@@ -3917,6 +3917,7 @@ void servoRotate90(int servo);
 
 void dispenseAlCan();
 void dispenseSnCan();
+int servoRotateArm();
 
 # 1 "sensors.h"
 int readAlTop();
@@ -4097,6 +4098,7 @@ servoRotate0(1);
 servoRotate0(2);
 servoRotate0(3);
 servoRotate0(0);
+servoRotate90n(4);
 
 
 while(timedif < 180 && PORTBbits.RB0 == 1){
@@ -4108,7 +4110,7 @@ printf("Executing    %03d", emptyCount);
 if(readSnTop() == 0){
 snLoaded = 0;
 }
-if(PORTAbits.RA3 == 0){
+if(readAlTop() == 0){
 alLoaded = 0;
 }
 if(readSnBot() == 0){
@@ -4120,7 +4122,7 @@ alInSensor = 0;
 
 if(snLoaded == 0){
 emptyCount = 0;
-if(runCanSn == 0){
+if(snInSensor == 1){
 _delay((unsigned long)((1000)*(10000000/4000.0)));
 dispenseSnCan();
 runCanSn = 1;
@@ -4129,7 +4131,7 @@ snLoaded = 1;
 }
 if(alLoaded == 0){
 emptyCount = 0;
-if(runCanAl == 0){
+if(alInSensor == 1){
 _delay((unsigned long)((1000)*(10000000/4000.0)));
 dispenseAlCan();
 runCanAl = 1;
@@ -4144,7 +4146,8 @@ emptyCount++;
 
 if(snInSensor == 0){
 int hasLabel;
-_delay((unsigned long)((300)*(10000000/4000.0)));
+_delay((unsigned long)((1000)*(10000000/4000.0)));
+emptyCount = 0;
 if(readSnSensor() == 1){
 hasLabel = 0;
 }else{
@@ -4165,17 +4168,17 @@ snInSensor = 1;
 }
 
 if(alInSensor == 0){
+emptyCount = 0;
+int hasTab;
 _delay((unsigned long)((1000)*(10000000/4000.0)));
-if(readAlSensor()){
-
-_delay((unsigned long)((2000)*(10000000/4000.0)));
-
+hasTab = servoRotateArm();
+servoRotate90n(4);
+if(hasTab){
+servoRotate90n(3);
 runCanAl = 0;
 alTab++;
-}else{
-
-_delay((unsigned long)((2000)*(10000000/4000.0)));
-
+}else if (hasTab == 0){
+servoRotate90(3);
 runCanAl = 0;
 alNoTab++;
 }
@@ -4243,11 +4246,11 @@ lcdInst(0b10000000);;
 printf("going debug");
 lcdInst(0b11000000);;
 
-# 342
-servoRotate0(4);
-servoRotate90(4);
+
+
+servoRotateArm();
+_delay((unsigned long)((1000)*(10000000/4000.0)));
 servoRotate90n(4);
-servoRotate90(4);
 
 state = MAIN;
 }
@@ -4326,7 +4329,7 @@ fixLCD();
 
 OSCCON = 0xF0;
 
-# 428
+# 423
 TRISA = 0b00001111;
 TRISB = 0b11110010;
 TRISC = 0b00011011;
@@ -4353,7 +4356,7 @@ INT1IE = 1;
 
 state = MAIN;
 
-# 458
+# 453
 while (1)
 {
 switch (state)

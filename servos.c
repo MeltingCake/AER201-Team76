@@ -209,15 +209,32 @@ void servoRotate90n(int servo) //0 Degree
     }
 }
 
+int servoRotateArm(){
+    unsigned int i;
+    int res = -1;
+    for(int i = 0; i < 60; i++){
+        LATBbits.LATB2 = 1;
+        __delay_us(1800);
+        LATBbits.LATB2 = 0;
+        __delay_us(18200);
+        if(PORTCbits.RC1 == 1){
+            res = 1;
+        }else{
+            res = 0;
+        }
+    }
+    return res;
+}
+
 void dispenseAlCan(){
     servoRotate90(1);
-    __delay_ms(100);
+    __delay_ms(800);
     servoRotate0(1);
 }
 
 void dispenseSnCan(){
     servoRotate90(0);
-    __delay_ms(100);
+    __delay_ms(800);
     servoRotate0(0);
 }
 

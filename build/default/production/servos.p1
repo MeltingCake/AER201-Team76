@@ -36,6 +36,26 @@ Version 3.2 HI-TECH Software Intermediate Code
 [n S40 . . . ]
 "1010
 [v _LATBbits `VS40 ~T0 @X0 0 e@3978 ]
+"361
+[s S16 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S16 . RC0 RC1 RC2 RC3 RC4 RC5 RC6 RC7 ]
+"371
+[s S17 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S17 . T1OSO T1OSI CCP1 SCK SDI SDO TX RX ]
+"381
+[s S18 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S18 . T13CKI CCP2 . SCL SDA . CK DT ]
+"391
+[s S19 :1 `uc 1 ]
+[n S19 . T1CKI ]
+"394
+[s S20 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S20 . . PA2 PA1 ]
+"360
+[u S15 `S16 1 `S17 1 `S18 1 `S19 1 `S20 1 ]
+[n S15 . . . . . . ]
+"400
+[v _PORTCbits `VS15 ~T0 @X0 0 e@3970 ]
 [; ;htc.h: 26: extern const char __xc8_OPTIM_SPEED;
 [; ;htc.h: 28: extern double __fpnormalize(double);
 [; ;xc8debug.h: 14: extern void __builtin_software_breakpoint(void);
@@ -3596,59 +3616,130 @@ Version 3.2 HI-TECH Software Intermediate Code
 [e :UE 325 ]
 }
 "212
-[v _dispenseAlCan `(v ~T0 @X0 1 ef ]
+[v _servoRotateArm `(i ~T0 @X0 1 ef ]
 {
-[; ;servos.c: 212: void dispenseAlCan(){
-[e :U _dispenseAlCan ]
+[; ;servos.c: 212: int servoRotateArm(){
+[e :U _servoRotateArm ]
 [f ]
-[; ;servos.c: 213: servoRotate90(1);
 "213
-[e ( _servoRotate90 (1 -> 1 `i ]
-[; ;servos.c: 214: _delay((unsigned long)((100)*(10000000/4000.0)));
+[v _i `ui ~T0 @X0 1 a ]
 "214
-[e ( __delay (1 -> * -> -> 100 `i `d / -> -> 10000000 `l `d .4000.0 `ul ]
-[; ;servos.c: 215: servoRotate0(1);
+[v _res `i ~T0 @X0 1 a ]
+[; ;servos.c: 213: unsigned int i;
+[; ;servos.c: 214: int res = -1;
+[e = _res -U -> 1 `i ]
+[; ;servos.c: 215: for(int i = 0; i < 60; i++){
 "215
-[e ( _servoRotate0 (1 -> 1 `i ]
-[; ;servos.c: 216: }
+{
+[v _i `i ~T0 @X0 1 a ]
+[e = _i -> 0 `i ]
+[e $ < _i -> 60 `i 344  ]
+[e $U 345  ]
+[e :U 344 ]
+{
+[; ;servos.c: 216: LATBbits.LATB2 = 1;
 "216
+[e = . . _LATBbits 0 2 -> -> 1 `i `uc ]
+[; ;servos.c: 217: _delay((unsigned long)((1800)*(10000000/4000000.0)));
+"217
+[e ( __delay (1 -> * -> -> 1800 `i `d / -> -> 10000000 `l `d .4000000.0 `ul ]
+[; ;servos.c: 218: LATBbits.LATB2 = 0;
+"218
+[e = . . _LATBbits 0 2 -> -> 0 `i `uc ]
+[; ;servos.c: 219: _delay((unsigned long)((18200)*(10000000/4000000.0)));
+"219
+[e ( __delay (1 -> * -> -> 18200 `i `d / -> -> 10000000 `l `d .4000000.0 `ul ]
+[; ;servos.c: 220: if(PORTCbits.RC1 == 1){
+"220
+[e $ ! == -> . . _PORTCbits 0 1 `i -> 1 `i 347  ]
+{
+[; ;servos.c: 221: res = 1;
+"221
+[e = _res -> 1 `i ]
+"222
+}
+[; ;servos.c: 222: }else{
+[e $U 348  ]
+[e :U 347 ]
+{
+[; ;servos.c: 223: res = 0;
+"223
+[e = _res -> 0 `i ]
+"224
+}
+[e :U 348 ]
+"225
+}
+"215
+[e ++ _i -> 1 `i ]
+[e $ < _i -> 60 `i 344  ]
+[e :U 345 ]
+"225
+}
+[; ;servos.c: 224: }
+[; ;servos.c: 225: }
+[; ;servos.c: 226: return res;
+"226
+[e ) _res ]
+[e $UE 343  ]
+[; ;servos.c: 227: }
+"227
 [e :UE 343 ]
 }
-"218
+"229
+[v _dispenseAlCan `(v ~T0 @X0 1 ef ]
+{
+[; ;servos.c: 229: void dispenseAlCan(){
+[e :U _dispenseAlCan ]
+[f ]
+[; ;servos.c: 230: servoRotate90(1);
+"230
+[e ( _servoRotate90 (1 -> 1 `i ]
+[; ;servos.c: 231: _delay((unsigned long)((800)*(10000000/4000.0)));
+"231
+[e ( __delay (1 -> * -> -> 800 `i `d / -> -> 10000000 `l `d .4000.0 `ul ]
+[; ;servos.c: 232: servoRotate0(1);
+"232
+[e ( _servoRotate0 (1 -> 1 `i ]
+[; ;servos.c: 233: }
+"233
+[e :UE 349 ]
+}
+"235
 [v _dispenseSnCan `(v ~T0 @X0 1 ef ]
 {
-[; ;servos.c: 218: void dispenseSnCan(){
+[; ;servos.c: 235: void dispenseSnCan(){
 [e :U _dispenseSnCan ]
 [f ]
-[; ;servos.c: 219: servoRotate90(0);
-"219
+[; ;servos.c: 236: servoRotate90(0);
+"236
 [e ( _servoRotate90 (1 -> 0 `i ]
-[; ;servos.c: 220: _delay((unsigned long)((100)*(10000000/4000.0)));
-"220
-[e ( __delay (1 -> * -> -> 100 `i `d / -> -> 10000000 `l `d .4000.0 `ul ]
-[; ;servos.c: 221: servoRotate0(0);
-"221
+[; ;servos.c: 237: _delay((unsigned long)((800)*(10000000/4000.0)));
+"237
+[e ( __delay (1 -> * -> -> 800 `i `d / -> -> 10000000 `l `d .4000.0 `ul ]
+[; ;servos.c: 238: servoRotate0(0);
+"238
 [e ( _servoRotate0 (1 -> 0 `i ]
-[; ;servos.c: 222: }
-"222
-[e :UE 344 ]
+[; ;servos.c: 239: }
+"239
+[e :UE 350 ]
 }
-"224
+"241
 [v _moveArm `(v ~T0 @X0 1 ef ]
 {
-[; ;servos.c: 224: void moveArm(){
+[; ;servos.c: 241: void moveArm(){
 [e :U _moveArm ]
 [f ]
-[; ;servos.c: 225: servoRotate5(90);
-"225
+[; ;servos.c: 242: servoRotate5(90);
+"242
 [e ( _servoRotate5 (1 -> 90 `i ]
-[; ;servos.c: 226: _delay((unsigned long)((1000)*(10000000/4000.0)));
-"226
+[; ;servos.c: 243: _delay((unsigned long)((1000)*(10000000/4000.0)));
+"243
 [e ( __delay (1 -> * -> -> 1000 `i `d / -> -> 10000000 `l `d .4000.0 `ul ]
-[; ;servos.c: 227: servoRotate5(0);
-"227
+[; ;servos.c: 244: servoRotate5(0);
+"244
 [e ( _servoRotate5 (1 -> 0 `i ]
-[; ;servos.c: 228: }
-"228
-[e :UE 345 ]
+[; ;servos.c: 245: }
+"245
+[e :UE 351 ]
 }

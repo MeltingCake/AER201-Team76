@@ -3929,15 +3929,32 @@ _delay((unsigned long)((19400)*(10000000/4000000.0)));
 }
 }
 
+int servoRotateArm(){
+unsigned int i;
+int res = -1;
+for(int i = 0; i < 60; i++){
+LATBbits.LATB2 = 1;
+_delay((unsigned long)((1800)*(10000000/4000000.0)));
+LATBbits.LATB2 = 0;
+_delay((unsigned long)((18200)*(10000000/4000000.0)));
+if(PORTCbits.RC1 == 1){
+res = 1;
+}else{
+res = 0;
+}
+}
+return res;
+}
+
 void dispenseAlCan(){
 servoRotate90(1);
-_delay((unsigned long)((100)*(10000000/4000.0)));
+_delay((unsigned long)((800)*(10000000/4000.0)));
 servoRotate0(1);
 }
 
 void dispenseSnCan(){
 servoRotate90(0);
-_delay((unsigned long)((100)*(10000000/4000.0)));
+_delay((unsigned long)((800)*(10000000/4000.0)));
 servoRotate0(0);
 }
 

@@ -185,6 +185,7 @@ void executingState()
     servoRotate0(2);
     servoRotate0(3);
     servoRotate0(0);
+    servoRotate90n(4);
     
     
     while(timedif < 180 && PORTBbits.RB0 == 1){
@@ -196,7 +197,7 @@ void executingState()
         if(readSnTop() == 0){
             snLoaded = 0;
         }
-        if(PORTAbits.RA3 == 0){
+        if(readAlTop() == 0){
             alLoaded = 0;
         }
         if(readSnBot() == 0){
@@ -208,7 +209,7 @@ void executingState()
         
         if(snLoaded == 0){
             emptyCount = 0;
-            if(runCanSn == 0){
+            if(snInSensor == 1){
                 __delay_ms(1000);
                 dispenseSnCan();
                 runCanSn = 1;
@@ -217,7 +218,7 @@ void executingState()
         }
         if(alLoaded == 0){
             emptyCount = 0;
-            if(runCanAl == 0){
+            if(alInSensor == 1){
                 __delay_ms(1000);
                 dispenseAlCan();
                 runCanAl = 1;
@@ -232,7 +233,8 @@ void executingState()
 
         if(snInSensor == 0){
             int hasLabel;
-            __delay_ms(300);
+            __delay_ms(1000);
+            emptyCount = 0;
             if(readSnSensor() == 1){
                 hasLabel = 0;
             }else{
@@ -253,17 +255,17 @@ void executingState()
         }
 
         if(alInSensor == 0){
+            emptyCount = 0;
+            int hasTab;
             __delay_ms(1000);
-            if(readAlSensor()){
-                //servoRotate2(90);
-                __delay_ms(2000);
-                //servoRotate2(0);
+            hasTab = servoRotateArm();
+            servoRotate90n(4);
+            if(hasTab){
+                servoRotate90n(3);
                 runCanAl = 0;
                 alTab++;
-            }else{
-                //servoRotate2(-90);
-                __delay_ms(2000);
-                //servoRotate2(0);
+            }else if (hasTab == 0){
+                servoRotate90(3);
                 runCanAl = 0;
                 alNoTab++;
             }
@@ -332,17 +334,10 @@ void debugState(){
     __lcd_newline();
     
     
-    //servoRotate90n(3);
-    //__delay_ms(1000);
-    //servoRotate0(3);
-    //__delay_ms(1000);
-    //servoRotate90(3);
-    //__delay_ms(1000);
-    //servoRotate0(3);
-    servoRotate0(4);
-    servoRotate90(4);
+    
+    servoRotateArm();
+   __delay_ms(1000);
     servoRotate90n(4);
-    servoRotate90(4);s
     
     state = MAIN;
 }

@@ -12,3 +12,4 @@ void servoRotate90(int servo);
 
 void dispenseAlCan();
 void dispenseSnCan();
+int servoRotateArm();
