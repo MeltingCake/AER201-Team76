@@ -57,13 +57,11 @@ void servoRotate3(int angle) {
 
 void servoRotate4(int angle) {
     unsigned int i;
-    unsigned long first = (unsigned long) (800 + ((unsigned long) (((float) angle)*(70.0 / 9.0))));
-    unsigned long second = (unsigned long) (19200 - ((unsigned long) (((float) angle)*(70.0 / 9.0))));
-    for (i = 0; i < 50; i++) {
+    for (i = 0; i < 300; i++) {
         LATEbits.LATE1 = 1;
-        delay_us(first);
+        __delay_us(1500);
         LATEbits.LATE1 = 0;
-        delay_us(second);
+        __delay_us(18500);
     }
 }
 
@@ -83,7 +81,7 @@ void servoRotate5(int angle) {
 void servoRotate0(int servo) //0 Degree
 {
     unsigned int i;
-    for (i = 0; i < 30; i++) {
+    for (i = 0; i < 50; i++) {
         switch (servo) {
             case 0:
                 LATAbits.LATA4 = 1;
@@ -126,7 +124,7 @@ void servoRotate0(int servo) //0 Degree
 void servoRotate90(int servo) //0 Degree
 {
     unsigned int i;
-    for (i = 0; i < 30; i++) {
+    for (i = 0; i < 50; i++) {
         switch (servo) {
             case 0:
                 LATAbits.LATA4 = 1;
@@ -169,7 +167,7 @@ void servoRotate90(int servo) //0 Degree
 void servoRotate90n(int servo) //0 Degree
 {
     unsigned int i;
-    for (i = 0; i < 30; i++) {
+    for (i = 0; i < 50; i++) {
         switch (servo) {
             case 0:
                 LATAbits.LATA4 = 1;

@@ -183,7 +183,7 @@ void executingState()
     
     servoRotate0(1);
     servoRotate0(2);
-    servoRotate0(3);
+    servoRotate4(3);
     servoRotate0(0);
     servoRotate90n(4);
     
@@ -333,12 +333,15 @@ void debugState(){
     printf("going debug");
     __lcd_newline();
     
-    
-    
-    servoRotateArm();
-   __delay_ms(1000);
-    servoRotate90n(4);
-    
+    //servoRotate90(3);
+    //__delay_ms(2000);
+    //servoRotate90n(3);
+    //__delay_ms(2000);
+    //servoRotate4(3);
+    servoRotate0(3);
+    //servoRotate90n(3);
+    //servoRotate90(3);
+    //servoRotate0(3);
     state = MAIN;
 }
 

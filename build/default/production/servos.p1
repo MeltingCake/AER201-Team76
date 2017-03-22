@@ -3021,175 +3021,167 @@ Version 3.2 HI-TECH Software Intermediate Code
 [f ]
 "59
 [v _i `ui ~T0 @X0 1 a ]
-"60
-[v _first `ul ~T0 @X0 1 a ]
 [; ;servos.c: 59: unsigned int i;
-[; ;servos.c: 60: unsigned long first = (unsigned long) (800 + ((unsigned long) (((float) angle)*(70.0 / 9.0))));
-[e = _first + -> -> -> 800 `i `l `ul -> * -> -> _angle `f `d / .70.0 .9.0 `ul ]
-"61
-[v _second `ul ~T0 @X0 1 a ]
-[; ;servos.c: 61: unsigned long second = (unsigned long) (19200 - ((unsigned long) (((float) angle)*(70.0 / 9.0))));
-[e = _second - -> -> -> 19200 `i `l `ul -> * -> -> _angle `f `d / .70.0 .9.0 `ul ]
-[; ;servos.c: 62: for (i = 0; i < 50; i++) {
-"62
+[; ;servos.c: 60: for (i = 0; i < 300; i++) {
+"60
 {
 [e = _i -> -> 0 `i `ui ]
-[e $ < _i -> -> 50 `i `ui 282  ]
+[e $ < _i -> -> 300 `i `ui 282  ]
 [e $U 283  ]
 [e :U 282 ]
 {
-[; ;servos.c: 63: LATEbits.LATE1 = 1;
-"63
+[; ;servos.c: 61: LATEbits.LATE1 = 1;
+"61
 [e = . . _LATEbits 0 1 -> -> 1 `i `uc ]
-[; ;servos.c: 64: delay_us(first);
-"64
-[e ( _delay_us (1 -> _first `ui ]
-[; ;servos.c: 65: LATEbits.LATE1 = 0;
-"65
-[e = . . _LATEbits 0 1 -> -> 0 `i `uc ]
-[; ;servos.c: 66: delay_us(second);
-"66
-[e ( _delay_us (1 -> _second `ui ]
-"67
-}
+[; ;servos.c: 62: _delay((unsigned long)((1500)*(10000000/4000000.0)));
 "62
-[e ++ _i -> -> 1 `i `ui ]
-[e $ < _i -> -> 50 `i `ui 282  ]
-[e :U 283 ]
-"67
+[e ( __delay (1 -> * -> -> 1500 `i `d / -> -> 10000000 `l `d .4000000.0 `ul ]
+[; ;servos.c: 63: LATEbits.LATE1 = 0;
+"63
+[e = . . _LATEbits 0 1 -> -> 0 `i `uc ]
+[; ;servos.c: 64: _delay((unsigned long)((18500)*(10000000/4000000.0)));
+"64
+[e ( __delay (1 -> * -> -> 18500 `i `d / -> -> 10000000 `l `d .4000000.0 `ul ]
+"65
 }
-[; ;servos.c: 67: }
-[; ;servos.c: 68: }
-"68
+"60
+[e ++ _i -> -> 1 `i `ui ]
+[e $ < _i -> -> 300 `i `ui 282  ]
+[e :U 283 ]
+"65
+}
+[; ;servos.c: 65: }
+[; ;servos.c: 66: }
+"66
 [e :UE 281 ]
 }
-"70
+"68
 [v _servoRotate5 `(v ~T0 @X0 1 ef1`i ]
 {
-[; ;servos.c: 70: void servoRotate5(int angle) {
+[; ;servos.c: 68: void servoRotate5(int angle) {
 [e :U _servoRotate5 ]
 [v _angle `i ~T0 @X0 1 r1 ]
 [f ]
-"71
+"69
 [v _i `ui ~T0 @X0 1 a ]
-"72
+"70
 [v _first `ul ~T0 @X0 1 a ]
-[; ;servos.c: 71: unsigned int i;
-[; ;servos.c: 72: unsigned long first = (unsigned long) (800 + ((unsigned long) (((float) angle)*(70.0 / 9.0))));
+[; ;servos.c: 69: unsigned int i;
+[; ;servos.c: 70: unsigned long first = (unsigned long) (800 + ((unsigned long) (((float) angle)*(70.0 / 9.0))));
 [e = _first + -> -> -> 800 `i `l `ul -> * -> -> _angle `f `d / .70.0 .9.0 `ul ]
-"73
+"71
 [v _second `ul ~T0 @X0 1 a ]
-[; ;servos.c: 73: unsigned long second = (unsigned long) (19200 - ((unsigned long) (((float) angle)*(70.0 / 9.0))));
+[; ;servos.c: 71: unsigned long second = (unsigned long) (19200 - ((unsigned long) (((float) angle)*(70.0 / 9.0))));
 [e = _second - -> -> -> 19200 `i `l `ul -> * -> -> _angle `f `d / .70.0 .9.0 `ul ]
-[; ;servos.c: 74: for (i = 0; i < 50; i++) {
-"74
+[; ;servos.c: 72: for (i = 0; i < 50; i++) {
+"72
 {
 [e = _i -> -> 0 `i `ui ]
 [e $ < _i -> -> 50 `i `ui 286  ]
 [e $U 287  ]
 [e :U 286 ]
 {
-[; ;servos.c: 75: LATBbits.LATB2 = 1;
-"75
+[; ;servos.c: 73: LATBbits.LATB2 = 1;
+"73
 [e = . . _LATBbits 0 2 -> -> 1 `i `uc ]
-[; ;servos.c: 76: delay_us(800);
-"76
-[e ( _delay_us (1 -> -> 800 `i `ui ]
-[; ;servos.c: 77: LATBbits.LATB2 = 0;
-"77
-[e = . . _LATBbits 0 2 -> -> 0 `i `uc ]
-[; ;servos.c: 78: delay_us(19200);
-"78
-[e ( _delay_us (1 -> -> 19200 `i `ui ]
-"79
-}
+[; ;servos.c: 74: delay_us(800);
 "74
+[e ( _delay_us (1 -> -> 800 `i `ui ]
+[; ;servos.c: 75: LATBbits.LATB2 = 0;
+"75
+[e = . . _LATBbits 0 2 -> -> 0 `i `uc ]
+[; ;servos.c: 76: delay_us(19200);
+"76
+[e ( _delay_us (1 -> -> 19200 `i `ui ]
+"77
+}
+"72
 [e ++ _i -> -> 1 `i `ui ]
 [e $ < _i -> -> 50 `i `ui 286  ]
 [e :U 287 ]
-"79
+"77
 }
-[; ;servos.c: 79: }
-[; ;servos.c: 80: }
-"80
+[; ;servos.c: 77: }
+[; ;servos.c: 78: }
+"78
 [e :UE 285 ]
 }
-"83
+"81
 [v _servoRotate0 `(v ~T0 @X0 1 ef1`i ]
-"84
+"82
 {
-[; ;servos.c: 83: void servoRotate0(int servo)
-[; ;servos.c: 84: {
+[; ;servos.c: 81: void servoRotate0(int servo)
+[; ;servos.c: 82: {
 [e :U _servoRotate0 ]
-"83
+"81
 [v _servo `i ~T0 @X0 1 r1 ]
-"84
+"82
 [f ]
-"85
+"83
 [v _i `ui ~T0 @X0 1 a ]
-[; ;servos.c: 85: unsigned int i;
-[; ;servos.c: 86: for (i = 0; i < 30; i++) {
-"86
+[; ;servos.c: 83: unsigned int i;
+[; ;servos.c: 84: for (i = 0; i < 50; i++) {
+"84
 {
 [e = _i -> -> 0 `i `ui ]
-[e $ < _i -> -> 30 `i `ui 290  ]
+[e $ < _i -> -> 50 `i `ui 290  ]
 [e $U 291  ]
 [e :U 290 ]
 {
-[; ;servos.c: 87: switch (servo) {
-"87
+[; ;servos.c: 85: switch (servo) {
+"85
 [e $U 294  ]
 {
-[; ;servos.c: 88: case 0:
-"88
+[; ;servos.c: 86: case 0:
+"86
 [e :U 295 ]
-[; ;servos.c: 89: LATAbits.LATA4 = 1;
-"89
-[e = . . _LATAbits 0 4 -> -> 1 `i `uc ]
-[; ;servos.c: 90: break;
-"90
-[e $U 293  ]
-[; ;servos.c: 91: case 1:
-"91
-[e :U 296 ]
-[; ;servos.c: 92: LATAbits.LATA5 = 1;
-"92
-[e = . . _LATAbits 0 5 -> -> 1 `i `uc ]
-[; ;servos.c: 93: break;
-"93
-[e $U 293  ]
-[; ;servos.c: 94: case 2:
-"94
-[e :U 297 ]
-[; ;servos.c: 95: LATEbits.LATE0 = 1;
-"95
-[e = . . _LATEbits 0 0 -> -> 1 `i `uc ]
-[; ;servos.c: 96: break;
-"96
-[e $U 293  ]
-[; ;servos.c: 97: case 3:
-"97
-[e :U 298 ]
-[; ;servos.c: 98: LATEbits.LATE1 = 1;
-"98
-[e = . . _LATEbits 0 1 -> -> 1 `i `uc ]
-[; ;servos.c: 99: break;
-"99
-[e $U 293  ]
-[; ;servos.c: 100: case 4:
-"100
-[e :U 299 ]
-[; ;servos.c: 101: LATBbits.LATB2 = 1;
-"101
-[e = . . _LATBbits 0 2 -> -> 1 `i `uc ]
-[; ;servos.c: 102: break;
-"102
-[e $U 293  ]
-"103
-}
-[; ;servos.c: 103: }
-[e $U 293  ]
+[; ;servos.c: 87: LATAbits.LATA4 = 1;
 "87
+[e = . . _LATAbits 0 4 -> -> 1 `i `uc ]
+[; ;servos.c: 88: break;
+"88
+[e $U 293  ]
+[; ;servos.c: 89: case 1:
+"89
+[e :U 296 ]
+[; ;servos.c: 90: LATAbits.LATA5 = 1;
+"90
+[e = . . _LATAbits 0 5 -> -> 1 `i `uc ]
+[; ;servos.c: 91: break;
+"91
+[e $U 293  ]
+[; ;servos.c: 92: case 2:
+"92
+[e :U 297 ]
+[; ;servos.c: 93: LATEbits.LATE0 = 1;
+"93
+[e = . . _LATEbits 0 0 -> -> 1 `i `uc ]
+[; ;servos.c: 94: break;
+"94
+[e $U 293  ]
+[; ;servos.c: 95: case 3:
+"95
+[e :U 298 ]
+[; ;servos.c: 96: LATEbits.LATE1 = 1;
+"96
+[e = . . _LATEbits 0 1 -> -> 1 `i `uc ]
+[; ;servos.c: 97: break;
+"97
+[e $U 293  ]
+[; ;servos.c: 98: case 4:
+"98
+[e :U 299 ]
+[; ;servos.c: 99: LATBbits.LATB2 = 1;
+"99
+[e = . . _LATBbits 0 2 -> -> 1 `i `uc ]
+[; ;servos.c: 100: break;
+"100
+[e $U 293  ]
+"101
+}
+[; ;servos.c: 101: }
+[e $U 293  ]
+"85
 [e :U 294 ]
 [e [\ _servo , $ -> 0 `i 295
  , $ -> 1 `i 296
@@ -3197,65 +3189,65 @@ Version 3.2 HI-TECH Software Intermediate Code
  , $ -> 3 `i 298
  , $ -> 4 `i 299
  293 ]
-"103
+"101
 [e :U 293 ]
-[; ;servos.c: 104: _delay((unsigned long)((1500)*(10000000/4000000.0)));
-"104
+[; ;servos.c: 102: _delay((unsigned long)((1500)*(10000000/4000000.0)));
+"102
 [e ( __delay (1 -> * -> -> 1500 `i `d / -> -> 10000000 `l `d .4000000.0 `ul ]
-[; ;servos.c: 105: switch (servo) {
-"105
+[; ;servos.c: 103: switch (servo) {
+"103
 [e $U 301  ]
 {
-[; ;servos.c: 106: case 0:
-"106
+[; ;servos.c: 104: case 0:
+"104
 [e :U 302 ]
-[; ;servos.c: 107: LATAbits.LATA4 = 0;
-"107
-[e = . . _LATAbits 0 4 -> -> 0 `i `uc ]
-[; ;servos.c: 108: break;
-"108
-[e $U 300  ]
-[; ;servos.c: 109: case 1:
-"109
-[e :U 303 ]
-[; ;servos.c: 110: LATAbits.LATA5 = 0;
-"110
-[e = . . _LATAbits 0 5 -> -> 0 `i `uc ]
-[; ;servos.c: 111: break;
-"111
-[e $U 300  ]
-[; ;servos.c: 112: case 2:
-"112
-[e :U 304 ]
-[; ;servos.c: 113: LATEbits.LATE0 = 0;
-"113
-[e = . . _LATEbits 0 0 -> -> 0 `i `uc ]
-[; ;servos.c: 114: break;
-"114
-[e $U 300  ]
-[; ;servos.c: 115: case 3:
-"115
-[e :U 305 ]
-[; ;servos.c: 116: LATEbits.LATE1 = 0;
-"116
-[e = . . _LATEbits 0 1 -> -> 0 `i `uc ]
-[; ;servos.c: 117: break;
-"117
-[e $U 300  ]
-[; ;servos.c: 118: case 4:
-"118
-[e :U 306 ]
-[; ;servos.c: 119: LATBbits.LATB2 = 0;
-"119
-[e = . . _LATBbits 0 2 -> -> 0 `i `uc ]
-[; ;servos.c: 120: break;
-"120
-[e $U 300  ]
-"121
-}
-[; ;servos.c: 121: }
-[e $U 300  ]
+[; ;servos.c: 105: LATAbits.LATA4 = 0;
 "105
+[e = . . _LATAbits 0 4 -> -> 0 `i `uc ]
+[; ;servos.c: 106: break;
+"106
+[e $U 300  ]
+[; ;servos.c: 107: case 1:
+"107
+[e :U 303 ]
+[; ;servos.c: 108: LATAbits.LATA5 = 0;
+"108
+[e = . . _LATAbits 0 5 -> -> 0 `i `uc ]
+[; ;servos.c: 109: break;
+"109
+[e $U 300  ]
+[; ;servos.c: 110: case 2:
+"110
+[e :U 304 ]
+[; ;servos.c: 111: LATEbits.LATE0 = 0;
+"111
+[e = . . _LATEbits 0 0 -> -> 0 `i `uc ]
+[; ;servos.c: 112: break;
+"112
+[e $U 300  ]
+[; ;servos.c: 113: case 3:
+"113
+[e :U 305 ]
+[; ;servos.c: 114: LATEbits.LATE1 = 0;
+"114
+[e = . . _LATEbits 0 1 -> -> 0 `i `uc ]
+[; ;servos.c: 115: break;
+"115
+[e $U 300  ]
+[; ;servos.c: 116: case 4:
+"116
+[e :U 306 ]
+[; ;servos.c: 117: LATBbits.LATB2 = 0;
+"117
+[e = . . _LATBbits 0 2 -> -> 0 `i `uc ]
+[; ;servos.c: 118: break;
+"118
+[e $U 300  ]
+"119
+}
+[; ;servos.c: 119: }
+[e $U 300  ]
+"103
 [e :U 301 ]
 [e [\ _servo , $ -> 0 `i 302
  , $ -> 1 `i 303
@@ -3263,100 +3255,100 @@ Version 3.2 HI-TECH Software Intermediate Code
  , $ -> 3 `i 305
  , $ -> 4 `i 306
  300 ]
-"121
+"119
 [e :U 300 ]
-[; ;servos.c: 122: _delay((unsigned long)((18500)*(10000000/4000000.0)));
-"122
+[; ;servos.c: 120: _delay((unsigned long)((18500)*(10000000/4000000.0)));
+"120
 [e ( __delay (1 -> * -> -> 18500 `i `d / -> -> 10000000 `l `d .4000000.0 `ul ]
-"123
+"121
 }
-"86
+"84
 [e ++ _i -> -> 1 `i `ui ]
-[e $ < _i -> -> 30 `i `ui 290  ]
+[e $ < _i -> -> 50 `i `ui 290  ]
 [e :U 291 ]
-"123
+"121
 }
-[; ;servos.c: 123: }
-[; ;servos.c: 124: }
-"124
+[; ;servos.c: 121: }
+[; ;servos.c: 122: }
+"122
 [e :UE 289 ]
 }
-"126
+"124
 [v _servoRotate90 `(v ~T0 @X0 1 ef1`i ]
-"127
+"125
 {
-[; ;servos.c: 126: void servoRotate90(int servo)
-[; ;servos.c: 127: {
+[; ;servos.c: 124: void servoRotate90(int servo)
+[; ;servos.c: 125: {
 [e :U _servoRotate90 ]
-"126
+"124
 [v _servo `i ~T0 @X0 1 r1 ]
-"127
+"125
 [f ]
-"128
+"126
 [v _i `ui ~T0 @X0 1 a ]
-[; ;servos.c: 128: unsigned int i;
-[; ;servos.c: 129: for (i = 0; i < 30; i++) {
-"129
+[; ;servos.c: 126: unsigned int i;
+[; ;servos.c: 127: for (i = 0; i < 50; i++) {
+"127
 {
 [e = _i -> -> 0 `i `ui ]
-[e $ < _i -> -> 30 `i `ui 308  ]
+[e $ < _i -> -> 50 `i `ui 308  ]
 [e $U 309  ]
 [e :U 308 ]
 {
-[; ;servos.c: 130: switch (servo) {
-"130
+[; ;servos.c: 128: switch (servo) {
+"128
 [e $U 312  ]
 {
-[; ;servos.c: 131: case 0:
-"131
+[; ;servos.c: 129: case 0:
+"129
 [e :U 313 ]
-[; ;servos.c: 132: LATAbits.LATA4 = 1;
-"132
-[e = . . _LATAbits 0 4 -> -> 1 `i `uc ]
-[; ;servos.c: 133: break;
-"133
-[e $U 311  ]
-[; ;servos.c: 134: case 1:
-"134
-[e :U 314 ]
-[; ;servos.c: 135: LATAbits.LATA5 = 1;
-"135
-[e = . . _LATAbits 0 5 -> -> 1 `i `uc ]
-[; ;servos.c: 136: break;
-"136
-[e $U 311  ]
-[; ;servos.c: 137: case 2:
-"137
-[e :U 315 ]
-[; ;servos.c: 138: LATEbits.LATE0 = 1;
-"138
-[e = . . _LATEbits 0 0 -> -> 1 `i `uc ]
-[; ;servos.c: 139: break;
-"139
-[e $U 311  ]
-[; ;servos.c: 140: case 3:
-"140
-[e :U 316 ]
-[; ;servos.c: 141: LATEbits.LATE1 = 1;
-"141
-[e = . . _LATEbits 0 1 -> -> 1 `i `uc ]
-[; ;servos.c: 142: break;
-"142
-[e $U 311  ]
-[; ;servos.c: 143: case 4:
-"143
-[e :U 317 ]
-[; ;servos.c: 144: LATBbits.LATB2 = 1;
-"144
-[e = . . _LATBbits 0 2 -> -> 1 `i `uc ]
-[; ;servos.c: 145: break;
-"145
-[e $U 311  ]
-"146
-}
-[; ;servos.c: 146: }
-[e $U 311  ]
+[; ;servos.c: 130: LATAbits.LATA4 = 1;
 "130
+[e = . . _LATAbits 0 4 -> -> 1 `i `uc ]
+[; ;servos.c: 131: break;
+"131
+[e $U 311  ]
+[; ;servos.c: 132: case 1:
+"132
+[e :U 314 ]
+[; ;servos.c: 133: LATAbits.LATA5 = 1;
+"133
+[e = . . _LATAbits 0 5 -> -> 1 `i `uc ]
+[; ;servos.c: 134: break;
+"134
+[e $U 311  ]
+[; ;servos.c: 135: case 2:
+"135
+[e :U 315 ]
+[; ;servos.c: 136: LATEbits.LATE0 = 1;
+"136
+[e = . . _LATEbits 0 0 -> -> 1 `i `uc ]
+[; ;servos.c: 137: break;
+"137
+[e $U 311  ]
+[; ;servos.c: 138: case 3:
+"138
+[e :U 316 ]
+[; ;servos.c: 139: LATEbits.LATE1 = 1;
+"139
+[e = . . _LATEbits 0 1 -> -> 1 `i `uc ]
+[; ;servos.c: 140: break;
+"140
+[e $U 311  ]
+[; ;servos.c: 141: case 4:
+"141
+[e :U 317 ]
+[; ;servos.c: 142: LATBbits.LATB2 = 1;
+"142
+[e = . . _LATBbits 0 2 -> -> 1 `i `uc ]
+[; ;servos.c: 143: break;
+"143
+[e $U 311  ]
+"144
+}
+[; ;servos.c: 144: }
+[e $U 311  ]
+"128
 [e :U 312 ]
 [e [\ _servo , $ -> 0 `i 313
  , $ -> 1 `i 314
@@ -3364,65 +3356,65 @@ Version 3.2 HI-TECH Software Intermediate Code
  , $ -> 3 `i 316
  , $ -> 4 `i 317
  311 ]
-"146
+"144
 [e :U 311 ]
-[; ;servos.c: 147: _delay((unsigned long)((2400)*(10000000/4000000.0)));
-"147
+[; ;servos.c: 145: _delay((unsigned long)((2400)*(10000000/4000000.0)));
+"145
 [e ( __delay (1 -> * -> -> 2400 `i `d / -> -> 10000000 `l `d .4000000.0 `ul ]
-[; ;servos.c: 148: switch (servo) {
-"148
+[; ;servos.c: 146: switch (servo) {
+"146
 [e $U 319  ]
 {
-[; ;servos.c: 149: case 0:
-"149
+[; ;servos.c: 147: case 0:
+"147
 [e :U 320 ]
-[; ;servos.c: 150: LATAbits.LATA4 = 0;
-"150
-[e = . . _LATAbits 0 4 -> -> 0 `i `uc ]
-[; ;servos.c: 151: break;
-"151
-[e $U 318  ]
-[; ;servos.c: 152: case 1:
-"152
-[e :U 321 ]
-[; ;servos.c: 153: LATAbits.LATA5 = 0;
-"153
-[e = . . _LATAbits 0 5 -> -> 0 `i `uc ]
-[; ;servos.c: 154: break;
-"154
-[e $U 318  ]
-[; ;servos.c: 155: case 2:
-"155
-[e :U 322 ]
-[; ;servos.c: 156: LATEbits.LATE0 = 0;
-"156
-[e = . . _LATEbits 0 0 -> -> 0 `i `uc ]
-[; ;servos.c: 157: break;
-"157
-[e $U 318  ]
-[; ;servos.c: 158: case 3:
-"158
-[e :U 323 ]
-[; ;servos.c: 159: LATEbits.LATE1 = 0;
-"159
-[e = . . _LATEbits 0 1 -> -> 0 `i `uc ]
-[; ;servos.c: 160: break;
-"160
-[e $U 318  ]
-[; ;servos.c: 161: case 4:
-"161
-[e :U 324 ]
-[; ;servos.c: 162: LATBbits.LATB2 = 0;
-"162
-[e = . . _LATBbits 0 2 -> -> 0 `i `uc ]
-[; ;servos.c: 163: break;
-"163
-[e $U 318  ]
-"164
-}
-[; ;servos.c: 164: }
-[e $U 318  ]
+[; ;servos.c: 148: LATAbits.LATA4 = 0;
 "148
+[e = . . _LATAbits 0 4 -> -> 0 `i `uc ]
+[; ;servos.c: 149: break;
+"149
+[e $U 318  ]
+[; ;servos.c: 150: case 1:
+"150
+[e :U 321 ]
+[; ;servos.c: 151: LATAbits.LATA5 = 0;
+"151
+[e = . . _LATAbits 0 5 -> -> 0 `i `uc ]
+[; ;servos.c: 152: break;
+"152
+[e $U 318  ]
+[; ;servos.c: 153: case 2:
+"153
+[e :U 322 ]
+[; ;servos.c: 154: LATEbits.LATE0 = 0;
+"154
+[e = . . _LATEbits 0 0 -> -> 0 `i `uc ]
+[; ;servos.c: 155: break;
+"155
+[e $U 318  ]
+[; ;servos.c: 156: case 3:
+"156
+[e :U 323 ]
+[; ;servos.c: 157: LATEbits.LATE1 = 0;
+"157
+[e = . . _LATEbits 0 1 -> -> 0 `i `uc ]
+[; ;servos.c: 158: break;
+"158
+[e $U 318  ]
+[; ;servos.c: 159: case 4:
+"159
+[e :U 324 ]
+[; ;servos.c: 160: LATBbits.LATB2 = 0;
+"160
+[e = . . _LATBbits 0 2 -> -> 0 `i `uc ]
+[; ;servos.c: 161: break;
+"161
+[e $U 318  ]
+"162
+}
+[; ;servos.c: 162: }
+[e $U 318  ]
+"146
 [e :U 319 ]
 [e [\ _servo , $ -> 0 `i 320
  , $ -> 1 `i 321
@@ -3430,100 +3422,100 @@ Version 3.2 HI-TECH Software Intermediate Code
  , $ -> 3 `i 323
  , $ -> 4 `i 324
  318 ]
-"164
+"162
 [e :U 318 ]
-[; ;servos.c: 165: _delay((unsigned long)((17600)*(10000000/4000000.0)));
-"165
+[; ;servos.c: 163: _delay((unsigned long)((17600)*(10000000/4000000.0)));
+"163
 [e ( __delay (1 -> * -> -> 17600 `i `d / -> -> 10000000 `l `d .4000000.0 `ul ]
-"166
+"164
 }
-"129
+"127
 [e ++ _i -> -> 1 `i `ui ]
-[e $ < _i -> -> 30 `i `ui 308  ]
+[e $ < _i -> -> 50 `i `ui 308  ]
 [e :U 309 ]
-"166
+"164
 }
-[; ;servos.c: 166: }
-[; ;servos.c: 167: }
-"167
+[; ;servos.c: 164: }
+[; ;servos.c: 165: }
+"165
 [e :UE 307 ]
 }
-"169
+"167
 [v _servoRotate90n `(v ~T0 @X0 1 ef1`i ]
-"170
+"168
 {
-[; ;servos.c: 169: void servoRotate90n(int servo)
-[; ;servos.c: 170: {
+[; ;servos.c: 167: void servoRotate90n(int servo)
+[; ;servos.c: 168: {
 [e :U _servoRotate90n ]
-"169
+"167
 [v _servo `i ~T0 @X0 1 r1 ]
-"170
+"168
 [f ]
-"171
+"169
 [v _i `ui ~T0 @X0 1 a ]
-[; ;servos.c: 171: unsigned int i;
-[; ;servos.c: 172: for (i = 0; i < 30; i++) {
-"172
+[; ;servos.c: 169: unsigned int i;
+[; ;servos.c: 170: for (i = 0; i < 50; i++) {
+"170
 {
 [e = _i -> -> 0 `i `ui ]
-[e $ < _i -> -> 30 `i `ui 326  ]
+[e $ < _i -> -> 50 `i `ui 326  ]
 [e $U 327  ]
 [e :U 326 ]
 {
-[; ;servos.c: 173: switch (servo) {
-"173
+[; ;servos.c: 171: switch (servo) {
+"171
 [e $U 330  ]
 {
-[; ;servos.c: 174: case 0:
-"174
+[; ;servos.c: 172: case 0:
+"172
 [e :U 331 ]
-[; ;servos.c: 175: LATAbits.LATA4 = 1;
-"175
-[e = . . _LATAbits 0 4 -> -> 1 `i `uc ]
-[; ;servos.c: 176: break;
-"176
-[e $U 329  ]
-[; ;servos.c: 177: case 1:
-"177
-[e :U 332 ]
-[; ;servos.c: 178: LATAbits.LATA5 = 1;
-"178
-[e = . . _LATAbits 0 5 -> -> 1 `i `uc ]
-[; ;servos.c: 179: break;
-"179
-[e $U 329  ]
-[; ;servos.c: 180: case 2:
-"180
-[e :U 333 ]
-[; ;servos.c: 181: LATEbits.LATE0 = 1;
-"181
-[e = . . _LATEbits 0 0 -> -> 1 `i `uc ]
-[; ;servos.c: 182: break;
-"182
-[e $U 329  ]
-[; ;servos.c: 183: case 3:
-"183
-[e :U 334 ]
-[; ;servos.c: 184: LATEbits.LATE1 = 1;
-"184
-[e = . . _LATEbits 0 1 -> -> 1 `i `uc ]
-[; ;servos.c: 185: break;
-"185
-[e $U 329  ]
-[; ;servos.c: 186: case 4:
-"186
-[e :U 335 ]
-[; ;servos.c: 187: LATBbits.LATB2 = 1;
-"187
-[e = . . _LATBbits 0 2 -> -> 1 `i `uc ]
-[; ;servos.c: 188: break;
-"188
-[e $U 329  ]
-"189
-}
-[; ;servos.c: 189: }
-[e $U 329  ]
+[; ;servos.c: 173: LATAbits.LATA4 = 1;
 "173
+[e = . . _LATAbits 0 4 -> -> 1 `i `uc ]
+[; ;servos.c: 174: break;
+"174
+[e $U 329  ]
+[; ;servos.c: 175: case 1:
+"175
+[e :U 332 ]
+[; ;servos.c: 176: LATAbits.LATA5 = 1;
+"176
+[e = . . _LATAbits 0 5 -> -> 1 `i `uc ]
+[; ;servos.c: 177: break;
+"177
+[e $U 329  ]
+[; ;servos.c: 178: case 2:
+"178
+[e :U 333 ]
+[; ;servos.c: 179: LATEbits.LATE0 = 1;
+"179
+[e = . . _LATEbits 0 0 -> -> 1 `i `uc ]
+[; ;servos.c: 180: break;
+"180
+[e $U 329  ]
+[; ;servos.c: 181: case 3:
+"181
+[e :U 334 ]
+[; ;servos.c: 182: LATEbits.LATE1 = 1;
+"182
+[e = . . _LATEbits 0 1 -> -> 1 `i `uc ]
+[; ;servos.c: 183: break;
+"183
+[e $U 329  ]
+[; ;servos.c: 184: case 4:
+"184
+[e :U 335 ]
+[; ;servos.c: 185: LATBbits.LATB2 = 1;
+"185
+[e = . . _LATBbits 0 2 -> -> 1 `i `uc ]
+[; ;servos.c: 186: break;
+"186
+[e $U 329  ]
+"187
+}
+[; ;servos.c: 187: }
+[e $U 329  ]
+"171
 [e :U 330 ]
 [e [\ _servo , $ -> 0 `i 331
  , $ -> 1 `i 332
@@ -3531,65 +3523,65 @@ Version 3.2 HI-TECH Software Intermediate Code
  , $ -> 3 `i 334
  , $ -> 4 `i 335
  329 ]
-"189
+"187
 [e :U 329 ]
-[; ;servos.c: 190: _delay((unsigned long)((600)*(10000000/4000000.0)));
-"190
+[; ;servos.c: 188: _delay((unsigned long)((600)*(10000000/4000000.0)));
+"188
 [e ( __delay (1 -> * -> -> 600 `i `d / -> -> 10000000 `l `d .4000000.0 `ul ]
-[; ;servos.c: 191: switch (servo) {
-"191
+[; ;servos.c: 189: switch (servo) {
+"189
 [e $U 337  ]
 {
-[; ;servos.c: 192: case 0:
-"192
+[; ;servos.c: 190: case 0:
+"190
 [e :U 338 ]
-[; ;servos.c: 193: LATAbits.LATA4 = 0;
-"193
-[e = . . _LATAbits 0 4 -> -> 0 `i `uc ]
-[; ;servos.c: 194: break;
-"194
-[e $U 336  ]
-[; ;servos.c: 195: case 1:
-"195
-[e :U 339 ]
-[; ;servos.c: 196: LATAbits.LATA5 = 0;
-"196
-[e = . . _LATAbits 0 5 -> -> 0 `i `uc ]
-[; ;servos.c: 197: break;
-"197
-[e $U 336  ]
-[; ;servos.c: 198: case 2:
-"198
-[e :U 340 ]
-[; ;servos.c: 199: LATEbits.LATE0 = 0;
-"199
-[e = . . _LATEbits 0 0 -> -> 0 `i `uc ]
-[; ;servos.c: 200: break;
-"200
-[e $U 336  ]
-[; ;servos.c: 201: case 3:
-"201
-[e :U 341 ]
-[; ;servos.c: 202: LATEbits.LATE1 = 0;
-"202
-[e = . . _LATEbits 0 1 -> -> 0 `i `uc ]
-[; ;servos.c: 203: break;
-"203
-[e $U 336  ]
-[; ;servos.c: 204: case 4:
-"204
-[e :U 342 ]
-[; ;servos.c: 205: LATBbits.LATB2 = 0;
-"205
-[e = . . _LATBbits 0 2 -> -> 0 `i `uc ]
-[; ;servos.c: 206: break;
-"206
-[e $U 336  ]
-"207
-}
-[; ;servos.c: 207: }
-[e $U 336  ]
+[; ;servos.c: 191: LATAbits.LATA4 = 0;
 "191
+[e = . . _LATAbits 0 4 -> -> 0 `i `uc ]
+[; ;servos.c: 192: break;
+"192
+[e $U 336  ]
+[; ;servos.c: 193: case 1:
+"193
+[e :U 339 ]
+[; ;servos.c: 194: LATAbits.LATA5 = 0;
+"194
+[e = . . _LATAbits 0 5 -> -> 0 `i `uc ]
+[; ;servos.c: 195: break;
+"195
+[e $U 336  ]
+[; ;servos.c: 196: case 2:
+"196
+[e :U 340 ]
+[; ;servos.c: 197: LATEbits.LATE0 = 0;
+"197
+[e = . . _LATEbits 0 0 -> -> 0 `i `uc ]
+[; ;servos.c: 198: break;
+"198
+[e $U 336  ]
+[; ;servos.c: 199: case 3:
+"199
+[e :U 341 ]
+[; ;servos.c: 200: LATEbits.LATE1 = 0;
+"200
+[e = . . _LATEbits 0 1 -> -> 0 `i `uc ]
+[; ;servos.c: 201: break;
+"201
+[e $U 336  ]
+[; ;servos.c: 202: case 4:
+"202
+[e :U 342 ]
+[; ;servos.c: 203: LATBbits.LATB2 = 0;
+"203
+[e = . . _LATBbits 0 2 -> -> 0 `i `uc ]
+[; ;servos.c: 204: break;
+"204
+[e $U 336  ]
+"205
+}
+[; ;servos.c: 205: }
+[e $U 336  ]
+"189
 [e :U 337 ]
 [e [\ _servo , $ -> 0 `i 338
  , $ -> 1 `i 339
@@ -3597,39 +3589,39 @@ Version 3.2 HI-TECH Software Intermediate Code
  , $ -> 3 `i 341
  , $ -> 4 `i 342
  336 ]
-"207
+"205
 [e :U 336 ]
-[; ;servos.c: 208: _delay((unsigned long)((19400)*(10000000/4000000.0)));
-"208
+[; ;servos.c: 206: _delay((unsigned long)((19400)*(10000000/4000000.0)));
+"206
 [e ( __delay (1 -> * -> -> 19400 `i `d / -> -> 10000000 `l `d .4000000.0 `ul ]
-"209
+"207
 }
-"172
+"170
 [e ++ _i -> -> 1 `i `ui ]
-[e $ < _i -> -> 30 `i `ui 326  ]
+[e $ < _i -> -> 50 `i `ui 326  ]
 [e :U 327 ]
-"209
+"207
 }
-[; ;servos.c: 209: }
-[; ;servos.c: 210: }
-"210
+[; ;servos.c: 207: }
+[; ;servos.c: 208: }
+"208
 [e :UE 325 ]
 }
-"212
+"210
 [v _servoRotateArm `(i ~T0 @X0 1 ef ]
 {
-[; ;servos.c: 212: int servoRotateArm(){
+[; ;servos.c: 210: int servoRotateArm(){
 [e :U _servoRotateArm ]
 [f ]
-"213
+"211
 [v _i `ui ~T0 @X0 1 a ]
-"214
+"212
 [v _res `i ~T0 @X0 1 a ]
-[; ;servos.c: 213: unsigned int i;
-[; ;servos.c: 214: int res = -1;
+[; ;servos.c: 211: unsigned int i;
+[; ;servos.c: 212: int res = -1;
 [e = _res -U -> 1 `i ]
-[; ;servos.c: 215: for(int i = 0; i < 60; i++){
-"215
+[; ;servos.c: 213: for(int i = 0; i < 60; i++){
+"213
 {
 [v _i `i ~T0 @X0 1 a ]
 [e = _i -> 0 `i ]
@@ -3637,109 +3629,109 @@ Version 3.2 HI-TECH Software Intermediate Code
 [e $U 345  ]
 [e :U 344 ]
 {
-[; ;servos.c: 216: LATBbits.LATB2 = 1;
-"216
+[; ;servos.c: 214: LATBbits.LATB2 = 1;
+"214
 [e = . . _LATBbits 0 2 -> -> 1 `i `uc ]
-[; ;servos.c: 217: _delay((unsigned long)((1800)*(10000000/4000000.0)));
-"217
+[; ;servos.c: 215: _delay((unsigned long)((1800)*(10000000/4000000.0)));
+"215
 [e ( __delay (1 -> * -> -> 1800 `i `d / -> -> 10000000 `l `d .4000000.0 `ul ]
-[; ;servos.c: 218: LATBbits.LATB2 = 0;
-"218
+[; ;servos.c: 216: LATBbits.LATB2 = 0;
+"216
 [e = . . _LATBbits 0 2 -> -> 0 `i `uc ]
-[; ;servos.c: 219: _delay((unsigned long)((18200)*(10000000/4000000.0)));
-"219
+[; ;servos.c: 217: _delay((unsigned long)((18200)*(10000000/4000000.0)));
+"217
 [e ( __delay (1 -> * -> -> 18200 `i `d / -> -> 10000000 `l `d .4000000.0 `ul ]
-[; ;servos.c: 220: if(PORTCbits.RC1 == 1){
-"220
+[; ;servos.c: 218: if(PORTCbits.RC1 == 1){
+"218
 [e $ ! == -> . . _PORTCbits 0 1 `i -> 1 `i 347  ]
 {
-[; ;servos.c: 221: res = 1;
-"221
+[; ;servos.c: 219: res = 1;
+"219
 [e = _res -> 1 `i ]
-"222
+"220
 }
-[; ;servos.c: 222: }else{
+[; ;servos.c: 220: }else{
 [e $U 348  ]
 [e :U 347 ]
 {
-[; ;servos.c: 223: res = 0;
-"223
+[; ;servos.c: 221: res = 0;
+"221
 [e = _res -> 0 `i ]
-"224
+"222
 }
 [e :U 348 ]
-"225
+"223
 }
-"215
+"213
 [e ++ _i -> 1 `i ]
 [e $ < _i -> 60 `i 344  ]
 [e :U 345 ]
-"225
+"223
 }
-[; ;servos.c: 224: }
-[; ;servos.c: 225: }
-[; ;servos.c: 226: return res;
-"226
+[; ;servos.c: 222: }
+[; ;servos.c: 223: }
+[; ;servos.c: 224: return res;
+"224
 [e ) _res ]
 [e $UE 343  ]
-[; ;servos.c: 227: }
-"227
+[; ;servos.c: 225: }
+"225
 [e :UE 343 ]
 }
-"229
+"227
 [v _dispenseAlCan `(v ~T0 @X0 1 ef ]
 {
-[; ;servos.c: 229: void dispenseAlCan(){
+[; ;servos.c: 227: void dispenseAlCan(){
 [e :U _dispenseAlCan ]
 [f ]
-[; ;servos.c: 230: servoRotate90(1);
-"230
+[; ;servos.c: 228: servoRotate90(1);
+"228
 [e ( _servoRotate90 (1 -> 1 `i ]
-[; ;servos.c: 231: _delay((unsigned long)((800)*(10000000/4000.0)));
-"231
+[; ;servos.c: 229: _delay((unsigned long)((800)*(10000000/4000.0)));
+"229
 [e ( __delay (1 -> * -> -> 800 `i `d / -> -> 10000000 `l `d .4000.0 `ul ]
-[; ;servos.c: 232: servoRotate0(1);
-"232
+[; ;servos.c: 230: servoRotate0(1);
+"230
 [e ( _servoRotate0 (1 -> 1 `i ]
-[; ;servos.c: 233: }
-"233
+[; ;servos.c: 231: }
+"231
 [e :UE 349 ]
 }
-"235
+"233
 [v _dispenseSnCan `(v ~T0 @X0 1 ef ]
 {
-[; ;servos.c: 235: void dispenseSnCan(){
+[; ;servos.c: 233: void dispenseSnCan(){
 [e :U _dispenseSnCan ]
 [f ]
-[; ;servos.c: 236: servoRotate90(0);
-"236
+[; ;servos.c: 234: servoRotate90(0);
+"234
 [e ( _servoRotate90 (1 -> 0 `i ]
-[; ;servos.c: 237: _delay((unsigned long)((800)*(10000000/4000.0)));
-"237
+[; ;servos.c: 235: _delay((unsigned long)((800)*(10000000/4000.0)));
+"235
 [e ( __delay (1 -> * -> -> 800 `i `d / -> -> 10000000 `l `d .4000.0 `ul ]
-[; ;servos.c: 238: servoRotate0(0);
-"238
+[; ;servos.c: 236: servoRotate0(0);
+"236
 [e ( _servoRotate0 (1 -> 0 `i ]
-[; ;servos.c: 239: }
-"239
+[; ;servos.c: 237: }
+"237
 [e :UE 350 ]
 }
-"241
+"239
 [v _moveArm `(v ~T0 @X0 1 ef ]
 {
-[; ;servos.c: 241: void moveArm(){
+[; ;servos.c: 239: void moveArm(){
 [e :U _moveArm ]
 [f ]
-[; ;servos.c: 242: servoRotate5(90);
-"242
+[; ;servos.c: 240: servoRotate5(90);
+"240
 [e ( _servoRotate5 (1 -> 90 `i ]
-[; ;servos.c: 243: _delay((unsigned long)((1000)*(10000000/4000.0)));
-"243
+[; ;servos.c: 241: _delay((unsigned long)((1000)*(10000000/4000.0)));
+"241
 [e ( __delay (1 -> * -> -> 1000 `i `d / -> -> 10000000 `l `d .4000.0 `ul ]
-[; ;servos.c: 244: servoRotate5(0);
-"244
+[; ;servos.c: 242: servoRotate5(0);
+"242
 [e ( _servoRotate5 (1 -> 0 `i ]
-[; ;servos.c: 245: }
-"245
+[; ;servos.c: 243: }
+"243
 [e :UE 351 ]
 }

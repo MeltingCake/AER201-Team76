@@ -4096,7 +4096,7 @@ emptyCount = 0;
 
 servoRotate0(1);
 servoRotate0(2);
-servoRotate0(3);
+servoRotate4(3);
 servoRotate0(0);
 servoRotate90n(4);
 
@@ -4246,11 +4246,10 @@ lcdInst(0b10000000);;
 printf("going debug");
 lcdInst(0b11000000);;
 
+# 341
+servoRotate0(3);
 
 
-servoRotateArm();
-_delay((unsigned long)((1000)*(10000000/4000.0)));
-servoRotate90n(4);
 
 state = MAIN;
 }
@@ -4329,7 +4328,7 @@ fixLCD();
 
 OSCCON = 0xF0;
 
-# 423
+# 426
 TRISA = 0b00001111;
 TRISB = 0b11110010;
 TRISC = 0b00011011;
@@ -4356,7 +4355,7 @@ INT1IE = 1;
 
 state = MAIN;
 
-# 453
+# 456
 while (1)
 {
 switch (state)
