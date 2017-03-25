@@ -4033,7 +4033,7 @@ return start_s - start;
 
 void mainState()
 {
-LATBbits.LATB0 = 1;
+LATBbits.LATB0 = 0;
 LATCbits.LATC6 = 0;
 while (1)
 {
@@ -4079,7 +4079,22 @@ int s_ten = (starttime[0] & 0b11110000)>>4;
 int s_one = (starttime[0] & 0b00001111);
 int start_s = (h_ten*10+h_one)*3600 + (m_ten*10 + m_one) * 60 + (s_ten * 10 + s_one);
 
+lcdInst(0b10000000);;
+printf("initializing    ");
+lcdInst(0b11000000);;
+printf("                ");
+
+
+
+LATBbits.LATB0 = 1;
+_delay((unsigned long)((300)*(10000000/4000.0)));
 LATCbits.LATC6 = 1;
+
+servoRotate90n(4);
+servoRotate2(1);
+servoRotate0(2);
+servoRotate1(0);
+servoRotate4(3);
 (INTCONbits.GIE = 0);
 update_lcd();
 int timedif = get_timeDif(start_s);
@@ -4094,11 +4109,6 @@ snInSensor = 1;
 alInSensor = 1;
 emptyCount = 0;
 
-servoRotate0(1);
-servoRotate0(2);
-servoRotate4(3);
-servoRotate0(0);
-servoRotate90n(4);
 
 
 while(timedif < 180 && PORTBbits.RB0 == 1){
@@ -4182,11 +4192,13 @@ servoRotate90(3);
 runCanAl = 0;
 alNoTab++;
 }
+_delay((unsigned long)((800)*(10000000/4000.0)));
+servoRotate4(3);
 alInSensor = 1;
 }
 
 timedif = get_timeDif(start_s);
-if(emptyCount > 20){
+if(emptyCount > 50){
 state = FINISH;
 runResult = 1;
 return;
@@ -4213,6 +4225,8 @@ void finishState()
 (INTCONbits.GIE = 0);
 _delay((unsigned long)((1000)*(10000000/4000.0)));
 update_lcd();
+LATBbits.LATB0 = 0;
+LATCbits.LATC6 = 0;
 while(1){
 int keypress = readKey();
 if(keypress == 0b1101){
@@ -4241,16 +4255,24 @@ return;
 }
 
 void debugState(){
+LATBbits.LATB0 = 1;
+_delay((unsigned long)((300)*(10000000/4000.0)));
 LATCbits.LATC6 = 1;
+
 lcdInst(0b10000000);;
 printf("going debug");
 lcdInst(0b11000000);;
 
-# 341
-servoRotate0(3);
+# 362
+servoRotate90n(4);
+servoRotate4(3);
+while(1){
+servoRotateArm();
+_delay((unsigned long)((300)*(10000000/4000.0)));
+servoRotate90n(4);
+}
 
-
-
+# 379
 state = MAIN;
 }
 
@@ -4328,7 +4350,7 @@ fixLCD();
 
 OSCCON = 0xF0;
 
-# 426
+# 460
 TRISA = 0b00001111;
 TRISB = 0b11110010;
 TRISC = 0b00011011;
@@ -4355,7 +4377,7 @@ INT1IE = 1;
 
 state = MAIN;
 
-# 456
+# 490
 while (1)
 {
 switch (state)

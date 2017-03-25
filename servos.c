@@ -9,6 +9,8 @@
 #include <xc.h>
 #include "configBits.h"
 
+int loopcount = 30;
+
 void delay_us(unsigned int useconds){
     while(useconds > 0){
         __delay_us(1);
@@ -18,26 +20,22 @@ void delay_us(unsigned int useconds){
 
 void servoRotate1(int angle) {
     unsigned int i;
-    unsigned long first = (unsigned long) (800 + ((unsigned long) (((float) angle)*(70.0 / 9.0))));
-    unsigned long second = (unsigned long) (19200 - ((unsigned long) (((float) angle)*(70.0 / 9.0))));
-    for (i = 0; i < 30; i++) {
-        LATAbits.LATA4= 1;
-        delay_us(first);
+    for (i = 0; i < loopcount; i++) {
+        LATAbits.LATA4 = 1;
+        __delay_us(1550);
         LATAbits.LATA4 = 0;
-        delay_us(second);
+        __delay_us(14450);
     }
 
 }
 
 void servoRotate2(int angle) {
-    unsigned int i;
-    unsigned long first = (unsigned long) (800 + ((unsigned long) (((float) angle)*(70.0 / 9.0))));
-    unsigned long second = (unsigned long) (19200 - ((unsigned long) (((float) angle)*(70.0 / 9.0))));
-    for (i = 0; i < 50; i++) {
+       unsigned int i;
+    for (i = 0; i < loopcount; i++) {
         LATAbits.LATA5 = 1;
-        delay_us(first);
+        __delay_us(1665);
         LATAbits.LATA5 = 0;
-        delay_us(second);
+        __delay_us(18335);
     }
 
 }
@@ -46,7 +44,7 @@ void servoRotate3(int angle) {
     unsigned int i;
     unsigned long first = (unsigned long) (800 + ((unsigned long) (((float) angle)*(70.0 / 9.0))));
     unsigned long second = (unsigned long) (19200 - ((unsigned long) (((float) angle)*(70.0 / 9.0))));
-    for (i = 0; i < 25; i++) {
+    for (i = 0; i < 35; i++) {
         LATEbits.LATE0 = 1;
         delay_us(first);
         LATEbits.LATE0 = 0;
@@ -57,11 +55,11 @@ void servoRotate3(int angle) {
 
 void servoRotate4(int angle) {
     unsigned int i;
-    for (i = 0; i < 300; i++) {
+    for (i = 0; i < loopcount; i++) {
         LATEbits.LATE1 = 1;
-        __delay_us(1500);
+        __delay_us(1550);
         LATEbits.LATE1 = 0;
-        __delay_us(18500);
+        __delay_us(18450);
     }
 }
 
@@ -69,7 +67,7 @@ void servoRotate5(int angle) {
     unsigned int i;
     unsigned long first = (unsigned long) (800 + ((unsigned long) (((float) angle)*(70.0 / 9.0))));
     unsigned long second = (unsigned long) (19200 - ((unsigned long) (((float) angle)*(70.0 / 9.0))));
-    for (i = 0; i < 50; i++) {
+    for (i = 0; i < loopcount; i++) {
         LATBbits.LATB2 = 1;
         delay_us(800);
         LATBbits.LATB2 = 0;
@@ -81,7 +79,7 @@ void servoRotate5(int angle) {
 void servoRotate0(int servo) //0 Degree
 {
     unsigned int i;
-    for (i = 0; i < 50; i++) {
+    for (i = 0; i < loopcount; i++) {
         switch (servo) {
             case 0:
                 LATAbits.LATA4 = 1;
@@ -124,7 +122,7 @@ void servoRotate0(int servo) //0 Degree
 void servoRotate90(int servo) //0 Degree
 {
     unsigned int i;
-    for (i = 0; i < 50; i++) {
+    for (i = 0; i < loopcount; i++) {
         switch (servo) {
             case 0:
                 LATAbits.LATA4 = 1;
@@ -167,7 +165,7 @@ void servoRotate90(int servo) //0 Degree
 void servoRotate90n(int servo) //0 Degree
 {
     unsigned int i;
-    for (i = 0; i < 50; i++) {
+    for (i = 0; i < loopcount; i++) {
         switch (servo) {
             case 0:
                 LATAbits.LATA4 = 1;
@@ -210,11 +208,11 @@ void servoRotate90n(int servo) //0 Degree
 int servoRotateArm(){
     unsigned int i;
     int res = -1;
-    for(int i = 0; i < 60; i++){
+    for(int i = 0; i < loopcount+50; i++){
         LATBbits.LATB2 = 1;
-        __delay_us(1800);
+        __delay_us(1740);
         LATBbits.LATB2 = 0;
-        __delay_us(18200);
+        __delay_us(18260);
         if(PORTCbits.RC1 == 1){
             res = 1;
         }else{
@@ -227,13 +225,13 @@ int servoRotateArm(){
 void dispenseAlCan(){
     servoRotate90(1);
     __delay_ms(800);
-    servoRotate0(1);
+    servoRotate2(1);
 }
 
 void dispenseSnCan(){
     servoRotate90(0);
     __delay_ms(800);
-    servoRotate0(0);
+    servoRotate1(0);
 }
 
 void moveArm(){

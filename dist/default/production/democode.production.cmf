@@ -11,75 +11,79 @@
 # All addresses and the length are given in unqualified hexadecimal
 # in delta units.  Any other numeric values are decimal.
 %PSECTS
-$C:\Users\Alex\AppData\Local\Temp\sp8g.obj
+$C:\Users\Alex\AppData\Local\Temp\sq8c.obj
 idloc IDLOC 0 200000 200000 8 1
 init CODE 0 E E 4 1
 reset_vec CODE 0 0 0 4 1
 config CONFIG 0 300000 300000 E 1
 $dist/default/production\democode.production.obj
-cinit CODE 0 15C2 15C2 26 1
-intcode_body CODE 0 EE8 EE8 B2 1
-text0 CODE 0 F9A F9A A0 1
-text1 CODE 0 13A8 13A8 48 1
-text2 CODE 0 130E 130E 4E 1
-text3 CODE 0 11AC 11AC 60 1
-text4 CODE 0 86C 86C 1B2 1
-text5 CODE 0 1438 1438 46 1
-text6 CODE 0 120C 120C 5A 1
-text7 CODE 0 10C0 10C0 82 1
-text8 CODE 0 14FC 14FC 3A 1
-text9 CODE 0 13F0 13F0 48 1
-text10 CODE 0 12 12 54E 1
-text11 CODE 0 B62 B62 138 1
-text12 CODE 0 1142 1142 6A 1
-text13 CODE 0 E26 E26 C2 1
-text14 CODE 0 14C0 14C0 3C 1
-text15 CODE 0 1694 1694 18 1
-text16 CODE 0 16AC 16AC 18 1
-text17 CODE 0 16C4 16C4 18 1
-text18 CODE 0 16DC 16DC 18 1
-text19 CODE 0 16F4 16F4 18 1
-text20 CODE 0 A1E A1E 144 1
-text21 CODE 0 103A 103A 86 1
-text22 CODE 0 175A 175A A 1
-text23 CODE 0 1764 1764 8 1
-text24 CODE 0 176C 176C 8 1
-text25 CODE 0 15E8 15E8 26 1
-text26 CODE 0 1722 1722 12 1
-text27 CODE 0 135C 135C 4C 1
-text28 CODE 0 1536 1536 30 1
-text29 CODE 0 1566 1566 30 1
-text30 CODE 0 C9A C9A C6 1
-text31 CODE 0 1678 1678 1C 1
-text32 CODE 0 1734 1734 E 1
-text33 CODE 0 170C 170C 16 1
-text34 CODE 0 160E 160E 26 1
-text35 CODE 0 1596 1596 2C 1
-text36 CODE 0 D60 D60 C6 1
-text37 CODE 0 560 560 30C 1
-text38 CODE 0 1742 1742 C 1
-text39 CODE 0 165A 165A 1E 1
-text40 CODE 0 1634 1634 26 1
-text41 CODE 0 147E 147E 42 1
-text42 CODE 0 12BC 12BC 52 1
-text43 CODE 0 174E 174E C 1
-text44 CODE 0 1266 1266 56 1
+cinit CODE 0 15D8 15D8 3E 1
+intcode_body CODE 0 F46 F46 B2 1
+text0 CODE 0 FF8 FF8 A0 1
+text1 CODE 0 1480 1480 48 1
+text2 CODE 0 13E6 13E6 4E 1
+text3 CODE 0 1284 1284 60 1
+text4 CODE 0 8CA 8CA 1B2 1
+text5 CODE 0 1510 1510 46 1
+text6 CODE 0 12E4 12E4 5A 1
+text7 CODE 0 111E 111E 82 1
+text8 CODE 0 1616 1616 3E 1
+text9 CODE 0 14C8 14C8 48 1
+text10 CODE 0 12 12 5AC 1
+text11 CODE 0 BC6 BC6 138 1
+text12 CODE 0 CFE CFE C4 1
+text13 CODE 0 17DC 17DC 18 1
+text14 CODE 0 17F4 17F4 18 1
+text15 CODE 0 180C 180C 18 1
+text16 CODE 0 1824 1824 18 1
+text17 CODE 0 183C 183C 18 1
+text18 CODE 0 A7C A7C 14A 1
+text19 CODE 0 1098 1098 86 1
+text20 CODE 0 18A2 18A2 A 1
+text21 CODE 0 18AC 18AC 8 1
+text22 CODE 0 18B4 18B4 8 1
+text23 CODE 0 1730 1730 26 1
+text24 CODE 0 186A 186A 12 1
+text25 CODE 0 1434 1434 4C 1
+text26 CODE 0 16D0 16D0 30 1
+text27 CODE 0 1654 1654 3E 1
+text28 CODE 0 1700 1700 30 1
+text29 CODE 0 DC2 DC2 C4 1
+text30 CODE 0 1598 1598 40 1
+text31 CODE 0 17C0 17C0 1C 1
+text32 CODE 0 187C 187C E 1
+text33 CODE 0 1854 1854 16 1
+text34 CODE 0 1756 1756 26 1
+text35 CODE 0 11A0 11A0 72 1
+text36 CODE 0 1212 1212 72 1
+text37 CODE 0 E86 E86 C0 1
+text38 CODE 0 1692 1692 3E 1
+text39 CODE 0 5BE 5BE 30C 1
+text40 CODE 0 188A 188A C 1
+text41 CODE 0 17A2 17A2 1E 1
+text42 CODE 0 177C 177C 26 1
+text43 CODE 0 1556 1556 42 1
+text44 CODE 0 1394 1394 52 1
+text45 CODE 0 1896 1896 C 1
+text46 CODE 0 133E 133E 56 1
+idataCOMRAM CODE 0 18BC 18BC 2 1
 cstackCOMRAM COMRAM 1 1 1 40 1
 cstackBANK0 BANK0 1 80 80 2E 1
-temp COMRAM 1 5B 5B 1 1
-bssBANK0 BANK0 1 AE AE E 1
+temp COMRAM 1 4F 4F 1 1
+bssBANK0 BANK0 1 AE AE 1C 1
 intcode CODE 0 8 8 6 1
-bssCOMRAM COMRAM 1 41 41 1A 1
-mediumconst MEDIUMCONST 0 FEE6 FEE6 11A 1
+dataCOMRAM COMRAM 1 4D 4D 2 1
+bssCOMRAM COMRAM 1 41 41 C 1
+mediumconst MEDIUMCONST 0 FEC4 FEC4 13C 1
 # %UNUSED Section
 # This section enumerates the unused ranges of each CLASS. Each entry
 # is described on a single line as follows:
 #    <class name> <range> <delta>
 # Addresses given in the range are in hexadecimal and units of delta.
 %UNUSED
-RAM BC-F7F 1
+RAM CA-F7F 1
 SFR F80-FFF 1
-BANK0 BC-FF 1
+BANK0 CA-FF 1
 BANK1 100-1FF 1
 BANK2 200-2FF 1
 BANK3 300-3FF 1
@@ -90,22 +94,22 @@ BANK7 700-7FF 1
 BANK8 800-8FF 1
 BANK9 900-9FF 1
 CONST 4-7 1
-CONST 1774-FEE5 1
-STACK BC-F7F 1
-SMALLCONST 1774-FEE5 1
+CONST 18BE-FEC3 1
+STACK CA-F7F 1
+SMALLCONST 18BE-FEC3 1
 CODE 4-7 1
-CODE 1774-FEE5 1
+CODE 18BE-FEC3 1
 BANK10 A00-AFF 1
 BANK11 B00-BFF 1
 BANK12 C00-CFF 1
 BANK13 D00-DFF 1
 BANK14 E00-EFF 1
 BANK15 F00-F7F 1
-BIGRAM 5C-7F 1
-BIGRAM BC-F7F 1
-COMRAM 5C-7F 1
+BIGRAM 50-7F 1
+BIGRAM CA-F7F 1
+COMRAM 50-7F 1
 EEDATA F00000-F003FF 1
-MEDIUMCONST 1774-FEE5 1
+MEDIUMCONST 18BE-FEC3 1
 # %LINETAB Section
 # This section enumerates the file/line to address mappings.
 # The beginning of the section is indicated by %LINETAB.
@@ -121,434 +125,450 @@ MEDIUMCONST 1774-FEE5 1
 %LINETAB
 $dist/default/production\democode.production.obj
 8 intcode CODE >57:D:\production\democode\lcd.c
-8 intcode CODE >482:D:\production\democode\main.c
-EE8 intcode_body CODE >482:D:\production\democode\main.c
-F22 intcode_body CODE >484:D:\production\democode\main.c
-F26 intcode_body CODE >488:D:\production\democode\main.c
-F2E intcode_body CODE >489:D:\production\democode\main.c
-F36 intcode_body CODE >491:D:\production\democode\main.c
-F3A intcode_body CODE >492:D:\production\democode\main.c
-F3E intcode_body CODE >493:D:\production\democode\main.c
-F42 intcode_body CODE >494:D:\production\democode\main.c
-F46 intcode_body CODE >495:D:\production\democode\main.c
-F4A intcode_body CODE >496:D:\production\democode\main.c
-F4C intcode_body CODE >497:D:\production\democode\main.c
-F4E intcode_body CODE >498:D:\production\democode\main.c
-F52 intcode_body CODE >499:D:\production\democode\main.c
-F5A intcode_body CODE >500:D:\production\democode\main.c
-F5C intcode_body CODE >504:D:\production\democode\main.c
-F5E intcode_body CODE >506:D:\production\democode\main.c
-1266 text44 CODE >36:D:\production\democode\lcd.c
-1268 text44 CODE >38:D:\production\democode\lcd.c
-126E text44 CODE >39:D:\production\democode\lcd.c
-1274 text44 CODE >40:D:\production\democode\lcd.c
-127A text44 CODE >42:D:\production\democode\lcd.c
-127C text44 CODE >43:D:\production\democode\lcd.c
-1284 text44 CODE >44:D:\production\democode\lcd.c
-1286 text44 CODE >45:D:\production\democode\lcd.c
-128E text44 CODE >47:D:\production\democode\lcd.c
-1294 text44 CODE >49:D:\production\democode\lcd.c
-129A text44 CODE >50:D:\production\democode\lcd.c
-12A0 text44 CODE >51:D:\production\democode\lcd.c
-12A6 text44 CODE >53:D:\production\democode\lcd.c
-12A8 text44 CODE >54:D:\production\democode\lcd.c
-12B0 text44 CODE >55:D:\production\democode\lcd.c
-12B2 text44 CODE >56:D:\production\democode\lcd.c
-12BA text44 CODE >57:D:\production\democode\lcd.c
-174E text43 CODE >26:D:\production\democode\lcd.c
-1750 text43 CODE >27:D:\production\democode\lcd.c
-1752 text43 CODE >28:D:\production\democode\lcd.c
-1758 text43 CODE >29:D:\production\democode\lcd.c
-12BC text42 CODE >8:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\lwdiv.c
-12BC text42 CODE >14:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\lwdiv.c
-12C4 text42 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\lwdiv.c
-12CC text42 CODE >16:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\lwdiv.c
-12D0 text42 CODE >17:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\lwdiv.c
-12D2 text42 CODE >18:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\lwdiv.c
-12D8 text42 CODE >19:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\lwdiv.c
-12DA text42 CODE >17:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\lwdiv.c
-12DE text42 CODE >22:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\lwdiv.c
-12E4 text42 CODE >23:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\lwdiv.c
-12F0 text42 CODE >24:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\lwdiv.c
-12F8 text42 CODE >25:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\lwdiv.c
-12FA text42 CODE >27:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\lwdiv.c
-1300 text42 CODE >28:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\lwdiv.c
-1304 text42 CODE >29:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\lwdiv.c
-1304 text42 CODE >30:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\lwdiv.c
-130C text42 CODE >31:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\lwdiv.c
-147E text41 CODE >8:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\lwmod.c
-147E text41 CODE >13:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\lwmod.c
-1486 text41 CODE >14:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\lwmod.c
-148A text41 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\lwmod.c
-148C text41 CODE >16:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\lwmod.c
-1492 text41 CODE >17:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\lwmod.c
-1494 text41 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\lwmod.c
-1498 text41 CODE >20:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\lwmod.c
-14A4 text41 CODE >21:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\lwmod.c
-14AC text41 CODE >22:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\lwmod.c
-14B2 text41 CODE >23:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\lwmod.c
-14B6 text41 CODE >24:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\lwmod.c
-14B6 text41 CODE >25:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\lwmod.c
-14BE text41 CODE >26:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\lwmod.c
-1634 text40 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\Umul16.c
-1634 text40 CODE >37:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\Umul16.c
-1640 text40 CODE >38:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\Umul16.c
-1648 text40 CODE >39:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\Umul16.c
-1650 text40 CODE >52:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\Umul16.c
-165A text39 CODE >8:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\isdigit.c
-165C text39 CODE >14:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\isdigit.c
-1742 text38 CODE >31:D:\production\democode\lcd.c
-1744 text38 CODE >32:D:\production\democode\lcd.c
-1746 text38 CODE >33:D:\production\democode\lcd.c
-174C text38 CODE >34:D:\production\democode\lcd.c
-560 text37 CODE >464:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\doprnt.c
-560 text37 CODE >533:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\doprnt.c
-568 text37 CODE >536:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\doprnt.c
-56A text37 CODE >538:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\doprnt.c
-572 text37 CODE >541:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\doprnt.c
-578 text37 CODE >542:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\doprnt.c
-57A text37 CODE >546:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\doprnt.c
-582 text37 CODE >548:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\doprnt.c
-586 text37 CODE >551:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\doprnt.c
-588 text37 CODE >580:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\doprnt.c
-58A text37 CODE >581:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\doprnt.c
-58E text37 CODE >551:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\doprnt.c
-5A0 text37 CODE >597:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\doprnt.c
-5B4 text37 CODE >598:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\doprnt.c
-5BC text37 CODE >600:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\doprnt.c
-5D8 text37 CODE >601:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\doprnt.c
-604 text37 CODE >602:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\doprnt.c
-61A text37 CODE >721:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\doprnt.c
-61C text37 CODE >723:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\doprnt.c
-61E text37 CODE >635:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\doprnt.c
-64C text37 CODE >822:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\doprnt.c
-64C text37 CODE >1251:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\doprnt.c
-650 text37 CODE >1259:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\doprnt.c
-668 text37 CODE >1261:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\doprnt.c
-66C text37 CODE >1262:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\doprnt.c
-670 text37 CODE >1263:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\doprnt.c
-678 text37 CODE >1266:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\doprnt.c
-67A text37 CODE >1286:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\doprnt.c
-692 text37 CODE >1294:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\doprnt.c
-694 text37 CODE >1305:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\doprnt.c
-6A0 text37 CODE >1306:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\doprnt.c
-6C0 text37 CODE >1305:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\doprnt.c
-6C4 text37 CODE >1316:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\doprnt.c
-6D0 text37 CODE >1317:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\doprnt.c
-6F0 text37 CODE >1316:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\doprnt.c
-6F4 text37 CODE >1294:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\doprnt.c
-704 text37 CODE >1345:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\doprnt.c
-718 text37 CODE >1346:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\doprnt.c
-71E text37 CODE >1381:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\doprnt.c
-734 text37 CODE >1382:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\doprnt.c
-742 text37 CODE >1384:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\doprnt.c
-74A text37 CODE >1387:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\doprnt.c
-74E text37 CODE >1392:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\doprnt.c
-75A text37 CODE >1393:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\doprnt.c
-760 text37 CODE >1415:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\doprnt.c
-768 text37 CODE >1417:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\doprnt.c
-76E text37 CODE >1418:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\doprnt.c
-776 text37 CODE >1428:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\doprnt.c
-77E text37 CODE >1430:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\doprnt.c
-784 text37 CODE >1431:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\doprnt.c
-792 text37 CODE >1438:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\doprnt.c
-79E text37 CODE >1439:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\doprnt.c
-7A4 text37 CODE >1472:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\doprnt.c
-7A8 text37 CODE >1474:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\doprnt.c
-7AA text37 CODE >1489:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\doprnt.c
-7EC text37 CODE >1491:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\doprnt.c
-7EE text37 CODE >1500:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\doprnt.c
-81C text37 CODE >1506:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\doprnt.c
-832 text37 CODE >1523:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\doprnt.c
-834 text37 CODE >1476:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\doprnt.c
-844 text37 CODE >1524:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\doprnt.c
-84A text37 CODE >1474:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\doprnt.c
-852 text37 CODE >536:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\doprnt.c
-D60 text36 CODE >81:D:\production\democode\servos.c
-D60 text36 CODE >84:D:\production\democode\servos.c
-D76 text36 CODE >86:D:\production\democode\servos.c
-D76 text36 CODE >87:D:\production\democode\servos.c
-D78 text36 CODE >88:D:\production\democode\servos.c
-D7A text36 CODE >89:D:\production\democode\servos.c
-D7A text36 CODE >90:D:\production\democode\servos.c
-D7C text36 CODE >91:D:\production\democode\servos.c
-D7E text36 CODE >92:D:\production\democode\servos.c
-D7E text36 CODE >93:D:\production\democode\servos.c
-D80 text36 CODE >94:D:\production\democode\servos.c
-D82 text36 CODE >95:D:\production\democode\servos.c
-D82 text36 CODE >96:D:\production\democode\servos.c
-D84 text36 CODE >97:D:\production\democode\servos.c
-D86 text36 CODE >98:D:\production\democode\servos.c
-D86 text36 CODE >99:D:\production\democode\servos.c
-D88 text36 CODE >101:D:\production\democode\servos.c
-D8A text36 CODE >85:D:\production\democode\servos.c
-DBA text36 CODE >102:D:\production\democode\servos.c
-DC8 text36 CODE >103:D:\production\democode\servos.c
-DCA text36 CODE >104:D:\production\democode\servos.c
-DCA text36 CODE >105:D:\production\democode\servos.c
-DCC text36 CODE >106:D:\production\democode\servos.c
-DCE text36 CODE >107:D:\production\democode\servos.c
-DCE text36 CODE >108:D:\production\democode\servos.c
-DD0 text36 CODE >109:D:\production\democode\servos.c
-DD2 text36 CODE >110:D:\production\democode\servos.c
-DD2 text36 CODE >111:D:\production\democode\servos.c
-DD4 text36 CODE >112:D:\production\democode\servos.c
-DD6 text36 CODE >113:D:\production\democode\servos.c
-DD6 text36 CODE >114:D:\production\democode\servos.c
-DD8 text36 CODE >115:D:\production\democode\servos.c
-DDA text36 CODE >116:D:\production\democode\servos.c
-DDA text36 CODE >117:D:\production\democode\servos.c
-DDC text36 CODE >119:D:\production\democode\servos.c
-DDE text36 CODE >103:D:\production\democode\servos.c
-E0E text36 CODE >120:D:\production\democode\servos.c
-E1E text36 CODE >84:D:\production\democode\servos.c
-E24 text36 CODE >122:D:\production\democode\servos.c
-1596 text35 CODE >330:D:\production\democode\main.c
-1596 text35 CODE >331:D:\production\democode\main.c
-1598 text35 CODE >332:D:\production\democode\main.c
-159E text35 CODE >333:D:\production\democode\main.c
-15AA text35 CODE >334:D:\production\democode\main.c
-15B0 text35 CODE >341:D:\production\democode\main.c
-15BC text35 CODE >345:D:\production\democode\main.c
-15C0 text35 CODE >346:D:\production\democode\main.c
-160E text34 CODE >37:D:\production\democode\eeprom.c
-160E text34 CODE >40:D:\production\democode\eeprom.c
-1612 text34 CODE >41:D:\production\democode\eeprom.c
-1616 text34 CODE >43:D:\production\democode\eeprom.c
-161A text34 CODE >44:D:\production\democode\eeprom.c
-161C text34 CODE >45:D:\production\democode\eeprom.c
-161E text34 CODE >46:D:\production\democode\eeprom.c
-1620 text34 CODE >50:D:\production\democode\eeprom.c
-1624 text34 CODE >51:D:\production\democode\eeprom.c
-1628 text34 CODE >52:D:\production\democode\eeprom.c
-162A text34 CODE >55:D:\production\democode\eeprom.c
-162A text34 CODE >58:D:\production\democode\eeprom.c
-162E text34 CODE >60:D:\production\democode\eeprom.c
-1630 text34 CODE >61:D:\production\democode\eeprom.c
-1632 text34 CODE >62:D:\production\democode\eeprom.c
-170C text33 CODE >14:D:\production\democode\eeprom.c
-170C text33 CODE >18:D:\production\democode\eeprom.c
-1710 text33 CODE >19:D:\production\democode\eeprom.c
-1714 text33 CODE >21:D:\production\democode\eeprom.c
-1716 text33 CODE >22:D:\production\democode\eeprom.c
-1718 text33 CODE >23:D:\production\democode\eeprom.c
-171A text33 CODE >27:D:\production\democode\eeprom.c
-171E text33 CODE >29:D:\production\democode\eeprom.c
-1734 text32 CODE >69:D:\production\democode\eeprom.c
-1734 text32 CODE >70:D:\production\democode\eeprom.c
-1678 text31 CODE >73:D:\production\democode\eeprom.c
-1678 text31 CODE >74:D:\production\democode\eeprom.c
-1682 text31 CODE >75:D:\production\democode\eeprom.c
-C9A text30 CODE >124:D:\production\democode\servos.c
-C9A text30 CODE >127:D:\production\democode\servos.c
-CB0 text30 CODE >129:D:\production\democode\servos.c
-CB0 text30 CODE >130:D:\production\democode\servos.c
-CB2 text30 CODE >131:D:\production\democode\servos.c
-CB4 text30 CODE >132:D:\production\democode\servos.c
-CB4 text30 CODE >133:D:\production\democode\servos.c
-CB6 text30 CODE >134:D:\production\democode\servos.c
-CB8 text30 CODE >135:D:\production\democode\servos.c
-CB8 text30 CODE >136:D:\production\democode\servos.c
-CBA text30 CODE >137:D:\production\democode\servos.c
-CBC text30 CODE >138:D:\production\democode\servos.c
-CBC text30 CODE >139:D:\production\democode\servos.c
-CBE text30 CODE >140:D:\production\democode\servos.c
-CC0 text30 CODE >141:D:\production\democode\servos.c
-CC0 text30 CODE >142:D:\production\democode\servos.c
-CC2 text30 CODE >144:D:\production\democode\servos.c
-CC4 text30 CODE >128:D:\production\democode\servos.c
-CF4 text30 CODE >145:D:\production\democode\servos.c
-D02 text30 CODE >146:D:\production\democode\servos.c
-D04 text30 CODE >147:D:\production\democode\servos.c
-D04 text30 CODE >148:D:\production\democode\servos.c
-D06 text30 CODE >149:D:\production\democode\servos.c
-D08 text30 CODE >150:D:\production\democode\servos.c
-D08 text30 CODE >151:D:\production\democode\servos.c
-D0A text30 CODE >152:D:\production\democode\servos.c
-D0C text30 CODE >153:D:\production\democode\servos.c
-D0C text30 CODE >154:D:\production\democode\servos.c
-D0E text30 CODE >155:D:\production\democode\servos.c
-D10 text30 CODE >156:D:\production\democode\servos.c
-D10 text30 CODE >157:D:\production\democode\servos.c
-D12 text30 CODE >158:D:\production\democode\servos.c
-D14 text30 CODE >159:D:\production\democode\servos.c
-D14 text30 CODE >160:D:\production\democode\servos.c
-D16 text30 CODE >162:D:\production\democode\servos.c
-D18 text30 CODE >146:D:\production\democode\servos.c
-D48 text30 CODE >163:D:\production\democode\servos.c
-D58 text30 CODE >127:D:\production\democode\servos.c
-D5E text30 CODE >165:D:\production\democode\servos.c
-1566 text29 CODE >227:D:\production\democode\servos.c
-1566 text29 CODE >228:D:\production\democode\servos.c
-1572 text29 CODE >229:D:\production\democode\servos.c
-1588 text29 CODE >230:D:\production\democode\servos.c
-1594 text29 CODE >231:D:\production\democode\servos.c
-1536 text28 CODE >233:D:\production\democode\servos.c
-1536 text28 CODE >234:D:\production\democode\servos.c
-1542 text28 CODE >235:D:\production\democode\servos.c
-1558 text28 CODE >236:D:\production\democode\servos.c
-1564 text28 CODE >237:D:\production\democode\servos.c
-135C text27 CODE >82:D:\production\democode\eeprom.c
-135C text27 CODE >83:D:\production\democode\eeprom.c
-1364 text27 CODE >84:D:\production\democode\eeprom.c
-1374 text27 CODE >85:D:\production\democode\eeprom.c
-138C text27 CODE >86:D:\production\democode\eeprom.c
-13A0 text27 CODE >85:D:\production\democode\eeprom.c
-13A6 text27 CODE >88:D:\production\democode\eeprom.c
-1722 text26 CODE >24:D:\production\democode\I2C.c
-1722 text26 CODE >26:D:\production\democode\I2C.c
-15E8 text25 CODE >53:D:\production\democode\I2C.c
-15EA text25 CODE >56:D:\production\democode\I2C.c
-15EE text25 CODE >57:D:\production\democode\I2C.c
-15F0 text25 CODE >58:D:\production\democode\I2C.c
-15F4 text25 CODE >59:D:\production\democode\I2C.c
-15F8 text25 CODE >60:D:\production\democode\I2C.c
-15FC text25 CODE >61:D:\production\democode\I2C.c
-1608 text25 CODE >62:D:\production\democode\I2C.c
-160A text25 CODE >63:D:\production\democode\I2C.c
-176C text24 CODE >29:D:\production\democode\I2C.c
-176C text24 CODE >31:D:\production\democode\I2C.c
-1770 text24 CODE >32:D:\production\democode\I2C.c
-1772 text24 CODE >33:D:\production\democode\I2C.c
-1764 text23 CODE >41:D:\production\democode\I2C.c
-1764 text23 CODE >43:D:\production\democode\I2C.c
-1768 text23 CODE >44:D:\production\democode\I2C.c
-176A text23 CODE >45:D:\production\democode\I2C.c
-175A text22 CODE >47:D:\production\democode\I2C.c
-175A text22 CODE >49:D:\production\democode\I2C.c
-175E text22 CODE >50:D:\production\democode\I2C.c
-1762 text22 CODE >51:D:\production\democode\I2C.c
-103A text21 CODE >23:D:\production\democode\RTC.c
-103A text21 CODE >25:D:\production\democode\RTC.c
-103E text21 CODE >26:D:\production\democode\RTC.c
-104A text21 CODE >27:D:\production\democode\RTC.c
-1056 text21 CODE >28:D:\production\democode\RTC.c
-105A text21 CODE >31:D:\production\democode\RTC.c
-105E text21 CODE >32:D:\production\democode\RTC.c
-106A text21 CODE >33:D:\production\democode\RTC.c
-1076 text21 CODE >34:D:\production\democode\RTC.c
-1098 text21 CODE >33:D:\production\democode\RTC.c
-109C text21 CODE >36:D:\production\democode\RTC.c
-10BA text21 CODE >37:D:\production\democode\RTC.c
-10BE text21 CODE >38:D:\production\democode\RTC.c
-A1E text20 CODE >108:D:\production\democode\main.c
-A1E text20 CODE >109:D:\production\democode\main.c
-A2A text20 CODE >110:D:\production\democode\main.c
-A4C text20 CODE >111:D:\production\democode\main.c
-A54 text20 CODE >112:D:\production\democode\main.c
-A76 text20 CODE >113:D:\production\democode\main.c
-A7E text20 CODE >114:D:\production\democode\main.c
-A9C text20 CODE >115:D:\production\democode\main.c
-AA4 text20 CODE >116:D:\production\democode\main.c
-B44 text20 CODE >118:D:\production\democode\main.c
-16F4 text19 CODE >18:D:\production\democode\sensors.c
-16F4 text19 CODE >19:D:\production\democode\sensors.c
-16F8 text19 CODE >20:D:\production\democode\sensors.c
-1702 text19 CODE >22:D:\production\democode\sensors.c
-16DC text18 CODE >32:D:\production\democode\sensors.c
-16DC text18 CODE >33:D:\production\democode\sensors.c
-16E0 text18 CODE >34:D:\production\democode\sensors.c
-16EA text18 CODE >36:D:\production\democode\sensors.c
-16C4 text17 CODE >11:D:\production\democode\sensors.c
-16C4 text17 CODE >12:D:\production\democode\sensors.c
-16C8 text17 CODE >13:D:\production\democode\sensors.c
-16D2 text17 CODE >15:D:\production\democode\sensors.c
-16AC text16 CODE >39:D:\production\democode\sensors.c
-16AC text16 CODE >40:D:\production\democode\sensors.c
-16B0 text16 CODE >41:D:\production\democode\sensors.c
-16BA text16 CODE >43:D:\production\democode\sensors.c
-1694 text15 CODE >25:D:\production\democode\sensors.c
-1694 text15 CODE >26:D:\production\democode\sensors.c
-1698 text15 CODE >27:D:\production\democode\sensors.c
-16A2 text15 CODE >29:D:\production\democode\sensors.c
-14C0 text14 CODE >58:D:\production\democode\servos.c
-14C0 text14 CODE >60:D:\production\democode\servos.c
-14D4 text14 CODE >61:D:\production\democode\servos.c
-14D6 text14 CODE >62:D:\production\democode\servos.c
-14E4 text14 CODE >63:D:\production\democode\servos.c
-14E6 text14 CODE >64:D:\production\democode\servos.c
-14F6 text14 CODE >60:D:\production\democode\servos.c
-E26 text13 CODE >167:D:\production\democode\servos.c
-E26 text13 CODE >170:D:\production\democode\servos.c
-E3C text13 CODE >172:D:\production\democode\servos.c
-E3C text13 CODE >173:D:\production\democode\servos.c
-E3E text13 CODE >174:D:\production\democode\servos.c
-E40 text13 CODE >175:D:\production\democode\servos.c
-E40 text13 CODE >176:D:\production\democode\servos.c
-E42 text13 CODE >177:D:\production\democode\servos.c
-E44 text13 CODE >178:D:\production\democode\servos.c
-E44 text13 CODE >179:D:\production\democode\servos.c
-E46 text13 CODE >180:D:\production\democode\servos.c
-E48 text13 CODE >181:D:\production\democode\servos.c
-E48 text13 CODE >182:D:\production\democode\servos.c
-E4A text13 CODE >183:D:\production\democode\servos.c
-E4C text13 CODE >184:D:\production\democode\servos.c
-E4C text13 CODE >185:D:\production\democode\servos.c
-E4E text13 CODE >187:D:\production\democode\servos.c
-E50 text13 CODE >171:D:\production\democode\servos.c
-E80 text13 CODE >188:D:\production\democode\servos.c
-E8C text13 CODE >189:D:\production\democode\servos.c
-E8E text13 CODE >190:D:\production\democode\servos.c
-E8E text13 CODE >191:D:\production\democode\servos.c
-E90 text13 CODE >192:D:\production\democode\servos.c
-E92 text13 CODE >193:D:\production\democode\servos.c
-E92 text13 CODE >194:D:\production\democode\servos.c
-E94 text13 CODE >195:D:\production\democode\servos.c
-E96 text13 CODE >196:D:\production\democode\servos.c
-E96 text13 CODE >197:D:\production\democode\servos.c
-E98 text13 CODE >198:D:\production\democode\servos.c
-E9A text13 CODE >199:D:\production\democode\servos.c
-E9A text13 CODE >200:D:\production\democode\servos.c
-E9C text13 CODE >201:D:\production\democode\servos.c
-E9E text13 CODE >202:D:\production\democode\servos.c
-E9E text13 CODE >203:D:\production\democode\servos.c
-EA0 text13 CODE >205:D:\production\democode\servos.c
-EA2 text13 CODE >189:D:\production\democode\servos.c
-ED2 text13 CODE >206:D:\production\democode\servos.c
-EE0 text13 CODE >170:D:\production\democode\servos.c
-EE6 text13 CODE >208:D:\production\democode\servos.c
-1142 text12 CODE >210:D:\production\democode\servos.c
-1142 text12 CODE >212:D:\production\democode\servos.c
-1146 text12 CODE >213:D:\production\democode\servos.c
-115E text12 CODE >214:D:\production\democode\servos.c
-1160 text12 CODE >215:D:\production\democode\servos.c
-1170 text12 CODE >216:D:\production\democode\servos.c
-1172 text12 CODE >217:D:\production\democode\servos.c
-1180 text12 CODE >218:D:\production\democode\servos.c
-1184 text12 CODE >219:D:\production\democode\servos.c
-118C text12 CODE >221:D:\production\democode\servos.c
-1194 text12 CODE >213:D:\production\democode\servos.c
-11A2 text12 CODE >224:D:\production\democode\servos.c
-11AA text12 CODE >225:D:\production\democode\servos.c
-B62 text11 CODE >44:D:\production\democode\main.c
-B62 text11 CODE >46:D:\production\democode\main.c
-B68 text11 CODE >48:D:\production\democode\main.c
-B6A text11 CODE >51:D:\production\democode\main.c
-B8E text11 CODE >52:D:\production\democode\main.c
-BB2 text11 CODE >54:D:\production\democode\main.c
-BB8 text11 CODE >55:D:\production\democode\main.c
-BC4 text11 CODE >56:D:\production\democode\main.c
-BC6 text11 CODE >59:D:\production\democode\main.c
-BD8 text11 CODE >60:D:\production\democode\main.c
-BDE text11 CODE >61:D:\production\democode\main.c
-BEA text11 CODE >62:D:\production\democode\main.c
-BEC text11 CODE >64:D:\production\democode\main.c
-BF8 text11 CODE >65:D:\production\democode\main.c
-BFE text11 CODE >66:D:\production\democode\main.c
-C2A text11 CODE >68:D:\production\democode\main.c
-C2C text11 CODE >71:D:\production\democode\main.c
-C34 text11 CODE >72:D:\production\democode\main.c
-C40 text11 CODE >73:D:\production\democode\main.c
-C42 text11 CODE >76:D:\production\democode\main.c
-C4E text11 CODE >78:D:\production\democode\main.c
-C54 text11 CODE >79:D:\production\democode\main.c
-C60 text11 CODE >80:D:\production\democode\main.c
-C62 text11 CODE >82:D:\production\democode\main.c
-C6E text11 CODE >84:D:\production\democode\main.c
-C70 text11 CODE >48:D:\production\democode\main.c
-C8C text11 CODE >86:D:\production\democode\main.c
-C92 text11 CODE >87:D:\production\democode\main.c
-C98 text11 CODE >88:D:\production\democode\main.c
+8 intcode CODE >516:D:\production\democode\main.c
+F46 intcode_body CODE >516:D:\production\democode\main.c
+F80 intcode_body CODE >518:D:\production\democode\main.c
+F84 intcode_body CODE >522:D:\production\democode\main.c
+F8C intcode_body CODE >523:D:\production\democode\main.c
+F94 intcode_body CODE >525:D:\production\democode\main.c
+F98 intcode_body CODE >526:D:\production\democode\main.c
+F9C intcode_body CODE >527:D:\production\democode\main.c
+FA0 intcode_body CODE >528:D:\production\democode\main.c
+FA4 intcode_body CODE >529:D:\production\democode\main.c
+FA8 intcode_body CODE >530:D:\production\democode\main.c
+FAA intcode_body CODE >531:D:\production\democode\main.c
+FAC intcode_body CODE >532:D:\production\democode\main.c
+FB0 intcode_body CODE >533:D:\production\democode\main.c
+FB8 intcode_body CODE >534:D:\production\democode\main.c
+FBA intcode_body CODE >538:D:\production\democode\main.c
+FBC intcode_body CODE >540:D:\production\democode\main.c
+133E text46 CODE >36:D:\production\democode\lcd.c
+1340 text46 CODE >38:D:\production\democode\lcd.c
+1346 text46 CODE >39:D:\production\democode\lcd.c
+134C text46 CODE >40:D:\production\democode\lcd.c
+1352 text46 CODE >42:D:\production\democode\lcd.c
+1354 text46 CODE >43:D:\production\democode\lcd.c
+135C text46 CODE >44:D:\production\democode\lcd.c
+135E text46 CODE >45:D:\production\democode\lcd.c
+1366 text46 CODE >47:D:\production\democode\lcd.c
+136C text46 CODE >49:D:\production\democode\lcd.c
+1372 text46 CODE >50:D:\production\democode\lcd.c
+1378 text46 CODE >51:D:\production\democode\lcd.c
+137E text46 CODE >53:D:\production\democode\lcd.c
+1380 text46 CODE >54:D:\production\democode\lcd.c
+1388 text46 CODE >55:D:\production\democode\lcd.c
+138A text46 CODE >56:D:\production\democode\lcd.c
+1392 text46 CODE >57:D:\production\democode\lcd.c
+1896 text45 CODE >26:D:\production\democode\lcd.c
+1898 text45 CODE >27:D:\production\democode\lcd.c
+189A text45 CODE >28:D:\production\democode\lcd.c
+18A0 text45 CODE >29:D:\production\democode\lcd.c
+1394 text44 CODE >8:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\lwdiv.c
+1394 text44 CODE >14:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\lwdiv.c
+139C text44 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\lwdiv.c
+13A4 text44 CODE >16:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\lwdiv.c
+13A8 text44 CODE >17:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\lwdiv.c
+13AA text44 CODE >18:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\lwdiv.c
+13B0 text44 CODE >19:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\lwdiv.c
+13B2 text44 CODE >17:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\lwdiv.c
+13B6 text44 CODE >22:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\lwdiv.c
+13BC text44 CODE >23:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\lwdiv.c
+13C8 text44 CODE >24:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\lwdiv.c
+13D0 text44 CODE >25:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\lwdiv.c
+13D2 text44 CODE >27:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\lwdiv.c
+13D8 text44 CODE >28:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\lwdiv.c
+13DC text44 CODE >29:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\lwdiv.c
+13DC text44 CODE >30:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\lwdiv.c
+13E4 text44 CODE >31:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\lwdiv.c
+1556 text43 CODE >8:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\lwmod.c
+1556 text43 CODE >13:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\lwmod.c
+155E text43 CODE >14:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\lwmod.c
+1562 text43 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\lwmod.c
+1564 text43 CODE >16:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\lwmod.c
+156A text43 CODE >17:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\lwmod.c
+156C text43 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\lwmod.c
+1570 text43 CODE >20:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\lwmod.c
+157C text43 CODE >21:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\lwmod.c
+1584 text43 CODE >22:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\lwmod.c
+158A text43 CODE >23:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\lwmod.c
+158E text43 CODE >24:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\lwmod.c
+158E text43 CODE >25:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\lwmod.c
+1596 text43 CODE >26:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\lwmod.c
+177C text42 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\Umul16.c
+177C text42 CODE >37:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\Umul16.c
+1788 text42 CODE >38:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\Umul16.c
+1790 text42 CODE >39:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\Umul16.c
+1798 text42 CODE >52:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\Umul16.c
+17A2 text41 CODE >8:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\isdigit.c
+17A4 text41 CODE >14:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\isdigit.c
+188A text40 CODE >31:D:\production\democode\lcd.c
+188C text40 CODE >32:D:\production\democode\lcd.c
+188E text40 CODE >33:D:\production\democode\lcd.c
+1894 text40 CODE >34:D:\production\democode\lcd.c
+5BE text39 CODE >464:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\doprnt.c
+5BE text39 CODE >533:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\doprnt.c
+5C6 text39 CODE >536:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\doprnt.c
+5C8 text39 CODE >538:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\doprnt.c
+5D0 text39 CODE >541:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\doprnt.c
+5D6 text39 CODE >542:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\doprnt.c
+5D8 text39 CODE >546:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\doprnt.c
+5E0 text39 CODE >548:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\doprnt.c
+5E4 text39 CODE >551:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\doprnt.c
+5E6 text39 CODE >580:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\doprnt.c
+5E8 text39 CODE >581:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\doprnt.c
+5EC text39 CODE >551:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\doprnt.c
+5FE text39 CODE >597:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\doprnt.c
+612 text39 CODE >598:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\doprnt.c
+61A text39 CODE >600:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\doprnt.c
+636 text39 CODE >601:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\doprnt.c
+662 text39 CODE >602:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\doprnt.c
+678 text39 CODE >721:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\doprnt.c
+67A text39 CODE >723:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\doprnt.c
+67C text39 CODE >635:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\doprnt.c
+6AA text39 CODE >822:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\doprnt.c
+6AA text39 CODE >1251:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\doprnt.c
+6AE text39 CODE >1259:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\doprnt.c
+6C6 text39 CODE >1261:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\doprnt.c
+6CA text39 CODE >1262:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\doprnt.c
+6CE text39 CODE >1263:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\doprnt.c
+6D6 text39 CODE >1266:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\doprnt.c
+6D8 text39 CODE >1286:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\doprnt.c
+6F0 text39 CODE >1294:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\doprnt.c
+6F2 text39 CODE >1305:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\doprnt.c
+6FE text39 CODE >1306:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\doprnt.c
+71E text39 CODE >1305:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\doprnt.c
+722 text39 CODE >1316:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\doprnt.c
+72E text39 CODE >1317:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\doprnt.c
+74E text39 CODE >1316:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\doprnt.c
+752 text39 CODE >1294:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\doprnt.c
+762 text39 CODE >1345:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\doprnt.c
+776 text39 CODE >1346:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\doprnt.c
+77C text39 CODE >1381:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\doprnt.c
+792 text39 CODE >1382:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\doprnt.c
+7A0 text39 CODE >1384:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\doprnt.c
+7A8 text39 CODE >1387:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\doprnt.c
+7AC text39 CODE >1392:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\doprnt.c
+7B8 text39 CODE >1393:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\doprnt.c
+7BE text39 CODE >1415:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\doprnt.c
+7C6 text39 CODE >1417:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\doprnt.c
+7CC text39 CODE >1418:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\doprnt.c
+7D4 text39 CODE >1428:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\doprnt.c
+7DC text39 CODE >1430:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\doprnt.c
+7E2 text39 CODE >1431:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\doprnt.c
+7F0 text39 CODE >1438:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\doprnt.c
+7FC text39 CODE >1439:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\doprnt.c
+802 text39 CODE >1472:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\doprnt.c
+806 text39 CODE >1474:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\doprnt.c
+808 text39 CODE >1489:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\doprnt.c
+84A text39 CODE >1491:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\doprnt.c
+84C text39 CODE >1500:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\doprnt.c
+87A text39 CODE >1506:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\doprnt.c
+890 text39 CODE >1523:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\doprnt.c
+892 text39 CODE >1476:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\doprnt.c
+8A2 text39 CODE >1524:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\doprnt.c
+8A8 text39 CODE >1474:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\doprnt.c
+8B0 text39 CODE >536:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\doprnt.c
+1692 text38 CODE >56:D:\production\democode\servos.c
+1692 text38 CODE >58:D:\production\democode\servos.c
+169C text38 CODE >59:D:\production\democode\servos.c
+169E text38 CODE >60:D:\production\democode\servos.c
+16AC text38 CODE >61:D:\production\democode\servos.c
+16AE text38 CODE >62:D:\production\democode\servos.c
+16BE text38 CODE >58:D:\production\democode\servos.c
+E86 text37 CODE >165:D:\production\democode\servos.c
+E86 text37 CODE >168:D:\production\democode\servos.c
+E90 text37 CODE >170:D:\production\democode\servos.c
+E90 text37 CODE >171:D:\production\democode\servos.c
+E92 text37 CODE >172:D:\production\democode\servos.c
+E94 text37 CODE >173:D:\production\democode\servos.c
+E94 text37 CODE >174:D:\production\democode\servos.c
+E96 text37 CODE >175:D:\production\democode\servos.c
+E98 text37 CODE >176:D:\production\democode\servos.c
+E98 text37 CODE >177:D:\production\democode\servos.c
+E9A text37 CODE >178:D:\production\democode\servos.c
+E9C text37 CODE >179:D:\production\democode\servos.c
+E9C text37 CODE >180:D:\production\democode\servos.c
+E9E text37 CODE >181:D:\production\democode\servos.c
+EA0 text37 CODE >182:D:\production\democode\servos.c
+EA0 text37 CODE >183:D:\production\democode\servos.c
+EA2 text37 CODE >185:D:\production\democode\servos.c
+EA4 text37 CODE >169:D:\production\democode\servos.c
+ED4 text37 CODE >186:D:\production\democode\servos.c
+EE0 text37 CODE >187:D:\production\democode\servos.c
+EE2 text37 CODE >188:D:\production\democode\servos.c
+EE2 text37 CODE >189:D:\production\democode\servos.c
+EE4 text37 CODE >190:D:\production\democode\servos.c
+EE6 text37 CODE >191:D:\production\democode\servos.c
+EE6 text37 CODE >192:D:\production\democode\servos.c
+EE8 text37 CODE >193:D:\production\democode\servos.c
+EEA text37 CODE >194:D:\production\democode\servos.c
+EEA text37 CODE >195:D:\production\democode\servos.c
+EEC text37 CODE >196:D:\production\democode\servos.c
+EEE text37 CODE >197:D:\production\democode\servos.c
+EEE text37 CODE >198:D:\production\democode\servos.c
+EF0 text37 CODE >199:D:\production\democode\servos.c
+EF2 text37 CODE >200:D:\production\democode\servos.c
+EF2 text37 CODE >201:D:\production\democode\servos.c
+EF4 text37 CODE >203:D:\production\democode\servos.c
+EF6 text37 CODE >187:D:\production\democode\servos.c
+F26 text37 CODE >204:D:\production\democode\servos.c
+F34 text37 CODE >168:D:\production\democode\servos.c
+1212 text36 CODE >208:D:\production\democode\servos.c
+1212 text36 CODE >210:D:\production\democode\servos.c
+1216 text36 CODE >211:D:\production\democode\servos.c
+1220 text36 CODE >212:D:\production\democode\servos.c
+1222 text36 CODE >213:D:\production\democode\servos.c
+1232 text36 CODE >214:D:\production\democode\servos.c
+1234 text36 CODE >215:D:\production\democode\servos.c
+1242 text36 CODE >216:D:\production\democode\servos.c
+1246 text36 CODE >217:D:\production\democode\servos.c
+124E text36 CODE >219:D:\production\democode\servos.c
+1256 text36 CODE >211:D:\production\democode\servos.c
+127A text36 CODE >222:D:\production\democode\servos.c
+1282 text36 CODE >223:D:\production\democode\servos.c
+11A0 text35 CODE >344:D:\production\democode\main.c
+11A0 text35 CODE >345:D:\production\democode\main.c
+11A2 text35 CODE >346:D:\production\democode\main.c
+11B8 text35 CODE >347:D:\production\democode\main.c
+11BA text35 CODE >349:D:\production\democode\main.c
+11C0 text35 CODE >350:D:\production\democode\main.c
+11CC text35 CODE >351:D:\production\democode\main.c
+11D2 text35 CODE >362:D:\production\democode\main.c
+11DE text35 CODE >363:D:\production\democode\main.c
+11EA text35 CODE >365:D:\production\democode\main.c
+11EE text35 CODE >366:D:\production\democode\main.c
+1204 text35 CODE >367:D:\production\democode\main.c
+1210 text35 CODE >364:D:\production\democode\main.c
+1756 text34 CODE >37:D:\production\democode\eeprom.c
+1756 text34 CODE >40:D:\production\democode\eeprom.c
+175A text34 CODE >41:D:\production\democode\eeprom.c
+175E text34 CODE >43:D:\production\democode\eeprom.c
+1762 text34 CODE >44:D:\production\democode\eeprom.c
+1764 text34 CODE >45:D:\production\democode\eeprom.c
+1766 text34 CODE >46:D:\production\democode\eeprom.c
+1768 text34 CODE >50:D:\production\democode\eeprom.c
+176C text34 CODE >51:D:\production\democode\eeprom.c
+1770 text34 CODE >52:D:\production\democode\eeprom.c
+1772 text34 CODE >55:D:\production\democode\eeprom.c
+1772 text34 CODE >58:D:\production\democode\eeprom.c
+1776 text34 CODE >60:D:\production\democode\eeprom.c
+1778 text34 CODE >61:D:\production\democode\eeprom.c
+177A text34 CODE >62:D:\production\democode\eeprom.c
+1854 text33 CODE >14:D:\production\democode\eeprom.c
+1854 text33 CODE >18:D:\production\democode\eeprom.c
+1858 text33 CODE >19:D:\production\democode\eeprom.c
+185C text33 CODE >21:D:\production\democode\eeprom.c
+185E text33 CODE >22:D:\production\democode\eeprom.c
+1860 text33 CODE >23:D:\production\democode\eeprom.c
+1862 text33 CODE >27:D:\production\democode\eeprom.c
+1866 text33 CODE >29:D:\production\democode\eeprom.c
+187C text32 CODE >69:D:\production\democode\eeprom.c
+187C text32 CODE >70:D:\production\democode\eeprom.c
+17C0 text31 CODE >73:D:\production\democode\eeprom.c
+17C0 text31 CODE >74:D:\production\democode\eeprom.c
+17CA text31 CODE >75:D:\production\democode\eeprom.c
+1598 text30 CODE >32:D:\production\democode\servos.c
+1598 text30 CODE >34:D:\production\democode\servos.c
+15A2 text30 CODE >35:D:\production\democode\servos.c
+15A4 text30 CODE >36:D:\production\democode\servos.c
+15B4 text30 CODE >37:D:\production\democode\servos.c
+15B6 text30 CODE >38:D:\production\democode\servos.c
+15C6 text30 CODE >34:D:\production\democode\servos.c
+DC2 text29 CODE >122:D:\production\democode\servos.c
+DC2 text29 CODE >125:D:\production\democode\servos.c
+DCC text29 CODE >127:D:\production\democode\servos.c
+DCC text29 CODE >128:D:\production\democode\servos.c
+DCE text29 CODE >129:D:\production\democode\servos.c
+DD0 text29 CODE >130:D:\production\democode\servos.c
+DD0 text29 CODE >131:D:\production\democode\servos.c
+DD2 text29 CODE >132:D:\production\democode\servos.c
+DD4 text29 CODE >133:D:\production\democode\servos.c
+DD4 text29 CODE >134:D:\production\democode\servos.c
+DD6 text29 CODE >135:D:\production\democode\servos.c
+DD8 text29 CODE >136:D:\production\democode\servos.c
+DD8 text29 CODE >137:D:\production\democode\servos.c
+DDA text29 CODE >138:D:\production\democode\servos.c
+DDC text29 CODE >139:D:\production\democode\servos.c
+DDC text29 CODE >140:D:\production\democode\servos.c
+DDE text29 CODE >142:D:\production\democode\servos.c
+DE0 text29 CODE >126:D:\production\democode\servos.c
+E10 text29 CODE >143:D:\production\democode\servos.c
+E1E text29 CODE >144:D:\production\democode\servos.c
+E20 text29 CODE >145:D:\production\democode\servos.c
+E20 text29 CODE >146:D:\production\democode\servos.c
+E22 text29 CODE >147:D:\production\democode\servos.c
+E24 text29 CODE >148:D:\production\democode\servos.c
+E24 text29 CODE >149:D:\production\democode\servos.c
+E26 text29 CODE >150:D:\production\democode\servos.c
+E28 text29 CODE >151:D:\production\democode\servos.c
+E28 text29 CODE >152:D:\production\democode\servos.c
+E2A text29 CODE >153:D:\production\democode\servos.c
+E2C text29 CODE >154:D:\production\democode\servos.c
+E2C text29 CODE >155:D:\production\democode\servos.c
+E2E text29 CODE >156:D:\production\democode\servos.c
+E30 text29 CODE >157:D:\production\democode\servos.c
+E30 text29 CODE >158:D:\production\democode\servos.c
+E32 text29 CODE >160:D:\production\democode\servos.c
+E34 text29 CODE >144:D:\production\democode\servos.c
+E64 text29 CODE >161:D:\production\democode\servos.c
+E74 text29 CODE >125:D:\production\democode\servos.c
+1700 text28 CODE >225:D:\production\democode\servos.c
+1700 text28 CODE >226:D:\production\democode\servos.c
+170C text28 CODE >227:D:\production\democode\servos.c
+1722 text28 CODE >228:D:\production\democode\servos.c
+172E text28 CODE >229:D:\production\democode\servos.c
+1654 text27 CODE >21:D:\production\democode\servos.c
+1654 text27 CODE >23:D:\production\democode\servos.c
+165E text27 CODE >24:D:\production\democode\servos.c
+1660 text27 CODE >25:D:\production\democode\servos.c
+166E text27 CODE >26:D:\production\democode\servos.c
+1670 text27 CODE >27:D:\production\democode\servos.c
+1680 text27 CODE >23:D:\production\democode\servos.c
+16D0 text26 CODE >231:D:\production\democode\servos.c
+16D0 text26 CODE >232:D:\production\democode\servos.c
+16DC text26 CODE >233:D:\production\democode\servos.c
+16F2 text26 CODE >234:D:\production\democode\servos.c
+16FE text26 CODE >235:D:\production\democode\servos.c
+1434 text25 CODE >82:D:\production\democode\eeprom.c
+1434 text25 CODE >83:D:\production\democode\eeprom.c
+143C text25 CODE >84:D:\production\democode\eeprom.c
+144C text25 CODE >85:D:\production\democode\eeprom.c
+1464 text25 CODE >86:D:\production\democode\eeprom.c
+1478 text25 CODE >85:D:\production\democode\eeprom.c
+147E text25 CODE >88:D:\production\democode\eeprom.c
+186A text24 CODE >24:D:\production\democode\I2C.c
+186A text24 CODE >26:D:\production\democode\I2C.c
+1730 text23 CODE >53:D:\production\democode\I2C.c
+1732 text23 CODE >56:D:\production\democode\I2C.c
+1736 text23 CODE >57:D:\production\democode\I2C.c
+1738 text23 CODE >58:D:\production\democode\I2C.c
+173C text23 CODE >59:D:\production\democode\I2C.c
+1740 text23 CODE >60:D:\production\democode\I2C.c
+1744 text23 CODE >61:D:\production\democode\I2C.c
+1750 text23 CODE >62:D:\production\democode\I2C.c
+1752 text23 CODE >63:D:\production\democode\I2C.c
+18B4 text22 CODE >29:D:\production\democode\I2C.c
+18B4 text22 CODE >31:D:\production\democode\I2C.c
+18B8 text22 CODE >32:D:\production\democode\I2C.c
+18BA text22 CODE >33:D:\production\democode\I2C.c
+18AC text21 CODE >41:D:\production\democode\I2C.c
+18AC text21 CODE >43:D:\production\democode\I2C.c
+18B0 text21 CODE >44:D:\production\democode\I2C.c
+18B2 text21 CODE >45:D:\production\democode\I2C.c
+18A2 text20 CODE >47:D:\production\democode\I2C.c
+18A2 text20 CODE >49:D:\production\democode\I2C.c
+18A6 text20 CODE >50:D:\production\democode\I2C.c
+18AA text20 CODE >51:D:\production\democode\I2C.c
+1098 text19 CODE >23:D:\production\democode\RTC.c
+1098 text19 CODE >25:D:\production\democode\RTC.c
+109C text19 CODE >26:D:\production\democode\RTC.c
+10A8 text19 CODE >27:D:\production\democode\RTC.c
+10B4 text19 CODE >28:D:\production\democode\RTC.c
+10B8 text19 CODE >31:D:\production\democode\RTC.c
+10BC text19 CODE >32:D:\production\democode\RTC.c
+10C8 text19 CODE >33:D:\production\democode\RTC.c
+10D4 text19 CODE >34:D:\production\democode\RTC.c
+10F6 text19 CODE >33:D:\production\democode\RTC.c
+10FA text19 CODE >36:D:\production\democode\RTC.c
+1118 text19 CODE >37:D:\production\democode\RTC.c
+111C text19 CODE >38:D:\production\democode\RTC.c
+A7C text18 CODE >108:D:\production\democode\main.c
+A7C text18 CODE >109:D:\production\democode\main.c
+A88 text18 CODE >110:D:\production\democode\main.c
+AAA text18 CODE >111:D:\production\democode\main.c
+AB4 text18 CODE >112:D:\production\democode\main.c
+AD6 text18 CODE >113:D:\production\democode\main.c
+AE0 text18 CODE >114:D:\production\democode\main.c
+AFE text18 CODE >115:D:\production\democode\main.c
+B08 text18 CODE >116:D:\production\democode\main.c
+BA8 text18 CODE >118:D:\production\democode\main.c
+183C text17 CODE >18:D:\production\democode\sensors.c
+183C text17 CODE >19:D:\production\democode\sensors.c
+1840 text17 CODE >20:D:\production\democode\sensors.c
+184A text17 CODE >22:D:\production\democode\sensors.c
+1824 text16 CODE >32:D:\production\democode\sensors.c
+1824 text16 CODE >33:D:\production\democode\sensors.c
+1828 text16 CODE >34:D:\production\democode\sensors.c
+1832 text16 CODE >36:D:\production\democode\sensors.c
+180C text15 CODE >11:D:\production\democode\sensors.c
+180C text15 CODE >12:D:\production\democode\sensors.c
+1810 text15 CODE >13:D:\production\democode\sensors.c
+181A text15 CODE >15:D:\production\democode\sensors.c
+17F4 text14 CODE >39:D:\production\democode\sensors.c
+17F4 text14 CODE >40:D:\production\democode\sensors.c
+17F8 text14 CODE >41:D:\production\democode\sensors.c
+1802 text14 CODE >43:D:\production\democode\sensors.c
+17DC text13 CODE >25:D:\production\democode\sensors.c
+17DC text13 CODE >26:D:\production\democode\sensors.c
+17E0 text13 CODE >27:D:\production\democode\sensors.c
+17EA text13 CODE >29:D:\production\democode\sensors.c
+CFE text12 CODE >79:D:\production\democode\servos.c
+CFE text12 CODE >82:D:\production\democode\servos.c
+D08 text12 CODE >84:D:\production\democode\servos.c
+D08 text12 CODE >85:D:\production\democode\servos.c
+D0A text12 CODE >86:D:\production\democode\servos.c
+D0C text12 CODE >87:D:\production\democode\servos.c
+D0C text12 CODE >88:D:\production\democode\servos.c
+D0E text12 CODE >89:D:\production\democode\servos.c
+D10 text12 CODE >90:D:\production\democode\servos.c
+D10 text12 CODE >91:D:\production\democode\servos.c
+D12 text12 CODE >92:D:\production\democode\servos.c
+D14 text12 CODE >93:D:\production\democode\servos.c
+D14 text12 CODE >94:D:\production\democode\servos.c
+D16 text12 CODE >95:D:\production\democode\servos.c
+D18 text12 CODE >96:D:\production\democode\servos.c
+D18 text12 CODE >97:D:\production\democode\servos.c
+D1A text12 CODE >99:D:\production\democode\servos.c
+D1C text12 CODE >83:D:\production\democode\servos.c
+D4C text12 CODE >100:D:\production\democode\servos.c
+D5A text12 CODE >101:D:\production\democode\servos.c
+D5C text12 CODE >102:D:\production\democode\servos.c
+D5C text12 CODE >103:D:\production\democode\servos.c
+D5E text12 CODE >104:D:\production\democode\servos.c
+D60 text12 CODE >105:D:\production\democode\servos.c
+D60 text12 CODE >106:D:\production\democode\servos.c
+D62 text12 CODE >107:D:\production\democode\servos.c
+D64 text12 CODE >108:D:\production\democode\servos.c
+D64 text12 CODE >109:D:\production\democode\servos.c
+D66 text12 CODE >110:D:\production\democode\servos.c
+D68 text12 CODE >111:D:\production\democode\servos.c
+D68 text12 CODE >112:D:\production\democode\servos.c
+D6A text12 CODE >113:D:\production\democode\servos.c
+D6C text12 CODE >114:D:\production\democode\servos.c
+D6C text12 CODE >115:D:\production\democode\servos.c
+D6E text12 CODE >117:D:\production\democode\servos.c
+D70 text12 CODE >101:D:\production\democode\servos.c
+DA0 text12 CODE >118:D:\production\democode\servos.c
+DB0 text12 CODE >82:D:\production\democode\servos.c
+BC6 text11 CODE >44:D:\production\democode\main.c
+BC6 text11 CODE >46:D:\production\democode\main.c
+BCC text11 CODE >48:D:\production\democode\main.c
+BCE text11 CODE >51:D:\production\democode\main.c
+BF2 text11 CODE >52:D:\production\democode\main.c
+C16 text11 CODE >54:D:\production\democode\main.c
+C1C text11 CODE >55:D:\production\democode\main.c
+C28 text11 CODE >56:D:\production\democode\main.c
+C2A text11 CODE >59:D:\production\democode\main.c
+C3C text11 CODE >60:D:\production\democode\main.c
+C42 text11 CODE >61:D:\production\democode\main.c
+C4E text11 CODE >62:D:\production\democode\main.c
+C50 text11 CODE >64:D:\production\democode\main.c
+C5C text11 CODE >65:D:\production\democode\main.c
+C62 text11 CODE >66:D:\production\democode\main.c
+C8E text11 CODE >68:D:\production\democode\main.c
+C90 text11 CODE >71:D:\production\democode\main.c
+C98 text11 CODE >72:D:\production\democode\main.c
+CA4 text11 CODE >73:D:\production\democode\main.c
+CA6 text11 CODE >76:D:\production\democode\main.c
+CB2 text11 CODE >78:D:\production\democode\main.c
+CB8 text11 CODE >79:D:\production\democode\main.c
+CC4 text11 CODE >80:D:\production\democode\main.c
+CC6 text11 CODE >82:D:\production\democode\main.c
+CD2 text11 CODE >84:D:\production\democode\main.c
+CD4 text11 CODE >48:D:\production\democode\main.c
+CF0 text11 CODE >86:D:\production\democode\main.c
+CF6 text11 CODE >87:D:\production\democode\main.c
+CFC text11 CODE >88:D:\production\democode\main.c
 12 text10 CODE >150:D:\production\democode\main.c
 12 text10 CODE >157:D:\production\democode\main.c
 1C text10 CODE >158:D:\production\democode\main.c
@@ -561,295 +581,315 @@ C98 text11 CODE >88:D:\production\democode\main.c
 BC text10 CODE >166:D:\production\democode\main.c
 CA text10 CODE >167:D:\production\democode\main.c
 182 text10 CODE >169:D:\production\democode\main.c
-184 text10 CODE >170:D:\production\democode\main.c
-186 text10 CODE >171:D:\production\democode\main.c
-18A text10 CODE >172:D:\production\democode\main.c
-19E text10 CODE >178:D:\production\democode\main.c
-1A8 text10 CODE >179:D:\production\democode\main.c
-1B2 text10 CODE >180:D:\production\democode\main.c
-1BC text10 CODE >181:D:\production\democode\main.c
-1C6 text10 CODE >182:D:\production\democode\main.c
-1D0 text10 CODE >184:D:\production\democode\main.c
-1DC text10 CODE >185:D:\production\democode\main.c
-1E8 text10 CODE >186:D:\production\democode\main.c
-1F4 text10 CODE >187:D:\production\democode\main.c
-200 text10 CODE >188:D:\production\democode\main.c
-20C text10 CODE >191:D:\production\democode\main.c
-20E text10 CODE >192:D:\production\democode\main.c
-212 text10 CODE >193:D:\production\democode\main.c
-218 text10 CODE >194:D:\production\democode\main.c
-22C text10 CODE >197:D:\production\democode\main.c
-238 text10 CODE >198:D:\production\democode\main.c
-242 text10 CODE >200:D:\production\democode\main.c
-24E text10 CODE >201:D:\production\democode\main.c
-258 text10 CODE >203:D:\production\democode\main.c
-264 text10 CODE >204:D:\production\democode\main.c
-26E text10 CODE >206:D:\production\democode\main.c
-27A text10 CODE >207:D:\production\democode\main.c
-284 text10 CODE >210:D:\production\democode\main.c
-290 text10 CODE >211:D:\production\democode\main.c
-29A text10 CODE >212:D:\production\democode\main.c
-2A6 text10 CODE >213:D:\production\democode\main.c
-2BE text10 CODE >214:D:\production\democode\main.c
-2C2 text10 CODE >215:D:\production\democode\main.c
-2CC text10 CODE >216:D:\production\democode\main.c
-2D6 text10 CODE >219:D:\production\democode\main.c
-2E2 text10 CODE >220:D:\production\democode\main.c
-2EC text10 CODE >221:D:\production\democode\main.c
-2F8 text10 CODE >222:D:\production\democode\main.c
-310 text10 CODE >223:D:\production\democode\main.c
-314 text10 CODE >224:D:\production\democode\main.c
-31E text10 CODE >225:D:\production\democode\main.c
-328 text10 CODE >229:D:\production\democode\main.c
-340 text10 CODE >230:D:\production\democode\main.c
-346 text10 CODE >234:D:\production\democode\main.c
-352 text10 CODE >236:D:\production\democode\main.c
-36A text10 CODE >237:D:\production\democode\main.c
-374 text10 CODE >238:D:\production\democode\main.c
-380 text10 CODE >239:D:\production\democode\main.c
-38A text10 CODE >241:D:\production\democode\main.c
-394 text10 CODE >243:D:\production\democode\main.c
-3A0 text10 CODE >244:D:\production\democode\main.c
-3AC text10 CODE >245:D:\production\democode\main.c
-3B8 text10 CODE >246:D:\production\democode\main.c
-3C2 text10 CODE >247:D:\production\democode\main.c
-3C6 text10 CODE >248:D:\production\democode\main.c
-3D4 text10 CODE >249:D:\production\democode\main.c
-3E0 text10 CODE >250:D:\production\democode\main.c
-3EC text10 CODE >251:D:\production\democode\main.c
-3F6 text10 CODE >252:D:\production\democode\main.c
-3FA text10 CODE >254:D:\production\democode\main.c
-404 text10 CODE >257:D:\production\democode\main.c
-410 text10 CODE >258:D:\production\democode\main.c
-41A text10 CODE >260:D:\production\democode\main.c
-432 text10 CODE >261:D:\production\democode\main.c
-43E text10 CODE >262:D:\production\democode\main.c
-44A text10 CODE >263:D:\production\democode\main.c
-456 text10 CODE >264:D:\production\democode\main.c
-462 text10 CODE >265:D:\production\democode\main.c
-46C text10 CODE >266:D:\production\democode\main.c
-470 text10 CODE >267:D:\production\democode\main.c
-47E text10 CODE >268:D:\production\democode\main.c
-48A text10 CODE >269:D:\production\democode\main.c
-494 text10 CODE >270:D:\production\democode\main.c
-498 text10 CODE >272:D:\production\democode\main.c
-4A2 text10 CODE >275:D:\production\democode\main.c
-4B6 text10 CODE >276:D:\production\democode\main.c
-4CC text10 CODE >277:D:\production\democode\main.c
-4D0 text10 CODE >278:D:\production\democode\main.c
-4D8 text10 CODE >279:D:\production\democode\main.c
-4DA text10 CODE >280:D:\production\democode\main.c
-4F0 text10 CODE >281:D:\production\democode\main.c
-4F4 text10 CODE >282:D:\production\democode\main.c
-4FC text10 CODE >285:D:\production\democode\main.c
-512 text10 CODE >191:D:\production\democode\main.c
-52C text10 CODE >288:D:\production\democode\main.c
+188 text10 CODE >170:D:\production\democode\main.c
+194 text10 CODE >171:D:\production\democode\main.c
+19A text10 CODE >172:D:\production\democode\main.c
+1A6 text10 CODE >176:D:\production\democode\main.c
+1A8 text10 CODE >177:D:\production\democode\main.c
+1BE text10 CODE >178:D:\production\democode\main.c
+1C0 text10 CODE >180:D:\production\democode\main.c
+1CC text10 CODE >181:D:\production\democode\main.c
+1D8 text10 CODE >182:D:\production\democode\main.c
+1E4 text10 CODE >183:D:\production\democode\main.c
+1F0 text10 CODE >184:D:\production\democode\main.c
+1FC text10 CODE >185:D:\production\democode\main.c
+1FE text10 CODE >186:D:\production\democode\main.c
+202 text10 CODE >187:D:\production\democode\main.c
+216 text10 CODE >193:D:\production\democode\main.c
+220 text10 CODE >194:D:\production\democode\main.c
+22A text10 CODE >195:D:\production\democode\main.c
+234 text10 CODE >196:D:\production\democode\main.c
+23E text10 CODE >197:D:\production\democode\main.c
+248 text10 CODE >201:D:\production\democode\main.c
+24A text10 CODE >202:D:\production\democode\main.c
+24E text10 CODE >203:D:\production\democode\main.c
+254 text10 CODE >204:D:\production\democode\main.c
+268 text10 CODE >207:D:\production\democode\main.c
+274 text10 CODE >208:D:\production\democode\main.c
+27E text10 CODE >210:D:\production\democode\main.c
+28A text10 CODE >211:D:\production\democode\main.c
+294 text10 CODE >213:D:\production\democode\main.c
+2A0 text10 CODE >214:D:\production\democode\main.c
+2AA text10 CODE >216:D:\production\democode\main.c
+2B6 text10 CODE >217:D:\production\democode\main.c
+2C0 text10 CODE >220:D:\production\democode\main.c
+2CC text10 CODE >221:D:\production\democode\main.c
+2D6 text10 CODE >222:D:\production\democode\main.c
+2E2 text10 CODE >223:D:\production\democode\main.c
+2FA text10 CODE >224:D:\production\democode\main.c
+2FE text10 CODE >225:D:\production\democode\main.c
+308 text10 CODE >226:D:\production\democode\main.c
+312 text10 CODE >229:D:\production\democode\main.c
+31E text10 CODE >230:D:\production\democode\main.c
+328 text10 CODE >231:D:\production\democode\main.c
+334 text10 CODE >232:D:\production\democode\main.c
+34C text10 CODE >233:D:\production\democode\main.c
+350 text10 CODE >234:D:\production\democode\main.c
+35A text10 CODE >235:D:\production\democode\main.c
+364 text10 CODE >239:D:\production\democode\main.c
+37C text10 CODE >240:D:\production\democode\main.c
+382 text10 CODE >244:D:\production\democode\main.c
+38E text10 CODE >246:D:\production\democode\main.c
+3A6 text10 CODE >247:D:\production\democode\main.c
+3B0 text10 CODE >248:D:\production\democode\main.c
+3BC text10 CODE >249:D:\production\democode\main.c
+3C6 text10 CODE >251:D:\production\democode\main.c
+3D0 text10 CODE >253:D:\production\democode\main.c
+3DC text10 CODE >254:D:\production\democode\main.c
+3E8 text10 CODE >255:D:\production\democode\main.c
+3F4 text10 CODE >256:D:\production\democode\main.c
+3FE text10 CODE >257:D:\production\democode\main.c
+402 text10 CODE >258:D:\production\democode\main.c
+410 text10 CODE >259:D:\production\democode\main.c
+41C text10 CODE >260:D:\production\democode\main.c
+428 text10 CODE >261:D:\production\democode\main.c
+432 text10 CODE >262:D:\production\democode\main.c
+436 text10 CODE >264:D:\production\democode\main.c
+440 text10 CODE >267:D:\production\democode\main.c
+44C text10 CODE >268:D:\production\democode\main.c
+456 text10 CODE >270:D:\production\democode\main.c
+46E text10 CODE >271:D:\production\democode\main.c
+47A text10 CODE >272:D:\production\democode\main.c
+486 text10 CODE >273:D:\production\democode\main.c
+492 text10 CODE >274:D:\production\democode\main.c
+49E text10 CODE >275:D:\production\democode\main.c
+4A8 text10 CODE >276:D:\production\democode\main.c
+4AC text10 CODE >277:D:\production\democode\main.c
+4BA text10 CODE >278:D:\production\democode\main.c
+4C6 text10 CODE >279:D:\production\democode\main.c
+4D0 text10 CODE >280:D:\production\democode\main.c
+4D4 text10 CODE >282:D:\production\democode\main.c
+4EA text10 CODE >283:D:\production\democode\main.c
+4F6 text10 CODE >284:D:\production\democode\main.c
+500 text10 CODE >287:D:\production\democode\main.c
+514 text10 CODE >288:D:\production\democode\main.c
+52A text10 CODE >289:D:\production\democode\main.c
 52E text10 CODE >290:D:\production\democode\main.c
 536 text10 CODE >291:D:\production\democode\main.c
-53E text10 CODE >292:D:\production\democode\main.c
-546 text10 CODE >293:D:\production\democode\main.c
-54E text10 CODE >294:D:\production\democode\main.c
-55A text10 CODE >295:D:\production\democode\main.c
-55E text10 CODE >296:D:\production\democode\main.c
-13F0 text9 CODE >90:D:\production\democode\main.c
-13F0 text9 CODE >92:D:\production\democode\main.c
-1408 text9 CODE >93:D:\production\democode\main.c
-1408 text9 CODE >94:D:\production\democode\main.c
-140C text9 CODE >96:D:\production\democode\main.c
-1414 text9 CODE >97:D:\production\democode\main.c
-1414 text9 CODE >99:D:\production\democode\main.c
-1418 text9 CODE >100:D:\production\democode\main.c
-141A text9 CODE >101:D:\production\democode\main.c
-141C text9 CODE >102:D:\production\democode\main.c
-1424 text9 CODE >92:D:\production\democode\main.c
-1432 text9 CODE >105:D:\production\democode\main.c
-1436 text9 CODE >106:D:\production\democode\main.c
-14FC text8 CODE >298:D:\production\democode\main.c
-14FC text8 CODE >300:D:\production\democode\main.c
-14FE text8 CODE >301:D:\production\democode\main.c
-1516 text8 CODE >302:D:\production\democode\main.c
-151A text8 CODE >304:D:\production\democode\main.c
-1526 text8 CODE >305:D:\production\democode\main.c
-1530 text8 CODE >306:D:\production\democode\main.c
-1534 text8 CODE >307:D:\production\democode\main.c
-10C0 text7 CODE >8:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\lldiv.c
-10C0 text7 CODE >14:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\lldiv.c
-10D0 text7 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\lldiv.c
-10DC text7 CODE >16:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\lldiv.c
-10E0 text7 CODE >17:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\lldiv.c
-10E2 text7 CODE >18:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\lldiv.c
-10EC text7 CODE >19:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\lldiv.c
-10EE text7 CODE >17:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\lldiv.c
-10F2 text7 CODE >22:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\lldiv.c
-10FC text7 CODE >23:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\lldiv.c
-1110 text7 CODE >24:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\lldiv.c
-1120 text7 CODE >25:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\lldiv.c
-1122 text7 CODE >27:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\lldiv.c
-112C text7 CODE >28:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\lldiv.c
-1130 text7 CODE >29:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\lldiv.c
-1130 text7 CODE >30:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\lldiv.c
-1140 text7 CODE >31:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\lldiv.c
-120C text6 CODE >13:D:\production\democode\I2C.c
-120C text6 CODE >16:D:\production\democode\I2C.c
-1210 text6 CODE >17:D:\production\democode\I2C.c
-1214 text6 CODE >18:D:\production\democode\I2C.c
-1218 text6 CODE >19:D:\production\democode\I2C.c
-1260 text6 CODE >20:D:\production\democode\I2C.c
-1262 text6 CODE >21:D:\production\democode\I2C.c
-1264 text6 CODE >22:D:\production\democode\I2C.c
-1438 text5 CODE >15:D:\production\democode\lcd.c
-1438 text5 CODE >16:D:\production\democode\lcd.c
-1448 text5 CODE >17:D:\production\democode\lcd.c
-144E text5 CODE >18:D:\production\democode\lcd.c
-1454 text5 CODE >19:D:\production\democode\lcd.c
-145A text5 CODE >20:D:\production\democode\lcd.c
-1460 text5 CODE >21:D:\production\democode\lcd.c
-1466 text5 CODE >22:D:\production\democode\lcd.c
-146C text5 CODE >23:D:\production\democode\lcd.c
-147C text5 CODE >24:D:\production\democode\lcd.c
-86C text4 CODE >348:D:\production\democode\main.c
-86C text4 CODE >350:D:\production\democode\main.c
-870 text4 CODE >354:D:\production\democode\main.c
-874 text4 CODE >355:D:\production\democode\main.c
-878 text4 CODE >356:D:\production\democode\main.c
-87C text4 CODE >357:D:\production\democode\main.c
-880 text4 CODE >358:D:\production\democode\main.c
-884 text4 CODE >359:D:\production\democode\main.c
-888 text4 CODE >360:D:\production\democode\main.c
-88C text4 CODE >361:D:\production\democode\main.c
-890 text4 CODE >362:D:\production\democode\main.c
-894 text4 CODE >363:D:\production\democode\main.c
-898 text4 CODE >364:D:\production\democode\main.c
-89C text4 CODE >365:D:\production\democode\main.c
-8A0 text4 CODE >367:D:\production\democode\main.c
-8A4 text4 CODE >368:D:\production\democode\main.c
-8B8 text4 CODE >369:D:\production\democode\main.c
-8BA text4 CODE >372:D:\production\democode\main.c
-8BE text4 CODE >373:D:\production\democode\main.c
-8C2 text4 CODE >374:D:\production\democode\main.c
-8C6 text4 CODE >375:D:\production\democode\main.c
-8C8 text4 CODE >376:D:\production\democode\main.c
-8CA text4 CODE >377:D:\production\democode\main.c
-8CC text4 CODE >378:D:\production\democode\main.c
-8CE text4 CODE >379:D:\production\democode\main.c
-8D6 text4 CODE >380:D:\production\democode\main.c
-8DE text4 CODE >381:D:\production\democode\main.c
-8E0 text4 CODE >383:D:\production\democode\main.c
-8E4 text4 CODE >384:D:\production\democode\main.c
-8F0 text4 CODE >385:D:\production\democode\main.c
-8FC text4 CODE >386:D:\production\democode\main.c
-900 text4 CODE >389:D:\production\democode\main.c
-904 text4 CODE >390:D:\production\democode\main.c
-910 text4 CODE >391:D:\production\democode\main.c
-91C text4 CODE >392:D:\production\democode\main.c
-934 text4 CODE >391:D:\production\democode\main.c
-938 text4 CODE >394:D:\production\democode\main.c
-940 text4 CODE >395:D:\production\democode\main.c
-944 text4 CODE >396:D:\production\democode\main.c
-94A text4 CODE >397:D:\production\democode\main.c
-968 text4 CODE >398:D:\production\democode\main.c
-986 text4 CODE >399:D:\production\democode\main.c
-98C text4 CODE >400:D:\production\democode\main.c
-998 text4 CODE >401:D:\production\democode\main.c
-99E text4 CODE >402:D:\production\democode\main.c
-9A4 text4 CODE >404:D:\production\democode\main.c
-9A6 text4 CODE >405:D:\production\democode\main.c
-9A8 text4 CODE >406:D:\production\democode\main.c
-9AA text4 CODE >407:D:\production\democode\main.c
-9C0 text4 CODE >408:D:\production\democode\main.c
-9D8 text4 CODE >409:D:\production\democode\main.c
-9EE text4 CODE >410:D:\production\democode\main.c
-A06 text4 CODE >411:D:\production\democode\main.c
-A0A text4 CODE >381:D:\production\democode\main.c
-A1C text4 CODE >413:D:\production\democode\main.c
-11AC text3 CODE >90:D:\production\democode\eeprom.c
-11AC text3 CODE >91:D:\production\democode\eeprom.c
-11B2 text3 CODE >92:D:\production\democode\eeprom.c
-11BE text3 CODE >93:D:\production\democode\eeprom.c
-11D6 text3 CODE >94:D:\production\democode\eeprom.c
-1204 text3 CODE >93:D:\production\democode\eeprom.c
-120A text3 CODE >96:D:\production\democode\eeprom.c
-130E text2 CODE >312:D:\production\democode\main.c
-130E text2 CODE >314:D:\production\democode\main.c
-1312 text2 CODE >315:D:\production\democode\main.c
-131A text2 CODE >317:D:\production\democode\main.c
-1326 text2 CODE >318:D:\production\democode\main.c
-132E text2 CODE >319:D:\production\democode\main.c
-1332 text2 CODE >320:D:\production\democode\main.c
-1346 text2 CODE >321:D:\production\democode\main.c
-134A text2 CODE >322:D:\production\democode\main.c
-134C text2 CODE >323:D:\production\democode\main.c
-1356 text2 CODE >324:D:\production\democode\main.c
-135A text2 CODE >325:D:\production\democode\main.c
-13A8 text1 CODE >121:D:\production\democode\main.c
-13A8 text1 CODE >123:D:\production\democode\main.c
-13AA text1 CODE >124:D:\production\democode\main.c
-13AC text1 CODE >128:D:\production\democode\main.c
-13B8 text1 CODE >129:D:\production\democode\main.c
-13BC text1 CODE >131:D:\production\democode\main.c
-13C8 text1 CODE >132:D:\production\democode\main.c
-13D0 text1 CODE >137:D:\production\democode\main.c
-13D4 text1 CODE >138:D:\production\democode\main.c
-13D6 text1 CODE >139:D:\production\democode\main.c
-13DE text1 CODE >141:D:\production\democode\main.c
-13E2 text1 CODE >143:D:\production\democode\main.c
-13EC text1 CODE >144:D:\production\democode\main.c
-F9A text0 CODE >415:D:\production\democode\main.c
-F9A text0 CODE >418:D:\production\democode\main.c
-F9E text0 CODE >420:D:\production\democode\main.c
-FA2 text0 CODE >426:D:\production\democode\main.c
-FA6 text0 CODE >427:D:\production\democode\main.c
-FAA text0 CODE >428:D:\production\democode\main.c
-FAE text0 CODE >429:D:\production\democode\main.c
-FB2 text0 CODE >430:D:\production\democode\main.c
-FB6 text0 CODE >432:D:\production\democode\main.c
-FBA text0 CODE >433:D:\production\democode\main.c
-FBE text0 CODE >434:D:\production\democode\main.c
-FC2 text0 CODE >435:D:\production\democode\main.c
-FC6 text0 CODE >436:D:\production\democode\main.c
-FCA text0 CODE >438:D:\production\democode\main.c
-FCE text0 CODE >439:D:\production\democode\main.c
-FD2 text0 CODE >440:D:\production\democode\main.c
-FD6 text0 CODE >443:D:\production\democode\main.c
-FDA text0 CODE >444:D:\production\democode\main.c
-FDE text0 CODE >445:D:\production\democode\main.c
-FF2 text0 CODE >447:D:\production\democode\main.c
-FF4 text0 CODE >448:D:\production\democode\main.c
-FF6 text0 CODE >450:D:\production\democode\main.c
-FFA text0 CODE >458:D:\production\democode\main.c
-FFC text0 CODE >461:D:\production\democode\main.c
-1000 text0 CODE >462:D:\production\democode\main.c
-1002 text0 CODE >464:D:\production\democode\main.c
-1006 text0 CODE >465:D:\production\democode\main.c
-1008 text0 CODE >467:D:\production\democode\main.c
-100C text0 CODE >468:D:\production\democode\main.c
-100E text0 CODE >470:D:\production\democode\main.c
-1012 text0 CODE >471:D:\production\democode\main.c
-1014 text0 CODE >473:D:\production\democode\main.c
-1018 text0 CODE >458:D:\production\democode\main.c
-1038 text0 CODE >456:D:\production\democode\main.c
-15C2 cinit CODE >3101:C:\Users\Alex\AppData\Local\Temp\sp8g.
-15C2 cinit CODE >3103:C:\Users\Alex\AppData\Local\Temp\sp8g.
-15C2 cinit CODE >3106:C:\Users\Alex\AppData\Local\Temp\sp8g.
-15C2 cinit CODE >3145:C:\Users\Alex\AppData\Local\Temp\sp8g.
-15C6 cinit CODE >3146:C:\Users\Alex\AppData\Local\Temp\sp8g.
-15C8 cinit CODE >3147:C:\Users\Alex\AppData\Local\Temp\sp8g.
-15C8 cinit CODE >3148:C:\Users\Alex\AppData\Local\Temp\sp8g.
-15CA cinit CODE >3149:C:\Users\Alex\AppData\Local\Temp\sp8g.
-15CC cinit CODE >3150:C:\Users\Alex\AppData\Local\Temp\sp8g.
-15CE cinit CODE >3153:C:\Users\Alex\AppData\Local\Temp\sp8g.
-15D2 cinit CODE >3154:C:\Users\Alex\AppData\Local\Temp\sp8g.
-15D4 cinit CODE >3155:C:\Users\Alex\AppData\Local\Temp\sp8g.
-15D4 cinit CODE >3156:C:\Users\Alex\AppData\Local\Temp\sp8g.
-15D6 cinit CODE >3157:C:\Users\Alex\AppData\Local\Temp\sp8g.
-15D8 cinit CODE >3158:C:\Users\Alex\AppData\Local\Temp\sp8g.
-15DA cinit CODE >3164:C:\Users\Alex\AppData\Local\Temp\sp8g.
-15DA cinit CODE >3166:C:\Users\Alex\AppData\Local\Temp\sp8g.
-15DC cinit CODE >3167:C:\Users\Alex\AppData\Local\Temp\sp8g.
-15DE cinit CODE >3169:C:\Users\Alex\AppData\Local\Temp\sp8g.
-15E0 cinit CODE >3170:C:\Users\Alex\AppData\Local\Temp\sp8g.
-15E2 cinit CODE >3171:C:\Users\Alex\AppData\Local\Temp\sp8g.
-15E4 cinit CODE >3172:C:\Users\Alex\AppData\Local\Temp\sp8g.
+538 text10 CODE >292:D:\production\democode\main.c
+54E text10 CODE >293:D:\production\democode\main.c
+552 text10 CODE >294:D:\production\democode\main.c
+55A text10 CODE >297:D:\production\democode\main.c
+570 text10 CODE >201:D:\production\democode\main.c
+58A text10 CODE >300:D:\production\democode\main.c
+58C text10 CODE >302:D:\production\democode\main.c
+594 text10 CODE >303:D:\production\democode\main.c
+59C text10 CODE >304:D:\production\democode\main.c
+5A4 text10 CODE >305:D:\production\democode\main.c
+5AC text10 CODE >306:D:\production\democode\main.c
+5B8 text10 CODE >307:D:\production\democode\main.c
+5BC text10 CODE >308:D:\production\democode\main.c
+14C8 text9 CODE >90:D:\production\democode\main.c
+14C8 text9 CODE >92:D:\production\democode\main.c
+14E0 text9 CODE >93:D:\production\democode\main.c
+14E0 text9 CODE >94:D:\production\democode\main.c
+14E4 text9 CODE >96:D:\production\democode\main.c
+14EC text9 CODE >97:D:\production\democode\main.c
+14EC text9 CODE >99:D:\production\democode\main.c
+14F0 text9 CODE >100:D:\production\democode\main.c
+14F2 text9 CODE >101:D:\production\democode\main.c
+14F4 text9 CODE >102:D:\production\democode\main.c
+14FC text9 CODE >92:D:\production\democode\main.c
+150A text9 CODE >105:D:\production\democode\main.c
+150E text9 CODE >106:D:\production\democode\main.c
+1616 text8 CODE >310:D:\production\democode\main.c
+1616 text8 CODE >312:D:\production\democode\main.c
+1618 text8 CODE >313:D:\production\democode\main.c
+1630 text8 CODE >314:D:\production\democode\main.c
+1634 text8 CODE >315:D:\production\democode\main.c
+1636 text8 CODE >316:D:\production\democode\main.c
+1638 text8 CODE >318:D:\production\democode\main.c
+1644 text8 CODE >319:D:\production\democode\main.c
+164E text8 CODE >320:D:\production\democode\main.c
+1652 text8 CODE >321:D:\production\democode\main.c
+111E text7 CODE >8:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\lldiv.c
+111E text7 CODE >14:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\lldiv.c
+112E text7 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\lldiv.c
+113A text7 CODE >16:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\lldiv.c
+113E text7 CODE >17:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\lldiv.c
+1140 text7 CODE >18:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\lldiv.c
+114A text7 CODE >19:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\lldiv.c
+114C text7 CODE >17:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\lldiv.c
+1150 text7 CODE >22:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\lldiv.c
+115A text7 CODE >23:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\lldiv.c
+116E text7 CODE >24:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\lldiv.c
+117E text7 CODE >25:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\lldiv.c
+1180 text7 CODE >27:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\lldiv.c
+118A text7 CODE >28:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\lldiv.c
+118E text7 CODE >29:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\lldiv.c
+118E text7 CODE >30:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\lldiv.c
+119E text7 CODE >31:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\lldiv.c
+12E4 text6 CODE >13:D:\production\democode\I2C.c
+12E4 text6 CODE >16:D:\production\democode\I2C.c
+12E8 text6 CODE >17:D:\production\democode\I2C.c
+12EC text6 CODE >18:D:\production\democode\I2C.c
+12F0 text6 CODE >19:D:\production\democode\I2C.c
+1338 text6 CODE >20:D:\production\democode\I2C.c
+133A text6 CODE >21:D:\production\democode\I2C.c
+133C text6 CODE >22:D:\production\democode\I2C.c
+1510 text5 CODE >15:D:\production\democode\lcd.c
+1510 text5 CODE >16:D:\production\democode\lcd.c
+1520 text5 CODE >17:D:\production\democode\lcd.c
+1526 text5 CODE >18:D:\production\democode\lcd.c
+152C text5 CODE >19:D:\production\democode\lcd.c
+1532 text5 CODE >20:D:\production\democode\lcd.c
+1538 text5 CODE >21:D:\production\democode\lcd.c
+153E text5 CODE >22:D:\production\democode\lcd.c
+1544 text5 CODE >23:D:\production\democode\lcd.c
+1554 text5 CODE >24:D:\production\democode\lcd.c
+8CA text4 CODE >382:D:\production\democode\main.c
+8CA text4 CODE >384:D:\production\democode\main.c
+8CE text4 CODE >388:D:\production\democode\main.c
+8D2 text4 CODE >389:D:\production\democode\main.c
+8D6 text4 CODE >390:D:\production\democode\main.c
+8DA text4 CODE >391:D:\production\democode\main.c
+8DE text4 CODE >392:D:\production\democode\main.c
+8E2 text4 CODE >393:D:\production\democode\main.c
+8E6 text4 CODE >394:D:\production\democode\main.c
+8EA text4 CODE >395:D:\production\democode\main.c
+8EE text4 CODE >396:D:\production\democode\main.c
+8F2 text4 CODE >397:D:\production\democode\main.c
+8F6 text4 CODE >398:D:\production\democode\main.c
+8FA text4 CODE >399:D:\production\democode\main.c
+8FE text4 CODE >401:D:\production\democode\main.c
+902 text4 CODE >402:D:\production\democode\main.c
+916 text4 CODE >403:D:\production\democode\main.c
+918 text4 CODE >406:D:\production\democode\main.c
+91C text4 CODE >407:D:\production\democode\main.c
+920 text4 CODE >408:D:\production\democode\main.c
+924 text4 CODE >409:D:\production\democode\main.c
+926 text4 CODE >410:D:\production\democode\main.c
+928 text4 CODE >411:D:\production\democode\main.c
+92A text4 CODE >412:D:\production\democode\main.c
+92C text4 CODE >413:D:\production\democode\main.c
+934 text4 CODE >414:D:\production\democode\main.c
+93C text4 CODE >415:D:\production\democode\main.c
+93E text4 CODE >417:D:\production\democode\main.c
+942 text4 CODE >418:D:\production\democode\main.c
+94E text4 CODE >419:D:\production\democode\main.c
+95A text4 CODE >420:D:\production\democode\main.c
+95E text4 CODE >423:D:\production\democode\main.c
+962 text4 CODE >424:D:\production\democode\main.c
+96E text4 CODE >425:D:\production\democode\main.c
+97A text4 CODE >426:D:\production\democode\main.c
+992 text4 CODE >425:D:\production\democode\main.c
+996 text4 CODE >428:D:\production\democode\main.c
+99E text4 CODE >429:D:\production\democode\main.c
+9A2 text4 CODE >430:D:\production\democode\main.c
+9A8 text4 CODE >431:D:\production\democode\main.c
+9C6 text4 CODE >432:D:\production\democode\main.c
+9E4 text4 CODE >433:D:\production\democode\main.c
+9EA text4 CODE >434:D:\production\democode\main.c
+9F6 text4 CODE >435:D:\production\democode\main.c
+9FC text4 CODE >436:D:\production\democode\main.c
+A02 text4 CODE >438:D:\production\democode\main.c
+A04 text4 CODE >439:D:\production\democode\main.c
+A06 text4 CODE >440:D:\production\democode\main.c
+A08 text4 CODE >441:D:\production\democode\main.c
+A1E text4 CODE >442:D:\production\democode\main.c
+A36 text4 CODE >443:D:\production\democode\main.c
+A4C text4 CODE >444:D:\production\democode\main.c
+A64 text4 CODE >445:D:\production\democode\main.c
+A68 text4 CODE >415:D:\production\democode\main.c
+A7A text4 CODE >447:D:\production\democode\main.c
+1284 text3 CODE >90:D:\production\democode\eeprom.c
+1284 text3 CODE >91:D:\production\democode\eeprom.c
+128A text3 CODE >92:D:\production\democode\eeprom.c
+1296 text3 CODE >93:D:\production\democode\eeprom.c
+12AE text3 CODE >94:D:\production\democode\eeprom.c
+12DC text3 CODE >93:D:\production\democode\eeprom.c
+12E2 text3 CODE >96:D:\production\democode\eeprom.c
+13E6 text2 CODE >326:D:\production\democode\main.c
+13E6 text2 CODE >328:D:\production\democode\main.c
+13EA text2 CODE >329:D:\production\democode\main.c
+13F2 text2 CODE >331:D:\production\democode\main.c
+13FE text2 CODE >332:D:\production\democode\main.c
+1406 text2 CODE >333:D:\production\democode\main.c
+140A text2 CODE >334:D:\production\democode\main.c
+141E text2 CODE >335:D:\production\democode\main.c
+1422 text2 CODE >336:D:\production\democode\main.c
+1424 text2 CODE >337:D:\production\democode\main.c
+142E text2 CODE >338:D:\production\democode\main.c
+1432 text2 CODE >339:D:\production\democode\main.c
+1480 text1 CODE >121:D:\production\democode\main.c
+1480 text1 CODE >123:D:\production\democode\main.c
+1482 text1 CODE >124:D:\production\democode\main.c
+1484 text1 CODE >128:D:\production\democode\main.c
+1490 text1 CODE >129:D:\production\democode\main.c
+1494 text1 CODE >131:D:\production\democode\main.c
+14A0 text1 CODE >132:D:\production\democode\main.c
+14A8 text1 CODE >137:D:\production\democode\main.c
+14AC text1 CODE >138:D:\production\democode\main.c
+14AE text1 CODE >139:D:\production\democode\main.c
+14B6 text1 CODE >141:D:\production\democode\main.c
+14BA text1 CODE >143:D:\production\democode\main.c
+14C4 text1 CODE >144:D:\production\democode\main.c
+FF8 text0 CODE >449:D:\production\democode\main.c
+FF8 text0 CODE >452:D:\production\democode\main.c
+FFC text0 CODE >454:D:\production\democode\main.c
+1000 text0 CODE >460:D:\production\democode\main.c
+1004 text0 CODE >461:D:\production\democode\main.c
+1008 text0 CODE >462:D:\production\democode\main.c
+100C text0 CODE >463:D:\production\democode\main.c
+1010 text0 CODE >464:D:\production\democode\main.c
+1014 text0 CODE >466:D:\production\democode\main.c
+1018 text0 CODE >467:D:\production\democode\main.c
+101C text0 CODE >468:D:\production\democode\main.c
+1020 text0 CODE >469:D:\production\democode\main.c
+1024 text0 CODE >470:D:\production\democode\main.c
+1028 text0 CODE >472:D:\production\democode\main.c
+102C text0 CODE >473:D:\production\democode\main.c
+1030 text0 CODE >474:D:\production\democode\main.c
+1034 text0 CODE >477:D:\production\democode\main.c
+1038 text0 CODE >478:D:\production\democode\main.c
+103C text0 CODE >479:D:\production\democode\main.c
+1050 text0 CODE >481:D:\production\democode\main.c
+1052 text0 CODE >482:D:\production\democode\main.c
+1054 text0 CODE >484:D:\production\democode\main.c
+1058 text0 CODE >492:D:\production\democode\main.c
+105A text0 CODE >495:D:\production\democode\main.c
+105E text0 CODE >496:D:\production\democode\main.c
+1060 text0 CODE >498:D:\production\democode\main.c
+1064 text0 CODE >499:D:\production\democode\main.c
+1066 text0 CODE >501:D:\production\democode\main.c
+106A text0 CODE >502:D:\production\democode\main.c
+106C text0 CODE >504:D:\production\democode\main.c
+1070 text0 CODE >505:D:\production\democode\main.c
+1072 text0 CODE >507:D:\production\democode\main.c
+1076 text0 CODE >492:D:\production\democode\main.c
+1096 text0 CODE >490:D:\production\democode\main.c
+15D8 cinit CODE >3152:C:\Users\Alex\AppData\Local\Temp\sq8c.
+15D8 cinit CODE >3154:C:\Users\Alex\AppData\Local\Temp\sq8c.
+15D8 cinit CODE >3157:C:\Users\Alex\AppData\Local\Temp\sq8c.
+15D8 cinit CODE >3205:C:\Users\Alex\AppData\Local\Temp\sq8c.
+15DA cinit CODE >3206:C:\Users\Alex\AppData\Local\Temp\sq8c.
+15DC cinit CODE >3207:C:\Users\Alex\AppData\Local\Temp\sq8c.
+15DE cinit CODE >3208:C:\Users\Alex\AppData\Local\Temp\sq8c.
+15E0 cinit CODE >3209:C:\Users\Alex\AppData\Local\Temp\sq8c.
+15E2 cinit CODE >3210:C:\Users\Alex\AppData\Local\Temp\sq8c.
+15E4 cinit CODE >3211:C:\Users\Alex\AppData\Local\Temp\sq8c.
+15E6 cinit CODE >3212:C:\Users\Alex\AppData\Local\Temp\sq8c.
+15EA cinit CODE >3213:C:\Users\Alex\AppData\Local\Temp\sq8c.
+15EC cinit CODE >3214:C:\Users\Alex\AppData\Local\Temp\sq8c.
+15F0 cinit CODE >3218:C:\Users\Alex\AppData\Local\Temp\sq8c.
+15F4 cinit CODE >3219:C:\Users\Alex\AppData\Local\Temp\sq8c.
+15F6 cinit CODE >3220:C:\Users\Alex\AppData\Local\Temp\sq8c.
+15F6 cinit CODE >3221:C:\Users\Alex\AppData\Local\Temp\sq8c.
+15F8 cinit CODE >3222:C:\Users\Alex\AppData\Local\Temp\sq8c.
+15FA cinit CODE >3223:C:\Users\Alex\AppData\Local\Temp\sq8c.
+15FC cinit CODE >3226:C:\Users\Alex\AppData\Local\Temp\sq8c.
+1600 cinit CODE >3227:C:\Users\Alex\AppData\Local\Temp\sq8c.
+1602 cinit CODE >3228:C:\Users\Alex\AppData\Local\Temp\sq8c.
+1602 cinit CODE >3229:C:\Users\Alex\AppData\Local\Temp\sq8c.
+1604 cinit CODE >3230:C:\Users\Alex\AppData\Local\Temp\sq8c.
+1606 cinit CODE >3231:C:\Users\Alex\AppData\Local\Temp\sq8c.
+1608 cinit CODE >3237:C:\Users\Alex\AppData\Local\Temp\sq8c.
+1608 cinit CODE >3239:C:\Users\Alex\AppData\Local\Temp\sq8c.
+160A cinit CODE >3240:C:\Users\Alex\AppData\Local\Temp\sq8c.
+160C cinit CODE >3242:C:\Users\Alex\AppData\Local\Temp\sq8c.
+160E cinit CODE >3243:C:\Users\Alex\AppData\Local\Temp\sq8c.
+1610 cinit CODE >3244:C:\Users\Alex\AppData\Local\Temp\sq8c.
+1612 cinit CODE >3245:C:\Users\Alex\AppData\Local\Temp\sq8c.
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -865,19 +905,19 @@ FFC text0 CODE >461:D:\production\democode\main.c
 get_time@time 13 0 COMRAM 1 cstackCOMRAM dist/default/production\democode.production.obj
 putch@data 12 0 COMRAM 1 cstackCOMRAM dist/default/production\democode.production.obj
 ___lwmod@counter 1B 0 COMRAM 1 cstackCOMRAM dist/default/production\democode.production.obj
-__Lmediumconst FEE6 0 MEDIUMCONST 0 mediumconst dist/default/production\democode.production.obj
+__Lmediumconst FEC4 0 MEDIUMCONST 0 mediumconst dist/default/production\democode.production.obj
 executingState@timedif A0 0 BANK0 1 cstackBANK0 dist/default/production\democode.production.obj
 __Hspace_0 30000E 0 ABS 0 - dist/default/production\democode.production.obj
-__Hspace_1 BC 0 ABS 0 - dist/default/production\democode.production.obj
+__Hspace_1 CA 0 ABS 0 - dist/default/production\democode.production.obj
 __Hspace_2 0 0 ABS 0 - dist/default/production\democode.production.obj
 __CFG_IESO$OFF 0 0 ABS 0 - dist/default/production\democode.production.obj
 __size_of_lcdInst 0 0 ABS 0 - dist/default/production\democode.production.obj
-__end_of_readKey 1438 0 CODE 0 text9 dist/default/production\democode.production.obj
+__end_of_readKey 1510 0 CODE 0 text9 dist/default/production\democode.production.obj
 executingState@runCanAl 82 0 BANK0 1 cstackBANK0 dist/default/production\democode.production.obj
 executingState@runCanSn 80 0 BANK0 1 cstackBANK0 dist/default/production\democode.production.obj
-_lcdNibble 1266 0 CODE 0 text44 dist/default/production\democode.production.obj
+_lcdNibble 133E 0 CODE 0 text46 dist/default/production\democode.production.obj
 __Hibigdata 0 0 CODE 0 ibigdata dist/default/production\democode.production.obj
-__mediumconst FEE6 0 MEDIUMCONST 0 mediumconst C:\Users\Alex\AppData\Local\Temp\sp8g.obj
+__mediumconst FEC4 0 MEDIUMCONST 0 mediumconst C:\Users\Alex\AppData\Local\Temp\sq8c.obj
 executingState@emptyCount AC 0 BANK0 1 cstackBANK0 dist/default/production\democode.production.obj
 I2C_Master_Init@c 1D 0 COMRAM 1 cstackCOMRAM dist/default/production\democode.production.obj
 __Heeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\democode.production.obj
@@ -891,23 +931,23 @@ _LATD F8C 0 ABS 0 - dist/default/production\democode.production.obj
 _LATE F8D 0 ABS 0 - dist/default/production\democode.production.obj
 _RCEN 7E2B 0 ABS 0 - dist/default/production\democode.production.obj
 _RSEN 7E29 0 ABS 0 - dist/default/production\democode.production.obj
-___sp 0 0 STACK 2 stack C:\Users\Alex\AppData\Local\Temp\sp8g.obj
-_keys FEE7 0 MEDIUMCONST 0 mediumconst dist/default/production\democode.production.obj
-_main F9A 0 CODE 0 text0 dist/default/production\democode.production.obj
-_time 4C 0 COMRAM 1 bssCOMRAM dist/default/production\democode.production.obj
-btemp 5B 0 COMRAM 1 temp dist/default/production\democode.production.obj
+___sp 0 0 STACK 2 stack C:\Users\Alex\AppData\Local\Temp\sq8c.obj
+_keys FEC5 0 MEDIUMCONST 0 mediumconst dist/default/production\democode.production.obj
+_main FF8 0 CODE 0 text0 dist/default/production\democode.production.obj
+_time BC 0 BANK0 1 bssBANK0 dist/default/production\democode.production.obj
+btemp 4F 0 COMRAM 1 temp dist/default/production\democode.production.obj
 __size_of_logState 0 0 ABS 0 - dist/default/production\democode.production.obj
-start E 0 CODE 0 init C:\Users\Alex\AppData\Local\Temp\sp8g.obj
-__end_of_dispenseAlCan 1596 0 CODE 0 text29 dist/default/production\democode.production.obj
+start E 0 CODE 0 init C:\Users\Alex\AppData\Local\Temp\sq8c.obj
+__end_of_dispenseAlCan 1730 0 CODE 0 text28 dist/default/production\democode.production.obj
 eeprom_GetLog@address 18 0 COMRAM 1 cstackCOMRAM dist/default/production\democode.production.obj
-__end_of_dispenseSnCan 1566 0 CODE 0 text28 dist/default/production\democode.production.obj
+__end_of_dispenseSnCan 1700 0 CODE 0 text26 dist/default/production\democode.production.obj
 __size_of_main 0 0 ABS 0 - dist/default/production\democode.production.obj
 __size_of___lldiv 0 0 ABS 0 - dist/default/production\democode.production.obj
 __size_of___lwdiv 0 0 ABS 0 - dist/default/production\democode.production.obj
 __size_of___lwmod 0 0 ABS 0 - dist/default/production\democode.production.obj
 __HbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production\democode.production.obj
 ?___wmul 10 0 COMRAM 1 cstackCOMRAM dist/default/production\democode.production.obj
-_get_timeDif A1E 0 CODE 0 text20 dist/default/production\democode.production.obj
+_get_timeDif A7C 0 CODE 0 text18 dist/default/production\democode.production.obj
 __size_of_servoRotate90 0 0 ABS 0 - dist/default/production\democode.production.obj
 keypressed@keypress F 0 COMRAM 1 cstackCOMRAM dist/default/production\democode.production.obj
 __size_of_newestAddress 0 0 ABS 0 - dist/default/production\democode.production.obj
@@ -916,48 +956,55 @@ __Hpowerup E 0 CODE 0 powerup dist/default/production\democode.production.obj
 printf@c 33 0 COMRAM 1 cstackCOMRAM dist/default/production\democode.production.obj
 printf@f 1C 0 COMRAM 1 cstackCOMRAM dist/default/production\democode.production.obj
 I2C_Master_Read@a 11 0 COMRAM 1 cstackCOMRAM dist/default/production\democode.production.obj
-_servoRotate0 D60 0 CODE 0 text36 dist/default/production\democode.production.obj
-_servoRotate4 14C0 0 CODE 0 text14 dist/default/production\democode.production.obj
+_servoRotate0 CFE 0 CODE 0 text12 dist/default/production\democode.production.obj
+_servoRotate1 1654 0 CODE 0 text27 dist/default/production\democode.production.obj
+_servoRotate2 1598 0 CODE 0 text30 dist/default/production\democode.production.obj
+_servoRotate4 1692 0 CODE 0 text38 dist/default/production\democode.production.obj
+__HdataCOMRAM 0 0 ABS 0 dataCOMRAM dist/default/production\democode.production.obj
 readKey@i 13 0 COMRAM 1 cstackCOMRAM dist/default/production\democode.production.obj
-__accesstop 80 0 ABS 0 - C:\Users\Alex\AppData\Local\Temp\sp8g.obj
-intlevel0 0 0 CODE 0 text C:\Users\Alex\AppData\Local\Temp\sp8g.obj
-intlevel1 0 0 CODE 0 text C:\Users\Alex\AppData\Local\Temp\sp8g.obj
-intlevel2 0 0 CODE 0 text C:\Users\Alex\AppData\Local\Temp\sp8g.obj
-intlevel3 0 0 CODE 0 text C:\Users\Alex\AppData\Local\Temp\sp8g.obj
+__accesstop 80 0 ABS 0 - C:\Users\Alex\AppData\Local\Temp\sq8c.obj
+intlevel0 0 0 CODE 0 text C:\Users\Alex\AppData\Local\Temp\sq8c.obj
+intlevel1 0 0 CODE 0 text C:\Users\Alex\AppData\Local\Temp\sq8c.obj
+intlevel2 0 0 CODE 0 text C:\Users\Alex\AppData\Local\Temp\sq8c.obj
+intlevel3 0 0 CODE 0 text C:\Users\Alex\AppData\Local\Temp\sq8c.obj
 __LbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production\democode.production.obj
 __LnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production\democode.production.obj
 __CFG_EBTR0$OFF 0 0 ABS 0 - dist/default/production\democode.production.obj
 __CFG_EBTR1$OFF 0 0 ABS 0 - dist/default/production\democode.production.obj
 __CFG_EBTR2$OFF 0 0 ABS 0 - dist/default/production\democode.production.obj
 __CFG_EBTR3$OFF 0 0 ABS 0 - dist/default/production\democode.production.obj
-_eeprom_GetLog 11AC 0 CODE 0 text3 dist/default/production\democode.production.obj
+_eeprom_GetLog 1284 0 CODE 0 text3 dist/default/production\democode.production.obj
 I2C_Master_Read@temp 12 0 COMRAM 1 cstackCOMRAM dist/default/production\democode.production.obj
 __CFG_EBTRB$OFF 0 0 ABS 0 - dist/default/production\democode.production.obj
 __Hifardata 0 0 CODE 0 ifardata dist/default/production\democode.production.obj
 servoRotate90@i 14 0 COMRAM 1 cstackCOMRAM dist/default/production\democode.production.obj
 __Hclrtext 0 0 ABS 0 clrtext dist/default/production\democode.production.obj
-__end_of_servoRotate90 D60 0 CODE 0 text30 dist/default/production\democode.production.obj
-__end_of_newestAddress 1742 0 CODE 0 text32 dist/default/production\democode.production.obj
-_logState 130E 0 CODE 0 text2 dist/default/production\democode.production.obj
+__pidataCOMRAM 18BC 0 CODE 0 idataCOMRAM dist/default/production\democode.production.obj
+__end_of_servoRotate90 E86 0 CODE 0 text29 dist/default/production\democode.production.obj
+__end_of_newestAddress 188A 0 CODE 0 text32 dist/default/production\democode.production.obj
+_logState 13E6 0 CODE 0 text2 dist/default/production\democode.production.obj
 ___wmul@multiplicand 12 0 COMRAM 1 cstackCOMRAM dist/default/production\democode.production.obj
 printf@flag 30 0 COMRAM 1 cstackCOMRAM dist/default/production\democode.production.obj
 printf@prec 2D 0 COMRAM 1 cstackCOMRAM dist/default/production\democode.production.obj
 _ADCON0 FC2 0 ABS 0 - dist/default/production\democode.production.obj
 _ADCON1 FC1 0 ABS 0 - dist/default/production\democode.production.obj
-__end_of_lcdInst 175A 0 CODE 0 text43 dist/default/production\democode.production.obj
-___inthi_sp 0 0 STACK 2 stack C:\Users\Alex\AppData\Local\Temp\sp8g.obj
+__end_of_lcdInst 18A2 0 CODE 0 text45 dist/default/production\democode.production.obj
+___inthi_sp 0 0 STACK 2 stack C:\Users\Alex\AppData\Local\Temp\sq8c.obj
 printf@width 31 0 COMRAM 1 cstackCOMRAM dist/default/production\democode.production.obj
-___intlo_sp 0 0 STACK 2 stack C:\Users\Alex\AppData\Local\Temp\sp8g.obj
+___intlo_sp 0 0 STACK 2 stack C:\Users\Alex\AppData\Local\Temp\sq8c.obj
 __size_of_update_lcd 0 0 ABS 0 - dist/default/production\democode.production.obj
-__end_of_eeprom_ReadByte 1722 0 CODE 0 text33 dist/default/production\democode.production.obj
+__end_of_eeprom_ReadByte 186A 0 CODE 0 text33 dist/default/production\democode.production.obj
+__LdataCOMRAM 0 0 ABS 0 dataCOMRAM dist/default/production\democode.production.obj
 _EECON1bits FA6 0 ABS 0 - dist/default/production\democode.production.obj
-__end_of_finishState 1536 0 CODE 0 text8 dist/default/production\democode.production.obj
-__end_of_logState 135C 0 CODE 0 text2 dist/default/production\democode.production.obj
+__end_of_finishState 1654 0 CODE 0 text8 dist/default/production\democode.production.obj
+__end_of_logState 1434 0 CODE 0 text2 dist/default/production\democode.production.obj
 __size_of_initLCD 0 0 ABS 0 - dist/default/production\democode.production.obj
 __size_of_servoRotate0 0 0 ABS 0 - dist/default/production\democode.production.obj
+__size_of_servoRotate1 0 0 ABS 0 - dist/default/production\democode.production.obj
+__size_of_servoRotate2 0 0 ABS 0 - dist/default/production\democode.production.obj
 __size_of_servoRotate4 0 0 ABS 0 - dist/default/production\democode.production.obj
 __Hintcode_body 0 0 ABS 0 intcode_body dist/default/production\democode.production.obj
-__end_of___wmul 165A 0 CODE 0 text40 dist/default/production\democode.production.obj
+__end_of___wmul 17A2 0 CODE 0 text42 dist/default/production\democode.production.obj
 executingState@res 94 0 BANK0 1 cstackBANK0 dist/default/production\democode.production.obj
 _executingState 12 0 CODE 0 text10 dist/default/production\democode.production.obj
 _EEADRH FAA 0 ABS 0 - dist/default/production\democode.production.obj
@@ -971,18 +1018,21 @@ __size_of_servoRotateArm 0 0 ABS 0 - dist/default/production\democode.production
 ?_printf 1C 0 COMRAM 1 cstackCOMRAM dist/default/production\democode.production.obj
 __Hintcodelo E 0 CODE 0 intcodelo dist/default/production\democode.production.obj
 ___lwmod@divisor 19 0 COMRAM 1 cstackCOMRAM dist/default/production\democode.production.obj
-__end_of___lldiv 1142 0 CODE 0 text7 dist/default/production\democode.production.obj
-__end_of___lwdiv 130E 0 CODE 0 text42 dist/default/production\democode.production.obj
-__end_of___lwmod 14C0 0 CODE 0 text41 dist/default/production\democode.production.obj
+__end_of___lldiv 11A0 0 CODE 0 text7 dist/default/production\democode.production.obj
+__end_of___lwdiv 13E6 0 CODE 0 text44 dist/default/production\democode.production.obj
+__end_of___lwmod 1598 0 CODE 0 text43 dist/default/production\democode.production.obj
 __size_of_isdigit 0 0 ABS 0 - dist/default/production\democode.production.obj
 _INT1IE 7F83 0 ABS 0 - dist/default/production\democode.production.obj
 _INT1IF 7F80 0 ABS 0 - dist/default/production\democode.production.obj
-__end_of_servoRotate0 E26 0 CODE 0 text36 dist/default/production\democode.production.obj
-__end_of_servoRotate4 14FC 0 CODE 0 text14 dist/default/production\democode.production.obj
-_dpowers FEF8 0 MEDIUMCONST 0 mediumconst dist/default/production\democode.production.obj
+__end_of_servoRotate0 DC2 0 CODE 0 text12 dist/default/production\democode.production.obj
+__end_of_servoRotate1 1692 0 CODE 0 text27 dist/default/production\democode.production.obj
+__end_of_servoRotate2 15D8 0 CODE 0 text30 dist/default/production\democode.production.obj
+__end_of_servoRotate4 16D0 0 CODE 0 text38 dist/default/production\democode.production.obj
+_dpowers FED6 0 MEDIUMCONST 0 mediumconst dist/default/production\democode.production.obj
 eeprom_LogResult@i 16 0 COMRAM 1 cstackCOMRAM dist/default/production\democode.production.obj
-__end_of_fixLCD A1E 0 CODE 0 text4 dist/default/production\democode.production.obj
+__end_of_fixLCD A7C 0 CODE 0 text4 dist/default/production\democode.production.obj
 ___lwdiv@quotient 15 0 COMRAM 1 cstackCOMRAM dist/default/production\democode.production.obj
+__LidataCOMRAM 0 0 ABS 0 idataCOMRAM dist/default/production\democode.production.obj
 readKey@keypress 12 0 COMRAM 1 cstackCOMRAM dist/default/production\democode.production.obj
 __size_of_putch 0 0 ABS 0 - dist/default/production\democode.production.obj
 servoRotate0@servo 10 0 COMRAM 1 cstackCOMRAM dist/default/production\democode.production.obj
@@ -992,34 +1042,34 @@ ___lwmod@dividend 17 0 COMRAM 1 cstackCOMRAM dist/default/production\democode.pr
 ___lldiv@counter 1C 0 COMRAM 1 cstackCOMRAM dist/default/production\democode.production.obj
 __Lintcodelo E 0 CODE 0 intcodelo dist/default/production\democode.production.obj
 __CFG_FCMEN$OFF 0 0 ABS 0 - dist/default/production\democode.production.obj
-start_initialization 15C2 0 CODE 0 cinit dist/default/production\democode.production.obj
+start_initialization 15D8 0 CODE 0 cinit dist/default/production\democode.production.obj
 __CFG_PBADEN$ON 0 0 ABS 0 - dist/default/production\democode.production.obj
-_eeprom_ReadByte 170C 0 CODE 0 text33 dist/default/production\democode.production.obj
-__end_of_hexpowers FF0A 0 MEDIUMCONST 0 mediumconst dist/default/production\democode.production.obj
+_eeprom_ReadByte 1854 0 CODE 0 text33 dist/default/production\democode.production.obj
+__end_of_hexpowers FEE8 0 MEDIUMCONST 0 mediumconst dist/default/production\democode.production.obj
 _OSCCON FD3 0 ABS 0 - dist/default/production\democode.production.obj
 __HnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production\democode.production.obj
 _starttime AE 0 BANK0 1 bssBANK0 dist/default/production\democode.production.obj
 executingState@alLoaded A6 0 BANK0 1 cstackBANK0 dist/default/production\democode.production.obj
 _alNoTab 41 0 COMRAM 1 bssCOMRAM dist/default/production\democode.production.obj
 ___lldiv@dividend 10 0 COMRAM 1 cstackCOMRAM dist/default/production\democode.production.obj
-__end_of_eeprom_initialize 1694 0 CODE 0 text31 dist/default/production\democode.production.obj
+__end_of_eeprom_initialize 17DC 0 CODE 0 text31 dist/default/production\democode.production.obj
 ___rparam_used 1 0 ABS 0 - dist/default/production\democode.production.obj
-__end_of_executingState 560 0 CODE 0 text10 dist/default/production\democode.production.obj
+__end_of_executingState 5BE 0 CODE 0 text10 dist/default/production\democode.production.obj
 __size_of_eeprom_GetLog 0 0 ABS 0 - dist/default/production\democode.production.obj
 __CFG_WDTPS$32768 0 0 ABS 0 - dist/default/production\democode.production.obj
 __pcstackBANK0 80 0 BANK0 1 cstackBANK0 dist/default/production\democode.production.obj
 _SSPADD FC8 0 ABS 0 - dist/default/production\democode.production.obj
 _SSPBUF FC9 0 ABS 0 - dist/default/production\democode.production.obj
-__end_of_mainState 13F0 0 CODE 0 text1 dist/default/production\democode.production.obj
+__end_of_mainState 14C8 0 CODE 0 text1 dist/default/production\democode.production.obj
 _TRISC3 7CA3 0 ABS 0 - dist/default/production\democode.production.obj
 _TRISC4 7CA4 0 ABS 0 - dist/default/production\democode.production.obj
-_hexpowers FF02 0 MEDIUMCONST 0 mediumconst dist/default/production\democode.production.obj
+_hexpowers FEE0 0 MEDIUMCONST 0 mediumconst dist/default/production\democode.production.obj
 __size_of_mainState 0 0 ABS 0 - dist/default/production\democode.production.obj
-__end_of_printf 86C 0 CODE 0 text37 dist/default/production\democode.production.obj
+__end_of_printf 8CA 0 CODE 0 text39 dist/default/production\democode.production.obj
 executingState@alInSensor AA 0 BANK0 1 cstackBANK0 dist/default/production\democode.production.obj
-_readKey 13F0 0 CODE 0 text9 dist/default/production\democode.production.obj
-_statictime FF0A 0 MEDIUMCONST 0 mediumconst dist/default/production\democode.production.obj
-__end_of_initLCD 147E 0 CODE 0 text5 dist/default/production\democode.production.obj
+_readKey 14C8 0 CODE 0 text9 dist/default/production\democode.production.obj
+_statictime FEE8 0 MEDIUMCONST 0 mediumconst dist/default/production\democode.production.obj
+__end_of_initLCD 1556 0 CODE 0 text5 dist/default/production\democode.production.obj
 __Hbank0 0 0 ABS 0 bank0 dist/default/production\democode.production.obj
 __Hbank1 0 0 ABS 0 bank1 dist/default/production\democode.production.obj
 __Hbank2 0 0 ABS 0 bank2 dist/default/production\democode.production.obj
@@ -1061,15 +1111,15 @@ __Hbigbss 0 0 BIGRAM 1 bigbss dist/default/production\democode.production.obj
 __Hbigram 0 0 ABS 0 bigram dist/default/production\democode.production.obj
 ?_readAlBot 10 0 COMRAM 1 cstackCOMRAM dist/default/production\democode.production.obj
 ?_readAlTop 10 0 COMRAM 1 cstackCOMRAM dist/default/production\democode.production.obj
-_get_timeDif$1730 2B 0 COMRAM 1 cstackCOMRAM dist/default/production\democode.production.obj
-_get_timeDif$1731 2D 0 COMRAM 1 cstackCOMRAM dist/default/production\democode.production.obj
-__smallconst 0 0 SMALLCONST 0 smallconst C:\Users\Alex\AppData\Local\Temp\sp8g.obj
-_eeprom_WriteByte 160E 0 CODE 0 text34 dist/default/production\democode.production.obj
+_get_timeDif$1733 2B 0 COMRAM 1 cstackCOMRAM dist/default/production\democode.production.obj
+_get_timeDif$1734 2D 0 COMRAM 1 cstackCOMRAM dist/default/production\democode.production.obj
+__smallconst 0 0 SMALLCONST 0 smallconst C:\Users\Alex\AppData\Local\Temp\sq8c.obj
+_eeprom_WriteByte 1756 0 CODE 0 text34 dist/default/production\democode.production.obj
 ?_readSnBot 10 0 COMRAM 1 cstackCOMRAM dist/default/production\democode.production.obj
 ?_readSnTop 10 0 COMRAM 1 cstackCOMRAM dist/default/production\democode.production.obj
-_mainState 13A8 0 CODE 0 text1 dist/default/production\democode.production.obj
+_mainState 1480 0 CODE 0 text1 dist/default/production\democode.production.obj
 servoRotate90n@i 14 0 COMRAM 1 cstackCOMRAM dist/default/production\democode.production.obj
-__end_of_eeprom_GetLog 120C 0 CODE 0 text3 dist/default/production\democode.production.obj
+__end_of_eeprom_GetLog 12E4 0 CODE 0 text3 dist/default/production\democode.production.obj
 __Hcomram 0 0 ABS 0 comram dist/default/production\democode.production.obj
 __Hconfig 30000E 0 CONFIG 0 config dist/default/production\democode.production.obj
 __CFG_LPT1OSC$OFF 0 0 ABS 0 - dist/default/production\democode.production.obj
@@ -1083,7 +1133,7 @@ __Lbank6 0 0 ABS 0 bank6 dist/default/production\democode.production.obj
 __Lbank7 0 0 ABS 0 bank7 dist/default/production\democode.production.obj
 __Lbank8 0 0 ABS 0 bank8 dist/default/production\democode.production.obj
 __Lbank9 0 0 ABS 0 bank9 dist/default/production\democode.production.obj
-__end_of_isdigit 1678 0 CODE 0 text39 dist/default/production\democode.production.obj
+__end_of_isdigit 17C0 0 CODE 0 text41 dist/default/production\democode.production.obj
 __Lcinit 0 0 ABS 0 cinit dist/default/production\democode.production.obj
 __Lconst 0 0 CONST 0 const dist/default/production\democode.production.obj
 __Lidata 0 0 CODE 0 idata dist/default/production\democode.production.obj
@@ -1113,55 +1163,58 @@ __Hdata 0 0 ABS 0 data dist/default/production\democode.production.obj
 __Hinit 12 0 CODE 0 init dist/default/production\democode.production.obj
 __Hrbit 0 0 COMRAM 1 rbit dist/default/production\democode.production.obj
 __Hrbss 0 0 COMRAM 1 rbss dist/default/production\democode.production.obj
-__Htemp 5C 0 COMRAM 1 temp dist/default/production\democode.production.obj
+__Htemp 50 0 COMRAM 1 temp dist/default/production\democode.production.obj
 __Htext 0 0 ABS 0 text dist/default/production\democode.production.obj
 __Labs1 0 0 ABS 0 abs1 dist/default/production\democode.production.obj
 __Ldata 0 0 ABS 0 data dist/default/production\democode.production.obj
 __Linit E 0 CODE 0 init dist/default/production\democode.production.obj
 __Lrbit 0 0 COMRAM 1 rbit dist/default/production\democode.production.obj
 __Lrbss 0 0 COMRAM 1 rbss dist/default/production\democode.production.obj
-__Ltemp 5B 0 COMRAM 1 temp dist/default/production\democode.production.obj
+__Ltemp 4F 0 COMRAM 1 temp dist/default/production\democode.production.obj
 __Ltext 0 0 ABS 0 text dist/default/production\democode.production.obj
 __CFG_XINST$OFF 0 0 ABS 0 - dist/default/production\democode.production.obj
 _keypressed 8 0 CODE 0 intcode dist/default/production\democode.production.obj
-___wmul 1634 0 CODE 0 text40 dist/default/production\democode.production.obj
+___wmul 177C 0 CODE 0 text42 dist/default/production\democode.production.obj
 __LcstackBANK0 0 0 ABS 0 cstackBANK0 dist/default/production\democode.production.obj
-int$flags 5B 0 COMRAM 1 temp dist/default/production\democode.production.obj
+int$flags 4F 0 COMRAM 1 temp dist/default/production\democode.production.obj
 __HcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production\democode.production.obj
 __size_of_finishState 0 0 ABS 0 - dist/default/production\democode.production.obj
 __Hintret 0 0 ABS 0 intret dist/default/production\democode.production.obj
 __Hirdata 0 0 CODE 0 irdata dist/default/production\democode.production.obj
-__end_of_get_timeDif B62 0 CODE 0 text20 dist/default/production\democode.production.obj
+__end_of_get_timeDif BC6 0 CODE 0 text18 dist/default/production\democode.production.obj
 _PEN 7E2A 0 ABS 0 - dist/default/production\democode.production.obj
 _SEN 7E28 0 ABS 0 - dist/default/production\democode.production.obj
 __S0 30000E 0 ABS 0 - dist/default/production\democode.production.obj
-__S1 BC 0 ABS 0 - dist/default/production\democode.production.obj
+__S1 CA 0 ABS 0 - dist/default/production\democode.production.obj
 __S2 0 0 ABS 0 - dist/default/production\democode.production.obj
 servoRotate4@angle 10 0 COMRAM 1 cstackCOMRAM dist/default/production\democode.production.obj
 get_time@i 17 0 COMRAM 1 cstackCOMRAM dist/default/production\democode.production.obj
 eeprom_WriteByte@address 10 0 COMRAM 1 cstackCOMRAM dist/default/production\democode.production.obj
 __size_of_eeprom_ReadByte 0 0 ABS 0 - dist/default/production\democode.production.obj
 ?_readKey 10 0 COMRAM 1 cstackCOMRAM dist/default/production\democode.production.obj
-_eeprom_initialize 1678 0 CODE 0 text31 dist/default/production\democode.production.obj
+_eeprom_initialize 17C0 0 CODE 0 text31 dist/default/production\democode.production.obj
 logState@log 34 0 COMRAM 1 cstackCOMRAM dist/default/production\democode.production.obj
-__end_of_statictime FF11 0 MEDIUMCONST 0 mediumconst dist/default/production\democode.production.obj
-_I2C_Master_Start 176C 0 CODE 0 text24 dist/default/production\democode.production.obj
+__end_of_statictime FEEF 0 MEDIUMCONST 0 mediumconst dist/default/production\democode.production.obj
+_I2C_Master_Start 18B4 0 CODE 0 text22 dist/default/production\democode.production.obj
+__HidataCOMRAM 0 0 ABS 0 idataCOMRAM dist/default/production\democode.production.obj
 logState@keypress 36 0 COMRAM 1 cstackCOMRAM dist/default/production\democode.production.obj
-_I2C_Master_Write 175A 0 CODE 0 text22 dist/default/production\democode.production.obj
+_I2C_Master_Write 18A2 0 CODE 0 text20 dist/default/production\democode.production.obj
 __Lbigdata 0 0 BIGRAM 1 bigdata dist/default/production\democode.production.obj
-_debugState 1596 0 CODE 0 text35 dist/default/production\democode.production.obj
+_debugState 11A0 0 CODE 0 text35 dist/default/production\democode.production.obj
 __Hnvrram 0 0 COMRAM 1 nvrram dist/default/production\democode.production.obj
 lcdInst@data 12 0 COMRAM 1 cstackCOMRAM dist/default/production\democode.production.obj
-_fixLCD 86C 0 CODE 0 text4 dist/default/production\democode.production.obj
+_fixLCD 8CA 0 CODE 0 text4 dist/default/production\democode.production.obj
 executingState@snLoaded A4 0 BANK0 1 cstackBANK0 dist/default/production\democode.production.obj
-int_func EE8 0 CODE 0 intcode_body dist/default/production\democode.production.obj
+int_func F46 0 CODE 0 intcode_body dist/default/production\democode.production.obj
 __CFG_CCP2MX$PORTC 0 0 ABS 0 - dist/default/production\democode.production.obj
 servoRotate0@i 14 0 COMRAM 1 cstackCOMRAM dist/default/production\democode.production.obj
+servoRotate1@i 13 0 COMRAM 1 cstackCOMRAM dist/default/production\democode.production.obj
+servoRotate2@i 13 0 COMRAM 1 cstackCOMRAM dist/default/production\democode.production.obj
 servoRotate4@i 13 0 COMRAM 1 cstackCOMRAM dist/default/production\democode.production.obj
 __Lintentry 0 0 ABS 0 intentry dist/default/production\democode.production.obj
 ___lldiv@divisor 14 0 COMRAM 1 cstackCOMRAM dist/default/production\democode.production.obj
 __size_of_get_time 0 0 ABS 0 - dist/default/production\democode.production.obj
-_lcdInst 174E 0 CODE 0 text43 dist/default/production\democode.production.obj
+_lcdInst 1896 0 CODE 0 text45 dist/default/production\democode.production.obj
 __Hramtop 1000 0 RAM 0 ramtop dist/default/production\democode.production.obj
 __Hrparam 0 0 COMRAM 1 rparam dist/default/production\democode.production.obj
 __activetblptr 2 0 ABS 0 - dist/default/production\democode.production.obj
@@ -1204,52 +1257,57 @@ __Htext41 0 0 ABS 0 text41 dist/default/production\democode.production.obj
 __Htext42 0 0 ABS 0 text42 dist/default/production\democode.production.obj
 __Htext43 0 0 ABS 0 text43 dist/default/production\democode.production.obj
 __Htext44 0 0 ABS 0 text44 dist/default/production\democode.production.obj
-_executingState$1732 90 0 BANK0 1 cstackBANK0 dist/default/production\democode.production.obj
-_executingState$1733 92 0 BANK0 1 cstackBANK0 dist/default/production\democode.production.obj
+__Htext45 0 0 ABS 0 text45 dist/default/production\democode.production.obj
+__Htext46 0 0 ABS 0 text46 dist/default/production\democode.production.obj
+_executingState$1735 90 0 BANK0 1 cstackBANK0 dist/default/production\democode.production.obj
+_executingState$1736 92 0 BANK0 1 cstackBANK0 dist/default/production\democode.production.obj
 servoRotate90n@servo 10 0 COMRAM 1 cstackCOMRAM dist/default/production\democode.production.obj
+servoRotate1@angle 10 0 COMRAM 1 cstackCOMRAM dist/default/production\democode.production.obj
 lcdNibble@data 11 0 COMRAM 1 cstackCOMRAM dist/default/production\democode.production.obj
 lcdNibble@temp 10 0 COMRAM 1 cstackCOMRAM dist/default/production\democode.production.obj
-__end_of_eeprom_WriteByte 1634 0 CODE 0 text34 dist/default/production\democode.production.obj
-__end_of_keypressed F9A 0 CODE 0 intcode_body dist/default/production\democode.production.obj
+__end_of_eeprom_WriteByte 177C 0 CODE 0 text34 dist/default/production\democode.production.obj
+__end_of_keypressed FF8 0 CODE 0 intcode_body dist/default/production\democode.production.obj
 __ptext10 12 0 CODE 0 text10 dist/default/production\democode.production.obj
-__ptext11 B62 0 CODE 0 text11 dist/default/production\democode.production.obj
-__ptext12 1142 0 CODE 0 text12 dist/default/production\democode.production.obj
-__ptext13 E26 0 CODE 0 text13 dist/default/production\democode.production.obj
-__ptext14 14C0 0 CODE 0 text14 dist/default/production\democode.production.obj
-__ptext15 1694 0 CODE 0 text15 dist/default/production\democode.production.obj
-__ptext16 16AC 0 CODE 0 text16 dist/default/production\democode.production.obj
-__ptext17 16C4 0 CODE 0 text17 dist/default/production\democode.production.obj
-__ptext18 16DC 0 CODE 0 text18 dist/default/production\democode.production.obj
-__ptext19 16F4 0 CODE 0 text19 dist/default/production\democode.production.obj
-__ptext20 A1E 0 CODE 0 text20 dist/default/production\democode.production.obj
-__ptext21 103A 0 CODE 0 text21 dist/default/production\democode.production.obj
-__ptext22 175A 0 CODE 0 text22 dist/default/production\democode.production.obj
-__ptext23 1764 0 CODE 0 text23 dist/default/production\democode.production.obj
-__ptext24 176C 0 CODE 0 text24 dist/default/production\democode.production.obj
-__ptext25 15E8 0 CODE 0 text25 dist/default/production\democode.production.obj
-__ptext26 1722 0 CODE 0 text26 dist/default/production\democode.production.obj
-__ptext27 135C 0 CODE 0 text27 dist/default/production\democode.production.obj
-__ptext28 1536 0 CODE 0 text28 dist/default/production\democode.production.obj
-__ptext29 1566 0 CODE 0 text29 dist/default/production\democode.production.obj
-__ptext30 C9A 0 CODE 0 text30 dist/default/production\democode.production.obj
-__ptext31 1678 0 CODE 0 text31 dist/default/production\democode.production.obj
-__ptext32 1734 0 CODE 0 text32 dist/default/production\democode.production.obj
-__ptext33 170C 0 CODE 0 text33 dist/default/production\democode.production.obj
-__ptext34 160E 0 CODE 0 text34 dist/default/production\democode.production.obj
-__ptext35 1596 0 CODE 0 text35 dist/default/production\democode.production.obj
-__ptext36 D60 0 CODE 0 text36 dist/default/production\democode.production.obj
-__ptext37 560 0 CODE 0 text37 dist/default/production\democode.production.obj
-__ptext38 1742 0 CODE 0 text38 dist/default/production\democode.production.obj
-__ptext39 165A 0 CODE 0 text39 dist/default/production\democode.production.obj
-__ptext40 1634 0 CODE 0 text40 dist/default/production\democode.production.obj
-__ptext41 147E 0 CODE 0 text41 dist/default/production\democode.production.obj
-__ptext42 12BC 0 CODE 0 text42 dist/default/production\democode.production.obj
-__ptext43 174E 0 CODE 0 text43 dist/default/production\democode.production.obj
-__ptext44 1266 0 CODE 0 text44 dist/default/production\democode.production.obj
-__pintcode_body EE8 0 CODE 0 intcode_body dist/default/production\democode.production.obj
-___lldiv 10C0 0 CODE 0 text7 dist/default/production\democode.production.obj
-___lwdiv 12BC 0 CODE 0 text42 dist/default/production\democode.production.obj
-___lwmod 147E 0 CODE 0 text41 dist/default/production\democode.production.obj
+__ptext11 BC6 0 CODE 0 text11 dist/default/production\democode.production.obj
+__ptext12 CFE 0 CODE 0 text12 dist/default/production\democode.production.obj
+__ptext13 17DC 0 CODE 0 text13 dist/default/production\democode.production.obj
+__ptext14 17F4 0 CODE 0 text14 dist/default/production\democode.production.obj
+__ptext15 180C 0 CODE 0 text15 dist/default/production\democode.production.obj
+__ptext16 1824 0 CODE 0 text16 dist/default/production\democode.production.obj
+__ptext17 183C 0 CODE 0 text17 dist/default/production\democode.production.obj
+__ptext18 A7C 0 CODE 0 text18 dist/default/production\democode.production.obj
+__ptext19 1098 0 CODE 0 text19 dist/default/production\democode.production.obj
+__ptext20 18A2 0 CODE 0 text20 dist/default/production\democode.production.obj
+__ptext21 18AC 0 CODE 0 text21 dist/default/production\democode.production.obj
+__ptext22 18B4 0 CODE 0 text22 dist/default/production\democode.production.obj
+__ptext23 1730 0 CODE 0 text23 dist/default/production\democode.production.obj
+__ptext24 186A 0 CODE 0 text24 dist/default/production\democode.production.obj
+__ptext25 1434 0 CODE 0 text25 dist/default/production\democode.production.obj
+__ptext26 16D0 0 CODE 0 text26 dist/default/production\democode.production.obj
+__ptext27 1654 0 CODE 0 text27 dist/default/production\democode.production.obj
+__ptext28 1700 0 CODE 0 text28 dist/default/production\democode.production.obj
+__ptext29 DC2 0 CODE 0 text29 dist/default/production\democode.production.obj
+__ptext30 1598 0 CODE 0 text30 dist/default/production\democode.production.obj
+__ptext31 17C0 0 CODE 0 text31 dist/default/production\democode.production.obj
+__ptext32 187C 0 CODE 0 text32 dist/default/production\democode.production.obj
+__ptext33 1854 0 CODE 0 text33 dist/default/production\democode.production.obj
+__ptext34 1756 0 CODE 0 text34 dist/default/production\democode.production.obj
+__ptext35 11A0 0 CODE 0 text35 dist/default/production\democode.production.obj
+__ptext36 1212 0 CODE 0 text36 dist/default/production\democode.production.obj
+__ptext37 E86 0 CODE 0 text37 dist/default/production\democode.production.obj
+__ptext38 1692 0 CODE 0 text38 dist/default/production\democode.production.obj
+__ptext39 5BE 0 CODE 0 text39 dist/default/production\democode.production.obj
+__ptext40 188A 0 CODE 0 text40 dist/default/production\democode.production.obj
+__ptext41 17A2 0 CODE 0 text41 dist/default/production\democode.production.obj
+__ptext42 177C 0 CODE 0 text42 dist/default/production\democode.production.obj
+__ptext43 1556 0 CODE 0 text43 dist/default/production\democode.production.obj
+__ptext44 1394 0 CODE 0 text44 dist/default/production\democode.production.obj
+__ptext45 1896 0 CODE 0 text45 dist/default/production\democode.production.obj
+__ptext46 133E 0 CODE 0 text46 dist/default/production\democode.production.obj
+__pintcode_body F46 0 CODE 0 intcode_body dist/default/production\democode.production.obj
+___lldiv 111E 0 CODE 0 text7 dist/default/production\democode.production.obj
+___lwdiv 1394 0 CODE 0 text44 dist/default/production\democode.production.obj
+___lwmod 1556 0 CODE 0 text43 dist/default/production\democode.production.obj
 __Lbank10 0 0 ABS 0 bank10 dist/default/production\democode.production.obj
 __Lbank11 0 0 ABS 0 bank11 dist/default/production\democode.production.obj
 __Lbank12 0 0 ABS 0 bank12 dist/default/production\democode.production.obj
@@ -1263,7 +1321,7 @@ __size_of_eeprom_WriteByte 0 0 ABS 0 - dist/default/production\democode.producti
 __CFG_BORV$3 0 0 ABS 0 - dist/default/production\democode.production.obj
 __Lcomram 0 0 ABS 0 comram dist/default/production\democode.production.obj
 __Lconfig 300000 0 CONFIG 0 config dist/default/production\democode.production.obj
-_printf 560 0 CODE 0 text37 dist/default/production\democode.production.obj
+_printf 5BE 0 CODE 0 text39 dist/default/production\democode.production.obj
 ___wmul@multiplier 10 0 COMRAM 1 cstackCOMRAM dist/default/production\democode.production.obj
 _LATAbits F89 0 ABS 0 - dist/default/production\democode.production.obj
 _LATBbits F8A 0 ABS 0 - dist/default/production\democode.production.obj
@@ -1271,37 +1329,38 @@ _LATCbits F8B 0 ABS 0 - dist/default/production\democode.production.obj
 _LATDbits F8C 0 ABS 0 - dist/default/production\democode.production.obj
 _LATEbits F8D 0 ABS 0 - dist/default/production\democode.production.obj
 __size_of_fixLCD 0 0 ABS 0 - dist/default/production\democode.production.obj
-servoRotateArm@i_1035 15 0 COMRAM 1 cstackCOMRAM dist/default/production\democode.production.obj
+servoRotateArm@i_1044 15 0 COMRAM 1 cstackCOMRAM dist/default/production\democode.production.obj
 __Lfarbss 0 0 FARRAM 0 farbss dist/default/production\democode.production.obj
 ___lwdiv@divisor 12 0 COMRAM 1 cstackCOMRAM dist/default/production\democode.production.obj
 __Lfardata 0 0 FARRAM 0 fardata dist/default/production\democode.production.obj
 eeprom_GetLog@i 19 0 COMRAM 1 cstackCOMRAM dist/default/production\democode.production.obj
-__end_of_debugState 15C2 0 CODE 0 text35 dist/default/production\democode.production.obj
-_logdata 5A 0 COMRAM 1 bssCOMRAM dist/default/production\democode.production.obj
+__end_of_debugState 1212 0 CODE 0 text35 dist/default/production\democode.production.obj
+_logdata 4C 0 COMRAM 1 bssCOMRAM dist/default/production\democode.production.obj
 mainState@keypress 34 0 COMRAM 1 cstackCOMRAM dist/default/production\democode.production.obj
-stackhi F7F 0 ABS 0 - C:\Users\Alex\AppData\Local\Temp\sp8g.obj
-stacklo BC 0 ABS 0 - C:\Users\Alex\AppData\Local\Temp\sp8g.obj
+stackhi F7F 0 ABS 0 - C:\Users\Alex\AppData\Local\Temp\sq8c.obj
+stacklo CA 0 ABS 0 - C:\Users\Alex\AppData\Local\Temp\sq8c.obj
 __Lintcode 8 0 CODE 0 intcode dist/default/production\democode.production.obj
-_get_time 103A 0 CODE 0 text21 dist/default/production\democode.production.obj
+_get_time 1098 0 CODE 0 text19 dist/default/production\democode.production.obj
 __Lintret 0 0 ABS 0 intret dist/default/production\democode.production.obj
-__end_of_I2C_Master_Init 1266 0 CODE 0 text6 dist/default/production\democode.production.obj
-__end_of_I2C_Master_Read 160E 0 CODE 0 text25 dist/default/production\democode.production.obj
-__end_of_I2C_Master_Stop 176C 0 CODE 0 text23 dist/default/production\democode.production.obj
-__end_of_I2C_Master_Wait 1734 0 CODE 0 text26 dist/default/production\democode.production.obj
+__end_of_I2C_Master_Init 133E 0 CODE 0 text6 dist/default/production\democode.production.obj
+__end_of_I2C_Master_Read 1756 0 CODE 0 text23 dist/default/production\democode.production.obj
+__end_of_I2C_Master_Stop 18B4 0 CODE 0 text21 dist/default/production\democode.production.obj
+__end_of_I2C_Master_Wait 187C 0 CODE 0 text24 dist/default/production\democode.production.obj
 __Lirdata 0 0 CODE 0 irdata dist/default/production\democode.production.obj
-_servoRotate90n E26 0 CODE 0 text13 dist/default/production\democode.production.obj
-_servoRotateArm 1142 0 CODE 0 text12 dist/default/production\democode.production.obj
+_servoRotate90n E86 0 CODE 0 text37 dist/default/production\democode.production.obj
+_servoRotateArm 1212 0 CODE 0 text36 dist/default/production\democode.production.obj
 __CFG_LVP$OFF 0 0 ABS 0 - dist/default/production\democode.production.obj
 ?_get_timeDif 18 0 COMRAM 1 cstackCOMRAM dist/default/production\democode.production.obj
-__end_of_I2C_Master_Start 1774 0 CODE 0 text24 dist/default/production\democode.production.obj
+__end_of_I2C_Master_Start 18BC 0 CODE 0 text22 dist/default/production\democode.production.obj
 __Lspace_0 0 0 ABS 0 - dist/default/production\democode.production.obj
 __Lspace_1 0 0 ABS 0 - dist/default/production\democode.production.obj
 __Lspace_2 0 0 ABS 0 - dist/default/production\democode.production.obj
-__end_of_I2C_Master_Write 1764 0 CODE 0 text22 dist/default/production\democode.production.obj
+__end_of_I2C_Master_Write 18AC 0 CODE 0 text20 dist/default/production\democode.production.obj
 __pbssCOMRAM 41 0 COMRAM 1 bssCOMRAM dist/default/production\democode.production.obj
 __HcstackBANK0 0 0 ABS 0 cstackBANK0 dist/default/production\democode.production.obj
-__end_of_get_time 10C0 0 CODE 0 text21 dist/default/production\democode.production.obj
+__end_of_get_time 111E 0 CODE 0 text19 dist/default/production\democode.production.obj
 _PIR2bits FA1 0 ABS 0 - dist/default/production\democode.production.obj
+_loopcount 4D 0 COMRAM 1 dataCOMRAM dist/default/production\democode.production.obj
 __LcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production\democode.production.obj
 printf@ap 2B 0 COMRAM 1 cstackCOMRAM dist/default/production\democode.production.obj
 executingState@h_one 86 0 BANK0 1 cstackBANK0 dist/default/production\democode.production.obj
@@ -1312,12 +1371,12 @@ executingState@m_ten 88 0 BANK0 1 cstackBANK0 dist/default/production\democode.p
 __size_of_I2C_Master_Write 0 0 ABS 0 - dist/default/production\democode.production.obj
 executingState@s_one 8E 0 BANK0 1 cstackBANK0 dist/default/production\democode.production.obj
 executingState@s_ten 8C 0 BANK0 1 cstackBANK0 dist/default/production\democode.production.obj
-end_of_initialization 15DA 0 CODE 0 cinit dist/default/production\democode.production.obj
+end_of_initialization 1608 0 CODE 0 cinit dist/default/production\democode.production.obj
 __Lnvrram 0 0 COMRAM 1 nvrram dist/default/production\democode.production.obj
 __Hintentry 0 0 ABS 0 intentry dist/default/production\democode.production.obj
 __CFG_STVREN$ON 0 0 ABS 0 - dist/default/production\democode.production.obj
 __size_of_printf 0 0 ABS 0 - dist/default/production\democode.production.obj
-_eeprom_LogResult 135C 0 CODE 0 text27 dist/default/production\democode.production.obj
+_eeprom_LogResult 1434 0 CODE 0 text25 dist/default/production\democode.production.obj
 eeprom_ReadByte@address 10 0 COMRAM 1 cstackCOMRAM dist/default/production\democode.production.obj
 __CFG_OSC$HS 0 0 ABS 0 - dist/default/production\democode.production.obj
 ___lwdiv@dividend 10 0 COMRAM 1 cstackCOMRAM dist/default/production\democode.production.obj
@@ -1327,22 +1386,22 @@ ___lwdiv@dividend 10 0 COMRAM 1 cstackCOMRAM dist/default/production\democode.pr
 __Hreset_vec 4 0 CODE 0 reset_vec dist/default/production\democode.production.obj
 __size_of_get_timeDif 0 0 ABS 0 - dist/default/production\democode.production.obj
 __HbssBANK0 0 0 ABS 0 bssBANK0 dist/default/production\democode.production.obj
-_update_lcd B62 0 CODE 0 text11 dist/default/production\democode.production.obj
+_update_lcd BC6 0 CODE 0 text11 dist/default/production\democode.production.obj
 _snLabel 47 0 COMRAM 1 bssCOMRAM dist/default/production\democode.production.obj
-_initLCD 1438 0 CODE 0 text5 dist/default/production\democode.production.obj
+_initLCD 1510 0 CODE 0 text5 dist/default/production\democode.production.obj
 __Lramtop 1000 0 RAM 0 ramtop dist/default/production\democode.production.obj
 __Lrparam 0 0 COMRAM 1 rparam dist/default/production\democode.production.obj
-__pcinit 15C2 0 CODE 0 cinit dist/default/production\democode.production.obj
-__ptext0 F9A 0 CODE 0 text0 dist/default/production\democode.production.obj
-__ptext1 13A8 0 CODE 0 text1 dist/default/production\democode.production.obj
-__ptext2 130E 0 CODE 0 text2 dist/default/production\democode.production.obj
-__ptext3 11AC 0 CODE 0 text3 dist/default/production\democode.production.obj
-__ptext4 86C 0 CODE 0 text4 dist/default/production\democode.production.obj
-__ptext5 1438 0 CODE 0 text5 dist/default/production\democode.production.obj
-__ptext6 120C 0 CODE 0 text6 dist/default/production\democode.production.obj
-__ptext7 10C0 0 CODE 0 text7 dist/default/production\democode.production.obj
-__ptext8 14FC 0 CODE 0 text8 dist/default/production\democode.production.obj
-__ptext9 13F0 0 CODE 0 text9 dist/default/production\democode.production.obj
+__pcinit 15D8 0 CODE 0 cinit dist/default/production\democode.production.obj
+__ptext0 FF8 0 CODE 0 text0 dist/default/production\democode.production.obj
+__ptext1 1480 0 CODE 0 text1 dist/default/production\democode.production.obj
+__ptext2 13E6 0 CODE 0 text2 dist/default/production\democode.production.obj
+__ptext3 1284 0 CODE 0 text3 dist/default/production\democode.production.obj
+__ptext4 8CA 0 CODE 0 text4 dist/default/production\democode.production.obj
+__ptext5 1510 0 CODE 0 text5 dist/default/production\democode.production.obj
+__ptext6 12E4 0 CODE 0 text6 dist/default/production\democode.production.obj
+__ptext7 111E 0 CODE 0 text7 dist/default/production\democode.production.obj
+__ptext8 1616 0 CODE 0 text8 dist/default/production\democode.production.obj
+__ptext9 14C8 0 CODE 0 text9 dist/default/production\democode.production.obj
 eeprom_GetLog@back 12 0 COMRAM 1 cstackCOMRAM dist/default/production\democode.production.obj
 __size_of_executingState 0 0 ABS 0 - dist/default/production\democode.production.obj
 __Lstruct 0 0 COMRAM 1 struct dist/default/production\democode.production.obj
@@ -1381,34 +1440,36 @@ __Ltext41 0 0 ABS 0 text41 dist/default/production\democode.production.obj
 __Ltext42 0 0 ABS 0 text42 dist/default/production\democode.production.obj
 __Ltext43 0 0 ABS 0 text43 dist/default/production\democode.production.obj
 __Ltext44 0 0 ABS 0 text44 dist/default/production\democode.production.obj
-_dispenseAlCan 1566 0 CODE 0 text29 dist/default/production\democode.production.obj
-_readSnSensor 16AC 0 CODE 0 text16 dist/default/production\democode.production.obj
-__ramtop 1000 0 RAM 0 ramtop C:\Users\Alex\AppData\Local\Temp\sp8g.obj
-_dispenseSnCan 1536 0 CODE 0 text28 dist/default/production\democode.production.obj
+__Ltext45 0 0 ABS 0 text45 dist/default/production\democode.production.obj
+__Ltext46 0 0 ABS 0 text46 dist/default/production\democode.production.obj
+_dispenseAlCan 1700 0 CODE 0 text28 dist/default/production\democode.production.obj
+_readSnSensor 17F4 0 CODE 0 text14 dist/default/production\democode.production.obj
+__ramtop 1000 0 RAM 0 ramtop C:\Users\Alex\AppData\Local\Temp\sq8c.obj
+_dispenseSnCan 16D0 0 CODE 0 text26 dist/default/production\democode.production.obj
 __Lpowerup E 0 CODE 0 powerup dist/default/production\democode.production.obj
 __Leeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\democode.production.obj
-_I2C_Master_Init 120C 0 CODE 0 text6 dist/default/production\democode.production.obj
-_I2C_Master_Read 15E8 0 CODE 0 text25 dist/default/production\democode.production.obj
-_I2C_Master_Stop 1764 0 CODE 0 text23 dist/default/production\democode.production.obj
-_I2C_Master_Wait 1722 0 CODE 0 text26 dist/default/production\democode.production.obj
+_I2C_Master_Init 12E4 0 CODE 0 text6 dist/default/production\democode.production.obj
+_I2C_Master_Read 1730 0 CODE 0 text23 dist/default/production\democode.production.obj
+_I2C_Master_Stop 18AC 0 CODE 0 text21 dist/default/production\democode.production.obj
+_I2C_Master_Wait 186A 0 CODE 0 text24 dist/default/production\democode.production.obj
 executingState@start_s 9C 0 BANK0 1 cstackBANK0 dist/default/production\democode.production.obj
-_isdigit 165A 0 CODE 0 text39 dist/default/production\democode.production.obj
-__end_of_servoRotate90n EE8 0 CODE 0 text13 dist/default/production\democode.production.obj
-__end_of_servoRotateArm 11AC 0 CODE 0 text12 dist/default/production\democode.production.obj
+_isdigit 17A2 0 CODE 0 text41 dist/default/production\democode.production.obj
+__end_of_servoRotate90n F46 0 CODE 0 text37 dist/default/production\democode.production.obj
+__end_of_servoRotateArm 1284 0 CODE 0 text36 dist/default/production\democode.production.obj
 eeprom_GetLog@res 14 0 COMRAM 1 cstackCOMRAM dist/default/production\democode.production.obj
-_finishState 14FC 0 CODE 0 text8 dist/default/production\democode.production.obj
+_finishState 1616 0 CODE 0 text8 dist/default/production\democode.production.obj
 __Lreset_vec 0 0 CODE 0 reset_vec dist/default/production\democode.production.obj
 executingState@hasLabel A2 0 BANK0 1 cstackBANK0 dist/default/production\democode.production.obj
-__end_of_readAlBot 170C 0 CODE 0 text19 dist/default/production\democode.production.obj
-__end_of_readAlTop 16F4 0 CODE 0 text18 dist/default/production\democode.production.obj
+__end_of_readAlBot 1854 0 CODE 0 text17 dist/default/production\democode.production.obj
+__end_of_readAlTop 183C 0 CODE 0 text16 dist/default/production\democode.production.obj
 __size_of_readKey 0 0 ABS 0 - dist/default/production\democode.production.obj
 ___param_bank 0 0 ABS 0 - dist/default/production\democode.production.obj
 __CFG_WDT$OFF 0 0 ABS 0 - dist/default/production\democode.production.obj
 __Hbigdata 0 0 BIGRAM 1 bigdata dist/default/production\democode.production.obj
-__end_of_readSnBot 16DC 0 CODE 0 text17 dist/default/production\democode.production.obj
-__end_of_readSnTop 16AC 0 CODE 0 text15 dist/default/production\democode.production.obj
+__end_of_readSnBot 1824 0 CODE 0 text15 dist/default/production\democode.production.obj
+__end_of_readSnTop 17F4 0 CODE 0 text13 dist/default/production\democode.production.obj
 ?_servoRotateArm 10 0 COMRAM 1 cstackCOMRAM dist/default/production\democode.production.obj
-__end_of__initialization 15DA 0 CODE 0 cinit dist/default/production\democode.production.obj
+__end_of__initialization 1608 0 CODE 0 cinit dist/default/production\democode.production.obj
 __CFG_WRT0$OFF 0 0 ABS 0 - dist/default/production\democode.production.obj
 __CFG_WRT1$OFF 0 0 ABS 0 - dist/default/production\democode.production.obj
 __CFG_WRT2$OFF 0 0 ABS 0 - dist/default/production\democode.production.obj
@@ -1423,7 +1484,7 @@ __size_of_readSnBot 0 0 ABS 0 - dist/default/production\democode.production.obj
 __size_of_readSnTop 0 0 ABS 0 - dist/default/production\democode.production.obj
 eeprom_WriteByte@data 12 0 COMRAM 1 cstackCOMRAM dist/default/production\democode.production.obj
 __Lclrtext 0 0 ABS 0 clrtext dist/default/production\democode.production.obj
-servoRotateArm@res 13 0 COMRAM 1 cstackCOMRAM dist/default/production\democode.production.obj
+servoRotateArm@res 17 0 COMRAM 1 cstackCOMRAM dist/default/production\democode.production.obj
 __CFG_PWRT$OFF 0 0 ABS 0 - dist/default/production\democode.production.obj
 ___lldiv@quotient 18 0 COMRAM 1 cstackCOMRAM dist/default/production\democode.production.obj
 __pcstackCOMRAM 1 0 COMRAM 1 cstackCOMRAM dist/default/production\democode.production.obj
@@ -1433,23 +1494,24 @@ get_timeDif@h_ten 1D 0 COMRAM 1 cstackCOMRAM dist/default/production\democode.pr
 get_timeDif@m_one 23 0 COMRAM 1 cstackCOMRAM dist/default/production\democode.production.obj
 get_timeDif@m_ten 21 0 COMRAM 1 cstackCOMRAM dist/default/production\democode.production.obj
 eeprom_LogResult@address 15 0 COMRAM 1 cstackCOMRAM dist/default/production\democode.production.obj
-_readAlBot 16F4 0 CODE 0 text19 dist/default/production\democode.production.obj
-_readAlTop 16DC 0 CODE 0 text18 dist/default/production\democode.production.obj
+_readAlBot 183C 0 CODE 0 text17 dist/default/production\democode.production.obj
+_readAlTop 1824 0 CODE 0 text16 dist/default/production\democode.production.obj
 get_timeDif@s_one 27 0 COMRAM 1 cstackCOMRAM dist/default/production\democode.production.obj
 get_timeDif@s_ten 25 0 COMRAM 1 cstackCOMRAM dist/default/production\democode.production.obj
 get_timeDif@start 18 0 COMRAM 1 cstackCOMRAM dist/default/production\democode.production.obj
-__pmediumconst FEE6 0 MEDIUMCONST 0 mediumconst dist/default/production\democode.production.obj
+__pmediumconst FEC4 0 MEDIUMCONST 0 mediumconst dist/default/production\democode.production.obj
 _SSPCON1 FC6 0 ABS 0 - dist/default/production\democode.production.obj
 _SSPCON2 FC5 0 ABS 0 - dist/default/production\democode.production.obj
-__end_of_update_lcd C9A 0 CODE 0 text11 dist/default/production\democode.production.obj
+__end_of_update_lcd CFE 0 CODE 0 text11 dist/default/production\democode.production.obj
 _SSPSTAT FC7 0 ABS 0 - dist/default/production\democode.production.obj
-_readSnBot 16C4 0 CODE 0 text17 dist/default/production\democode.production.obj
-_readSnTop 1694 0 CODE 0 text15 dist/default/production\democode.production.obj
+_readSnBot 180C 0 CODE 0 text15 dist/default/production\democode.production.obj
+_readSnTop 17DC 0 CODE 0 text13 dist/default/production\democode.production.obj
+servoRotate2@angle 10 0 COMRAM 1 cstackCOMRAM dist/default/production\democode.production.obj
 __CFG_BOREN$SBORDIS 0 0 ABS 0 - dist/default/production\democode.production.obj
-_servoRotate90 C9A 0 CODE 0 text30 dist/default/production\democode.production.obj
-__end_of_keys FEF8 0 MEDIUMCONST 0 mediumconst dist/default/production\democode.production.obj
-__end_of_main 103A 0 CODE 0 text0 dist/default/production\democode.production.obj
-_newestAddress 1734 0 CODE 0 text32 dist/default/production\democode.production.obj
+_servoRotate90 DC2 0 CODE 0 text29 dist/default/production\democode.production.obj
+__end_of_keys FED6 0 MEDIUMCONST 0 mediumconst dist/default/production\democode.production.obj
+__end_of_main 1098 0 CODE 0 text0 dist/default/production\democode.production.obj
+_newestAddress 187C 0 CODE 0 text32 dist/default/production\democode.production.obj
 __pintcode 8 0 CODE 0 intcode dist/default/production\democode.production.obj
 isdigit@c 12 0 COMRAM 1 cstackCOMRAM dist/default/production\democode.production.obj
 __size_of_keypressed 0 0 ABS 0 - dist/default/production\democode.production.obj
@@ -1457,19 +1519,19 @@ printf@idx 2A 0 COMRAM 1 cstackCOMRAM dist/default/production\democode.productio
 printf@val 2E 0 COMRAM 1 cstackCOMRAM dist/default/production\democode.production.obj
 _ACKDT 7E2D 0 ABS 0 - dist/default/production\democode.production.obj
 _ACKEN 7E2C 0 ABS 0 - dist/default/production\democode.production.obj
-__end_of_dpowers FF02 0 MEDIUMCONST 0 mediumconst dist/default/production\democode.production.obj
+__end_of_dpowers FEE0 0 MEDIUMCONST 0 mediumconst dist/default/production\democode.production.obj
 _CMCON FB4 0 ABS 0 - dist/default/production\democode.production.obj
 _EEADR FA9 0 ABS 0 - dist/default/production\democode.production.obj
-__end_of_eeprom_LogResult 13A8 0 CODE 0 text27 dist/default/production\democode.production.obj
-fixLCD@i_584 40 0 COMRAM 1 cstackCOMRAM dist/default/production\democode.production.obj
-_isdigit$1339 11 0 COMRAM 1 cstackCOMRAM dist/default/production\democode.production.obj
+__end_of_eeprom_LogResult 1480 0 CODE 0 text25 dist/default/production\democode.production.obj
+fixLCD@i_596 40 0 COMRAM 1 cstackCOMRAM dist/default/production\democode.production.obj
+_isdigit$1348 11 0 COMRAM 1 cstackCOMRAM dist/default/production\democode.production.obj
 _PORTB F81 0 ABS 0 - dist/default/production\democode.production.obj
 _TRISA F92 0 ABS 0 - dist/default/production\democode.production.obj
 _TRISB F93 0 ABS 0 - dist/default/production\democode.production.obj
 _TRISC F94 0 ABS 0 - dist/default/production\democode.production.obj
 _TRISD F95 0 ABS 0 - dist/default/production\democode.production.obj
 _TRISE F96 0 ABS 0 - dist/default/production\democode.production.obj
-__end_of_putch 174E 0 CODE 0 text38 dist/default/production\democode.production.obj
+__end_of_putch 1896 0 CODE 0 text40 dist/default/production\democode.production.obj
 __CFG_CP0$OFF 0 0 ABS 0 - dist/default/production\democode.production.obj
 __CFG_CP1$OFF 0 0 ABS 0 - dist/default/production\democode.production.obj
 __HRAM 0 0 ABS 0 - dist/default/production\democode.production.obj
@@ -1484,16 +1546,17 @@ __CFG_CP2$OFF 0 0 ABS 0 - dist/default/production\democode.production.obj
 __CFG_CP3$OFF 0 0 ABS 0 - dist/default/production\democode.production.obj
 _alTab 43 0 COMRAM 1 bssCOMRAM dist/default/production\democode.production.obj
 __CFG_CPB$OFF 0 0 ABS 0 - dist/default/production\democode.production.obj
-_putch 1742 0 CODE 0 text38 dist/default/production\democode.production.obj
+_putch 188A 0 CODE 0 text40 dist/default/production\democode.production.obj
 __CFG_CPD$OFF 0 0 ABS 0 - dist/default/production\democode.production.obj
 _state 4B 0 COMRAM 1 bssCOMRAM dist/default/production\democode.production.obj
 __size_of_eeprom_LogResult 0 0 ABS 0 - dist/default/production\democode.production.obj
 servoRotate90@servo 10 0 COMRAM 1 cstackCOMRAM dist/default/production\democode.production.obj
-__end_of_readSnSensor 16C4 0 CODE 0 text16 dist/default/production\democode.production.obj
+__end_of_readSnSensor 180C 0 CODE 0 text14 dist/default/production\democode.production.obj
 executingState@hasTab 9E 0 BANK0 1 cstackBANK0 dist/default/production\democode.production.obj
-__initialization 15C2 0 CODE 0 cinit dist/default/production\democode.production.obj
+__initialization 15D8 0 CODE 0 cinit dist/default/production\democode.production.obj
 __pbssBANK0 AE 0 BANK0 1 bssBANK0 dist/default/production\democode.production.obj
-__end_of_lcdNibble 12BC 0 CODE 0 text44 dist/default/production\democode.production.obj
+__pdataCOMRAM 4D 0 COMRAM 1 dataCOMRAM dist/default/production\democode.production.obj
+__end_of_lcdNibble 1394 0 CODE 0 text46 dist/default/production\democode.production.obj
 __Hfardata 0 0 FARRAM 0 fardata dist/default/production\democode.production.obj
 ___wmul@product 14 0 COMRAM 1 cstackCOMRAM dist/default/production\democode.production.obj
 __Hsmallconst 0 0 SMALLCONST 0 smallconst dist/default/production\democode.production.obj
@@ -1536,9 +1599,9 @@ finishState@keypress 36 0 COMRAM 1 cstackCOMRAM dist/default/production\democode
 # All other numeric quantities are in decimal.
 %SEGMENTS
 idloc 0 200000 200000 8 1
-cstackCOMRAM 1 1 1 5B 1
-cstackBANK0 1 80 80 3C 1
+cstackCOMRAM 1 1 1 4F 1
+cstackBANK0 1 80 80 4A 1
 reset_vec 0 0 0 4 1
-intcode 0 8 8 176C 1
-mediumconst 0 FEE6 FEE6 11A 1
+intcode 0 8 8 18B6 1
+mediumconst 0 FEC4 FEC4 13C 1
 config 0 300000 300000 E 1
