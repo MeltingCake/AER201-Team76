@@ -2,12 +2,12 @@
 #include "I2C.h"
 
 const char statictime[7] = {0x00, //45 Seconds 
-    0x51, //59 Minutes
-    0x14, //24 hour mode, set to 23:00
-    0x03, //Saturday 
-    0x28, //31st
-    0x02, //December
-    0x17}; //2016
+    0x59, //Minutes
+    0x20, //24 hour mode
+    0x02, //Saturday 
+    0x27, //31st
+    0x03, //Month
+    0x17}; //2017
 
 
 void set_time(void) {

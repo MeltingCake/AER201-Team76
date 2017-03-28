@@ -134,6 +134,7 @@ void mainState()
             //enable interrupts
             //flip master bit
             //printf executing
+            
             state = EXECUTING;
             return;
         }else if(keypress == 0b0001){
@@ -220,7 +221,7 @@ void executingState()
         if(snLoaded == 0){
             emptyCount = 0;
             if(snInSensor == 1){
-                __delay_ms(1000);
+                __delay_ms(400);
                 dispenseSnCan();
                 runCanSn = 1;
                 snLoaded = 1;
@@ -229,7 +230,7 @@ void executingState()
         if(alLoaded == 0){
             emptyCount = 0;
             if(alInSensor == 1){
-                __delay_ms(1000);
+                __delay_ms(400);
                 dispenseAlCan();
                 runCanAl = 1;
                 alLoaded = 1;
@@ -243,7 +244,7 @@ void executingState()
 
         if(snInSensor == 0){
             int hasLabel;
-            __delay_ms(1000);
+            __delay_ms(800);
             emptyCount = 0;
             if(readSnSensor() == 1){
                 hasLabel = 0;
@@ -267,7 +268,7 @@ void executingState()
         if(alInSensor == 0){
             emptyCount = 0;
             int hasTab;
-            __delay_ms(1000);
+            __delay_ms(800);
             hasTab = servoRotateArm();
             servoRotate90n(4);
             if(hasTab){
@@ -279,7 +280,7 @@ void executingState()
                 runCanAl = 0;
                 alNoTab++;
             }
-            __delay_ms(800);
+            //__delay_ms(800);
             servoRotate4(3);
             alInSensor = 1;
         }
@@ -294,7 +295,7 @@ void executingState()
             runResult = 0;
             return;
         }
-        __delay_ms(500);
+        __delay_ms(300);
     }
     
     LATCbits.LATC6 = 0;
@@ -344,42 +345,26 @@ void logState()
 void debugState(){
     LATBbits.LATB0 = 1;
     __delay_ms(300);
-    LATCbits.LATC6 = 1;
+    //LATCbits.LATC6 = 1;
     
     __lcd_home();
     printf("going debug");
     __lcd_newline();
     
-    
-    //servoRotate90(3);
-    //servoRotate90n(3);
-    //servoRotate0(3);
-    
-    //servoRotate0(2);
-    //servoRotate0(0);
-    //dispenseSnCan();
-     
-    servoRotate90n(4);
-    servoRotate4(3);
-    while(1){
-    servoRotateArm();
-    __delay_ms(300);
-    servoRotate90n(4);
-    }
-    
-    //servoRotate90(3);
-    //__delay_ms(2000);
-    //servoRotate90n(3);
-    //__delay_ms(2000);
+    //servoRotate90n(4);
     //servoRotate4(3);
-    //servoRotate0(3);
-    //servoRotate90n(3);
-    //servoRotate90(3);
-    //servoRotate0(3);
-    state = MAIN;
+    //while(1){
+    //servoRotateArm();
+    //__delay_ms(300);
+    //servoRotate90n(4);
+    //}
+    int keypress = readKey();
+    if(keypress == 0b1101){
+        state = MAIN;
+    }
 }
 
-void fixLCD(void){
+    void fixLCD(void){
     //LMAO
     OSCCON = 0xF0;  //8Mhz
     // RTC uses RC3 and RC4

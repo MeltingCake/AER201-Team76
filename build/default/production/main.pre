@@ -4044,9 +4044,7 @@ update_lcd();
 int keypress = readKey();
 if(keypress == 0b0000){
 
-
-
-
+# 138
 state = EXECUTING;
 return;
 }else if(keypress == 0b0001){
@@ -4133,7 +4131,7 @@ alInSensor = 0;
 if(snLoaded == 0){
 emptyCount = 0;
 if(snInSensor == 1){
-_delay((unsigned long)((1000)*(10000000/4000.0)));
+_delay((unsigned long)((400)*(10000000/4000.0)));
 dispenseSnCan();
 runCanSn = 1;
 snLoaded = 1;
@@ -4142,7 +4140,7 @@ snLoaded = 1;
 if(alLoaded == 0){
 emptyCount = 0;
 if(alInSensor == 1){
-_delay((unsigned long)((1000)*(10000000/4000.0)));
+_delay((unsigned long)((400)*(10000000/4000.0)));
 dispenseAlCan();
 runCanAl = 1;
 alLoaded = 1;
@@ -4156,7 +4154,7 @@ emptyCount++;
 
 if(snInSensor == 0){
 int hasLabel;
-_delay((unsigned long)((1000)*(10000000/4000.0)));
+_delay((unsigned long)((800)*(10000000/4000.0)));
 emptyCount = 0;
 if(readSnSensor() == 1){
 hasLabel = 0;
@@ -4180,7 +4178,7 @@ snInSensor = 1;
 if(alInSensor == 0){
 emptyCount = 0;
 int hasTab;
-_delay((unsigned long)((1000)*(10000000/4000.0)));
+_delay((unsigned long)((800)*(10000000/4000.0)));
 hasTab = servoRotateArm();
 servoRotate90n(4);
 if(hasTab){
@@ -4192,7 +4190,7 @@ servoRotate90(3);
 runCanAl = 0;
 alNoTab++;
 }
-_delay((unsigned long)((800)*(10000000/4000.0)));
+
 servoRotate4(3);
 alInSensor = 1;
 }
@@ -4207,7 +4205,7 @@ state = FINISH;
 runResult = 0;
 return;
 }
-_delay((unsigned long)((500)*(10000000/4000.0)));
+_delay((unsigned long)((300)*(10000000/4000.0)));
 }
 
 LATCbits.LATC6 = 0;
@@ -4257,23 +4255,17 @@ return;
 void debugState(){
 LATBbits.LATB0 = 1;
 _delay((unsigned long)((300)*(10000000/4000.0)));
-LATCbits.LATC6 = 1;
+
 
 lcdInst(0b10000000);;
 printf("going debug");
 lcdInst(0b11000000);;
 
-# 362
-servoRotate90n(4);
-servoRotate4(3);
-while(1){
-servoRotateArm();
-_delay((unsigned long)((300)*(10000000/4000.0)));
-servoRotate90n(4);
-}
-
-# 379
+# 361
+int keypress = readKey();
+if(keypress == 0b1101){
 state = MAIN;
+}
 }
 
 void fixLCD(void){
@@ -4350,7 +4342,7 @@ fixLCD();
 
 OSCCON = 0xF0;
 
-# 460
+# 445
 TRISA = 0b00001111;
 TRISB = 0b11110010;
 TRISC = 0b00011011;
@@ -4377,7 +4369,7 @@ INT1IE = 1;
 
 state = MAIN;
 
-# 490
+# 475
 while (1)
 {
 switch (state)
