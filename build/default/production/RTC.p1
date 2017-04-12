@@ -2699,25 +2699,25 @@ Version 3.2 HI-TECH Software Intermediate Code
 :U ..
 -> -> 0 `i `uc
 "5
--> -> 89 `i `uc
+-> -> 1 `i `uc
 "6
--> -> 32 `i `uc
+-> -> 1 `i `uc
 "7
--> -> 2 `i `uc
-"8
--> -> 39 `i `uc
-"9
 -> -> 3 `i `uc
+"8
+-> -> 18 `i `uc
+"9
+-> -> 4 `i `uc
 "10
 -> -> 23 `i `uc
 ..
 ]
 [; ;RTC.c: 4: const char statictime[7] = {0x00,
-[; ;RTC.c: 5: 0x59,
-[; ;RTC.c: 6: 0x20,
-[; ;RTC.c: 7: 0x02,
-[; ;RTC.c: 8: 0x27,
-[; ;RTC.c: 9: 0x03,
+[; ;RTC.c: 5: 0x01,
+[; ;RTC.c: 6: 0x01,
+[; ;RTC.c: 7: 0x03,
+[; ;RTC.c: 8: 0x12,
+[; ;RTC.c: 9: 0x04,
 [; ;RTC.c: 10: 0x17};
 "13
 [v _set_time `(v ~T0 @X0 1 ef ]

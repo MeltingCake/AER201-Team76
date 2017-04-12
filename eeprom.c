@@ -80,17 +80,20 @@ void eeprom_initialize(){
  Obtains the newest address (which is the start of the previous entry) and increments by 40 to reach clear memory, then stores the data.
  */
 void eeprom_LogResult(uint8_t * data){
-    uint8_t address = newestAddress() + 5;
+    uint8_t address = newestAddress() + 4;
     eeprom_WriteByte(0x0000, address);
-    for(int i = 0; i < 5; i++){
-        eeprom_WriteByte(address + i, 0xFF);
+    for(int i = 0; i < 4; i++){
+        eeprom_WriteByte(address + i, data[i]);
     }
 }
 
-void eeprom_GetLog(int back, int * res){
+void eeprom_GetLog(int back, uint8_t * res){
     uint8_t address = newestAddress();
-    address = address - back*5;
-    for(int i = 0; i < 5; i++){
+    address = address - (back*4);
+    if(address == 0){
+        address = 4;
+    }
+    for(int i = 0; i < 4; i++){
         res[i] = eeprom_ReadByte(address + i);
     }
 }

@@ -3896,7 +3896,7 @@ void eeprom_WriteByte(uint16_t address, uint8_t data);
 uint8_t newestAddress();
 void eeprom_initialize();
 void eeprom_LogResult(uint8_t * data);
-void eeprom_GetLog(int i, int * res);
+void eeprom_GetLog(int back, uint8_t * res);
 
 # 1 "RTC.h"
 void set_time(void);
@@ -3946,7 +3946,7 @@ const char keys[] = "123A456B789C*0#D";
 
 int time[7];
 int starttime[7];
-uint8_t logdata;
+uint8_t logdata[4];
 int runResult = 0;
 
 int alNoTab = 0;
@@ -3969,27 +3969,29 @@ printf("1:Start 2:Logs  ");
 break;
 case LOG:
 
-printf("%03d              ", logdata);
+printf("aN%d/a%d/sN%d/S%d   ", logdata[0], logdata[1], logdata[2], logdata[3]);
 lcdInst(0b11000000);
 printf("1:Prev 0:Exit   ");
 break;
 case EXECUTING:
 printf("Executing...    ");
 lcdInst(0b11000000);;
-printf("aN%d/a%d/sN%d/S%d",alNoTab, alTab, snNoLabel, snLabel);
+printf("aN%d/a%d/sN%d/S%d   ",alNoTab, alTab, snNoLabel, snLabel);
 
 break;
 case FINISH:
 
+printf("aN%d/a%d/sN%d/S%d   ",alNoTab, alTab, snNoLabel, snLabel);
+lcdInst(0b11000000);;
+
 if(runResult == 1){
-printf("Finished        ");
+printf("Finished 0:Home");
 }
 else
 {
-printf("Terminated      ");
+printf("Stopped   0:Home");
 }
 lcdInst(0b11000000);;
-printf("0:Menu          ");
 break;
 default:
 printf("error");
@@ -4044,7 +4046,7 @@ update_lcd();
 int keypress = readKey();
 if(keypress == 0b0000){
 
-# 138
+# 140
 state = EXECUTING;
 return;
 }else if(keypress == 0b0001){
@@ -4107,12 +4109,17 @@ snInSensor = 1;
 alInSensor = 1;
 emptyCount = 0;
 
+alTab = 0;
+alNoTab = 0;
+snLabel = 0;
+snNoLabel = 0;
+
 
 
 while(timedif < 180 && PORTBbits.RB0 == 1){
 update_lcd();
 lcdInst(0b10000000);;
-printf("Executing    %03d", emptyCount);
+printf("Executing    %03d", timedif);
 
 
 if(readSnTop() == 0){
@@ -4131,7 +4138,7 @@ alInSensor = 0;
 if(snLoaded == 0){
 emptyCount = 0;
 if(snInSensor == 1){
-_delay((unsigned long)((400)*(10000000/4000.0)));
+_delay((unsigned long)((300)*(10000000/4000.0)));
 dispenseSnCan();
 runCanSn = 1;
 snLoaded = 1;
@@ -4140,7 +4147,7 @@ snLoaded = 1;
 if(alLoaded == 0){
 emptyCount = 0;
 if(alInSensor == 1){
-_delay((unsigned long)((400)*(10000000/4000.0)));
+_delay((unsigned long)((300)*(10000000/4000.0)));
 dispenseAlCan();
 runCanAl = 1;
 alLoaded = 1;
@@ -4153,14 +4160,20 @@ emptyCount++;
 
 
 if(snInSensor == 0){
-int hasLabel;
-_delay((unsigned long)((800)*(10000000/4000.0)));
+int hasLabel = 1;
+
 emptyCount = 0;
+int count = 0;
+for(int i = 0; i < 800; i++){
 if(readSnSensor() == 1){
-hasLabel = 0;
-}else{
-hasLabel = 1;
+count++;
 }
+_delay((unsigned long)((1)*(10000000/4000.0)));
+}
+if(count >= 3){
+hasLabel = 0;
+}
+printf("%d", hasLabel);
 if(hasLabel == 0){
 servoRotate90n(2);
 servoRotate0(2);
@@ -4173,12 +4186,14 @@ runCanSn = 0;
 snLabel++;
 }
 snInSensor = 1;
+servoRotate0(0);
+servoRotate0(1);
 }
 
 if(alInSensor == 0){
 emptyCount = 0;
 int hasTab;
-_delay((unsigned long)((800)*(10000000/4000.0)));
+_delay((unsigned long)((700)*(10000000/4000.0)));
 hasTab = servoRotateArm();
 servoRotate90n(4);
 if(hasTab){
@@ -4193,28 +4208,40 @@ alNoTab++;
 
 servoRotate4(3);
 alInSensor = 1;
+if(readAlBot() == 0){
+if(hasTab){
+alTab--;
+}
+else{
+alNoTab--;
+}
+}
 }
 
 timedif = get_timeDif(start_s);
 if(emptyCount > 50){
 state = FINISH;
 runResult = 1;
-return;
-}else if(timedif > 180){
+break;
+}
+if(timedif > 180){
 state = FINISH;
 runResult = 0;
-return;
+break;
 }
 _delay((unsigned long)((300)*(10000000/4000.0)));
 }
 
 LATCbits.LATC6 = 0;
-int res[4];
-res[0] = alTab;
-res[1] = alNoTab;
-res[2] = snLabel;
-res[3] = snNoLabel;
+LATBbits.LATB0 = 0;
+uint8_t res[4];
+res[0] = alNoTab;
+res[1] = alTab;
+res[2] = snNoLabel;
+res[3] = snLabel;
 eeprom_LogResult(res);
+printf("%d/%d/%d/%d   ",res[0], res[1], res[2], res[3]);
+_delay((unsigned long)((3000)*(10000000/4000.0)));
 state = FINISH;
 }
 
@@ -4236,36 +4263,28 @@ return;
 
 void logState()
 {
-update_lcd();
 int log = 0;
-while(1){
-int keypress = readKey();
-if(keypress == 0b0001){
-log++;
 eeprom_GetLog(log, &logdata);
 update_lcd();
-return;
+while(1){
+int keypress = readKey();
+if(keypress == 0b0000){
+log++;
+eeprom_GetLog(log, &logdata);
+if(logdata[0] == 255){
+log--;
+eeprom_GetLog(log, &logdata);
+}
+update_lcd();
 }else if(keypress == 0b1101){
 state = MAIN;
-return;
+break;
 }
 }
 }
 
 void debugState(){
-LATBbits.LATB0 = 1;
-_delay((unsigned long)((300)*(10000000/4000.0)));
-
-
-lcdInst(0b10000000);;
-printf("going debug");
-lcdInst(0b11000000);;
-
-# 361
-int keypress = readKey();
-if(keypress == 0b1101){
 state = MAIN;
-}
 }
 
 void fixLCD(void){
@@ -4342,7 +4361,7 @@ fixLCD();
 
 OSCCON = 0xF0;
 
-# 445
+# 458
 TRISA = 0b00001111;
 TRISB = 0b11110010;
 TRISC = 0b00011011;
@@ -4357,19 +4376,25 @@ LATE = 0x00;
 
 ADCON0 = 0x00;
 ADCON1 = 0x0F;
-CMCON = 0x07;
 
 
 initLCD();
-eeprom_initialize();
 I2C_Master_Init(10000);
 
+eeprom_initialize();
 INT1IE = 1;
+CMCON = 0x07;
 (INTCONbits.GIE = 0);
+
+lcdInst(0b10000000);;
+printf("                ");
+lcdInst(0b11000000);;
+printf("                ");
+lcdInst(0b11000000);;
 
 state = MAIN;
 
-# 475
+# 493
 while (1)
 {
 switch (state)

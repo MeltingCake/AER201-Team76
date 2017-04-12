@@ -33,7 +33,7 @@ const char keys[] = "123A456B789C*0#D";
 
 int time[7];    //format [6] = year, [5] = month, [4] = day, [2] = hour, [1] = minute, [0] = time.
 int starttime[7];
-uint8_t logdata;
+uint8_t logdata[4];
 int runResult = 0;
 
 int alNoTab = 0;
@@ -56,27 +56,29 @@ void update_lcd()
         break;
     case LOG:
         //logdata = eeprom_ReadByte(0x00FF);
-        printf("%03d              ", logdata);
+        printf("aN%d/a%d/sN%d/S%d   ", logdata[0], logdata[1], logdata[2], logdata[3]);
         __lcd_newline()
             printf("1:Prev 0:Exit   ");
         break;
     case EXECUTING:
         printf("Executing...    ");
         __lcd_newline();
-        printf("aN%d/a%d/sN%d/S%d",alNoTab, alTab, snNoLabel, snLabel);
+        printf("aN%d/a%d/sN%d/S%d   ",alNoTab, alTab, snNoLabel, snLabel);
         //printf("0:Emergency Stop");
         break;
     case FINISH:
         //DEFINE GLOBAL VARIABLE TO HANDLE PRINTING RESULTS. 
+        printf("aN%d/a%d/sN%d/S%d   ",alNoTab, alTab, snNoLabel, snLabel);
+        __lcd_newline();
+        
         if(runResult == 1){
-            printf("Finished        ");
+            printf("Finished 0:Home");
         }
         else
         {
-            printf("Terminated      ");
+            printf("Stopped   0:Home");
         }
         __lcd_newline();
-        printf("0:Menu          ");
         break;
     default:
         printf("error");
@@ -197,12 +199,17 @@ void executingState()
     alInSensor = 1;
     emptyCount = 0;
     
+    alTab = 0;
+    alNoTab = 0;
+    snLabel = 0;
+    snNoLabel = 0;
+    
     
     
     while(timedif < 180 && PORTBbits.RB0 == 1){
         update_lcd();
         __lcd_home();
-        printf("Executing    %03d", emptyCount);
+        printf("Executing    %03d", timedif);
         //printf("%d, %d, %d, %d", PORTAbits.RA0, PORTAbits.RA1, PORTAbits.RA2, PORTAbits.RA3);
         
         if(readSnTop() == 0){
@@ -221,7 +228,7 @@ void executingState()
         if(snLoaded == 0){
             emptyCount = 0;
             if(snInSensor == 1){
-                __delay_ms(400);
+                __delay_ms(300);
                 dispenseSnCan();
                 runCanSn = 1;
                 snLoaded = 1;
@@ -230,7 +237,7 @@ void executingState()
         if(alLoaded == 0){
             emptyCount = 0;
             if(alInSensor == 1){
-                __delay_ms(400);
+                __delay_ms(300);
                 dispenseAlCan();
                 runCanAl = 1;
                 alLoaded = 1;
@@ -243,14 +250,20 @@ void executingState()
 
 
         if(snInSensor == 0){
-            int hasLabel;
-            __delay_ms(800);
+            int hasLabel = 1;
+            //__delay_ms(400);
             emptyCount = 0;
-            if(readSnSensor() == 1){
-                hasLabel = 0;
-            }else{
-                hasLabel = 1;
+            int count = 0;
+            for(int i = 0; i < 800; i++){
+                if(readSnSensor() == 1){
+                    count++;
+                }
+                __delay_ms(1);
             }
+            if(count >= 3){
+                hasLabel = 0;
+            }
+            printf("%d", hasLabel);
             if(hasLabel == 0){
                 servoRotate90n(2);
                 servoRotate0(2);
@@ -263,12 +276,14 @@ void executingState()
                 snLabel++;
             }
             snInSensor = 1;
+            servoRotate0(0);
+            servoRotate0(1);
         }
 
         if(alInSensor == 0){
             emptyCount = 0;
             int hasTab;
-            __delay_ms(800);
+            __delay_ms(700);
             hasTab = servoRotateArm();
             servoRotate90n(4);
             if(hasTab){
@@ -283,28 +298,40 @@ void executingState()
             //__delay_ms(800);
             servoRotate4(3);
             alInSensor = 1;
+            if(readAlBot() == 0){
+                if(hasTab){
+                    alTab--;
+                }
+                else{
+                    alNoTab--; 
+               }
+            }
         }
 
         timedif = get_timeDif(start_s);
         if(emptyCount > 50){
             state = FINISH;
             runResult = 1;
-            return;
-        }else if(timedif > 180){
+            break;
+        }
+        if(timedif > 180){
             state = FINISH;
             runResult = 0;
-            return;
+            break;
         }
         __delay_ms(300);
     }
     
     LATCbits.LATC6 = 0;
-    int res[4];
-    res[0] = alTab;
-    res[1] = alNoTab;
-    res[2] = snLabel;
-    res[3] = snNoLabel;
+    LATBbits.LATB0 = 0;
+    uint8_t res[4];
+    res[0] = alNoTab;
+    res[1] = alTab;
+    res[2] = snNoLabel;
+    res[3] = snLabel;
     eeprom_LogResult(res);
+    printf("%d/%d/%d/%d   ",res[0], res[1], res[2], res[3]);
+    __delay_ms(3000);
     state = FINISH;
 }
 
@@ -326,45 +353,31 @@ void finishState()
 
 void logState()
 {
-    update_lcd();
     int log = 0;
+    eeprom_GetLog(log, &logdata);
+    update_lcd();
     while(1){
         int keypress = readKey();
-        if(keypress == 0b0001){
+        if(keypress == 0b0000){
             log++;
             eeprom_GetLog(log, &logdata);
+            if(logdata[0] == 255){
+                log--;
+                eeprom_GetLog(log, &logdata);
+            }
             update_lcd();
-            return;
         }else if(keypress == 0b1101){
             state = MAIN;
-            return;
+            break;
         }
     }
 }
 
 void debugState(){
-    LATBbits.LATB0 = 1;
-    __delay_ms(300);
-    //LATCbits.LATC6 = 1;
-    
-    __lcd_home();
-    printf("going debug");
-    __lcd_newline();
-    
-    //servoRotate90n(4);
-    //servoRotate4(3);
-    //while(1){
-    //servoRotateArm();
-    //__delay_ms(300);
-    //servoRotate90n(4);
-    //}
-    int keypress = readKey();
-    if(keypress == 0b1101){
-        state = MAIN;
-    }
+    state = MAIN;
 }
 
-    void fixLCD(void){
+void fixLCD(void){
     //LMAO
     OSCCON = 0xF0;  //8Mhz
     // RTC uses RC3 and RC4
@@ -456,18 +469,23 @@ void main(void)
 
     ADCON0 = 0x00; //Disable ADC
     ADCON1 = 0x0F; //Set PORTB to be digital instead of analog default
-    CMCON = 0x07;
 
     // nRBPU = 0;
     initLCD(); // Initialize LCD
-    eeprom_initialize();
     I2C_Master_Init(10000); //Initialize I2C Master with 100KHz clock
     
+    eeprom_initialize();
     INT1IE = 1;
+    CMCON = 0x07;
     di();
     
-    state = MAIN;
+    __lcd_home();
+    printf("                ");
+    __lcd_newline();
+    printf("                ");
+    __lcd_newline();
     
+    state = MAIN;
     /*
      Main loop to repeatedly poll for values. Establishes current state and executes functions based off of it, also reads for state changes based on key presses.
      */

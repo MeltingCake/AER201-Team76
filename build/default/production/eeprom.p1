@@ -2889,28 +2889,28 @@ Version 3.2 HI-TECH Software Intermediate Code
 [f ]
 "83
 [v _address `uc ~T0 @X0 1 a ]
-[; ;eeprom.c: 83: uint8_t address = newestAddress() + 5;
-[e = _address -> + -> ( _newestAddress ..  `i -> 5 `i `uc ]
+[; ;eeprom.c: 83: uint8_t address = newestAddress() + 4;
+[e = _address -> + -> ( _newestAddress ..  `i -> 4 `i `uc ]
 [; ;eeprom.c: 84: eeprom_WriteByte(0x0000, address);
 "84
 [e ( _eeprom_WriteByte (2 , -> -> 0 `i `ui _address ]
-[; ;eeprom.c: 85: for(int i = 0; i < 5; i++){
+[; ;eeprom.c: 85: for(int i = 0; i < 4; i++){
 "85
 {
 [v _i `i ~T0 @X0 1 a ]
 [e = _i -> 0 `i ]
-[e $ < _i -> 5 `i 277  ]
+[e $ < _i -> 4 `i 277  ]
 [e $U 278  ]
 [e :U 277 ]
 {
-[; ;eeprom.c: 86: eeprom_WriteByte(address + i, 0xFF);
+[; ;eeprom.c: 86: eeprom_WriteByte(address + i, data[i]);
 "86
-[e ( _eeprom_WriteByte (2 , -> + -> _address `i _i `ui -> -> 255 `i `uc ]
+[e ( _eeprom_WriteByte (2 , -> + -> _address `i _i `ui *U + _data * -> _i `x -> -> # *U _data `i `x ]
 "87
 }
 "85
 [e ++ _i -> 1 `i ]
-[e $ < _i -> 5 `i 277  ]
+[e $ < _i -> 4 `i 277  ]
 [e :U 278 ]
 "87
 }
@@ -2920,42 +2920,53 @@ Version 3.2 HI-TECH Software Intermediate Code
 [e :UE 276 ]
 }
 "90
-[v _eeprom_GetLog `(v ~T0 @X0 1 ef2`i`*i ]
+[v _eeprom_GetLog `(v ~T0 @X0 1 ef2`i`*uc ]
 {
-[; ;eeprom.c: 90: void eeprom_GetLog(int back, int * res){
+[; ;eeprom.c: 90: void eeprom_GetLog(int back, uint8_t * res){
 [e :U _eeprom_GetLog ]
 [v _back `i ~T0 @X0 1 r1 ]
-[v _res `*i ~T0 @X0 1 r2 ]
+[v _res `*uc ~T0 @X0 1 r2 ]
 [f ]
 "91
 [v _address `uc ~T0 @X0 1 a ]
 [; ;eeprom.c: 91: uint8_t address = newestAddress();
 [e = _address ( _newestAddress ..  ]
-[; ;eeprom.c: 92: address = address - back*5;
+[; ;eeprom.c: 92: address = address - (back*4);
 "92
-[e = _address -> - -> _address `i * _back -> 5 `i `uc ]
-[; ;eeprom.c: 93: for(int i = 0; i < 5; i++){
+[e = _address -> - -> _address `i * _back -> 4 `i `uc ]
+[; ;eeprom.c: 93: if(address == 0){
 "93
+[e $ ! == -> _address `i -> 0 `i 281  ]
+{
+[; ;eeprom.c: 94: address = 4;
+"94
+[e = _address -> -> 4 `i `uc ]
+"95
+}
+[e :U 281 ]
+[; ;eeprom.c: 95: }
+[; ;eeprom.c: 96: for(int i = 0; i < 4; i++){
+"96
 {
 [v _i `i ~T0 @X0 1 a ]
 [e = _i -> 0 `i ]
-[e $ < _i -> 5 `i 281  ]
-[e $U 282  ]
-[e :U 281 ]
-{
-[; ;eeprom.c: 94: res[i] = eeprom_ReadByte(address + i);
-"94
-[e = *U + _res * -> _i `x -> -> # *U _res `i `x -> ( _eeprom_ReadByte (1 -> + -> _address `i _i `ui `i ]
-"95
-}
-"93
-[e ++ _i -> 1 `i ]
-[e $ < _i -> 5 `i 281  ]
+[e $ < _i -> 4 `i 282  ]
+[e $U 283  ]
 [e :U 282 ]
-"95
+{
+[; ;eeprom.c: 97: res[i] = eeprom_ReadByte(address + i);
+"97
+[e = *U + _res * -> _i `x -> -> # *U _res `i `x ( _eeprom_ReadByte (1 -> + -> _address `i _i `ui ]
+"98
 }
-[; ;eeprom.c: 95: }
-[; ;eeprom.c: 96: }
 "96
+[e ++ _i -> 1 `i ]
+[e $ < _i -> 4 `i 282  ]
+[e :U 283 ]
+"98
+}
+[; ;eeprom.c: 98: }
+[; ;eeprom.c: 99: }
+"99
 [e :UE 280 ]
 }
